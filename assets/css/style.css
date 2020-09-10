@@ -4,6 +4,12 @@ body {
     font-family: 'Varela Round', sans-serif;
 }
 
-nav a {
+.header-section {
+    background-color: #ddfee4;
+}
+
+.game-logo {
     text-align: center;
+    width: 200px;
+    height: 200px;
 }
