@@ -6,10 +6,11 @@ body {
 
 .header-section {
     background-color: #ddfee4;
+    text-align: center;
+
 }
 
 .game-logo {
-    text-align: center;
     width: 200px;
     height: 200px;
 }
