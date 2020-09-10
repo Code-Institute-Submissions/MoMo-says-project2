@@ -4,4 +4,6 @@ body {
     font-family: 'Varela Round', sans-serif;
 }
 
-
+nav a {
+    text-align: center;
+}
