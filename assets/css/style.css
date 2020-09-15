@@ -4,6 +4,8 @@ body {
     font-family: 'Varela Round', sans-serif;
 }
 
+/*---------- Header ----------*/
+
 .header-section {
     background-color: #ddfee4;
     text-align: center;
@@ -14,3 +16,18 @@ body {
     width: 200px;
     height: 200px;
 }
+
+
+/*---------- Game section ----------*/
+
+
+
+/*---------- Footer ----------*/
+
+.footer-section {
+    background-color: #ddfee4;
+    text-align: center;
+}
+
+
+
