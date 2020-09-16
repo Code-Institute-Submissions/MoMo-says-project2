@@ -21,7 +21,8 @@ body {
 /*---------- Game section ----------*/
 
 .game-section {
-
+    background-image: url("/assets/background-images/summer.jpg");
+    background-size: cover;
 }
 
 .animal-picture {
