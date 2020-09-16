@@ -35,12 +35,19 @@ body {
     /* float: left; */
     opacity: 0.75;
     border-radius: 20%;
+    display: block;
+    
 }
 
-.animal-picture {
+.animal-image-div {
+    display: block;
+}
+
+.animal-image {
     border-radius: 50px;
     /* float: center; */
-    padding: 5px, 5px, 5px, 5px;
+    margin: 5px;
+    
 }
 
 
@@ -51,6 +58,7 @@ body {
     /* float: right; */
     opacity: 0.75;
     border-radius: 20%;
+    display: block;
 }
 
 
