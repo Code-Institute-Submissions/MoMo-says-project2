@@ -49,6 +49,18 @@ This is a school project with the main focus to display my skills in HTML, css a
 
 
 ### Media
+#### Images: 
+
+MoMo logo image made with [hatchful](https://hatchful.shopify.com)
+
+Image of hog is created by Kimberly Lake and retrived via [unsplashed](https://unsplash.com/photos/VBmRbvMrb7A), thank you Kimberly!
+
+Image of sealion is created by Duncan Sanchez and retrived via [unsplashed](https://unsplash.com/photos/l6aAMUH_oW8), thank you Duncan!
+
+Image of rattlesnake is created by NOAA and retrived via [unsplashed](https://unsplash.com/photos/VrQRpV4c9jY), thank you NOAA!
+
+Image of elephant is created by Maurits Bausenhart and retrived via [unsplashed](https://unsplash.com/photos/Ay67yB6vmF8), thank you Maurits!
+
 
 
 ### Acknowledgements
