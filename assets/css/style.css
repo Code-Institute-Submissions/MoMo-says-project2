@@ -23,10 +23,34 @@ body {
 .game-section {
     background-image: url("/assets/background-images/summer.jpg");
     background-size: cover;
+    text-align: center;
+    background-color: #ddfee4;
+    margin-bottom: 0px;
+}
+
+.how-to-play-text {
+    padding: 10px;
+    background-color: #b6fcc5;
+    max-width: 30%;
+    /* float: left; */
+    opacity: 0.75;
+    border-radius: 20%;
 }
 
 .animal-picture {
     border-radius: 50px;
+    /* float: center; */
+    padding: 5px, 5px, 5px, 5px;
+}
+
+
+.highscore-text {
+    padding: 10px;
+    background-color: #b6fcc5;
+    max-width: 30%;
+    /* float: right; */
+    opacity: 0.75;
+    border-radius: 20%;
 }
 
 
