@@ -35,6 +35,34 @@ This is a school project with the main focus to display my skills in HTML, css a
 
 ## Technologies Used
 
+### Languages
+
+- HTML
+- CSS
+
+The project is built up on HTML and CSS to make the basic structure of the webpage and to style it.
+
+### Framework
+
+Bootstrap
+
+The project uses Bootstrap to simplify the structural development of the webpages HTML and CSS. https://getbootstrap.com/
+
+### Library
+
+- Fontawesome
+
+    The project used fontawesome icons to make the webpage more intuitive and more visually appealing. https://fontawesome.com/
+
+- w3schools
+
+    The project used w3shools online color picker to easily find and test diffrent colors for the pricing headings. https://www.w3schools.com/colors/colors_picker.asp
+
+Other Technologies
+- Favicon.ico and app icon generator
+
+The project uses a favicon made with the favicon.ico generator tool to make the page more visually appealing. The image is a cropped version of the company logo. https://www.favicon-generator.org/
+
 
 ## Testing
 
