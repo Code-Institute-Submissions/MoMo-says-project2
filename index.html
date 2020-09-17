@@ -5,11 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-	
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-    
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 	<title>MoMo says</title>
 </head>
@@ -24,23 +22,20 @@
 
 	<section class="game-section">
 
- <button data-toggle="collapse" data-target="#demo">Collapsible</button>
+<button class="theme-button" id="how-to-play-button" data-toggle="collapse" data-target="#demo">How to play <i class="far fa-question-circle"></i></button>
+    <div id="demo" class="collapse how-to-play-text">
+        <h4>How to play</h4>
+		<p>- To start the game press any animal button.</p>
+		<p>- Observe the pattern playing and replicate it by pressing the buttons.</p>
+    </div> 
 
-<div id="demo" class="collapse">
-    Lorem ipsum dolor text....
-</div> 
-
-		<div class="how-to-play-text">
-			<h4>How to play</h4>
-			<p>- To start the game press any button.</p>
-			<p>- Observe the pattern playing and replicate it by pressing the buttons.</p>
-		</div>
 		<div class="animal-image-div">
-			<img src="assets/animal-images/hog.png" class="animal-image" alt="Image of a hog laying in the grass">
-			<img src="assets/animal-images/sealion.png" class="animal-image" alt="Image of a sealion by the sea">
+
+			<img src="assets/animal-images/hog.png" class="animal-image" alt="Image of a hog">
+			<img src="assets/animal-images/sealion.png" class="animal-image" alt="Image of a sealion">
             <br>
-			<img src="assets/animal-images/rattlesnake.png" class="animal-image" alt="Image of a rattlesnake laying in the sand">
-			<img src="assets/animal-images/elephant.png" class="animal-image" alt="Image of a elephant standing in front of an adult elephant">
+			<img src="assets/animal-images/rattlesnake.png" class="animal-image" alt="Image of a rattlesnake">
+			<img src="assets/animal-images/elephant.png" class="animal-image" alt="Image of a elephant">
         </div>
 		<div class="highscore-text">
 			<h4>High score</h4>
