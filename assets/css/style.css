@@ -9,7 +9,6 @@ body {
 .header-section {
     background-color: #ddfee4;
     text-align: center;
-
 }
 
 .game-logo {
@@ -36,7 +35,6 @@ body {
     opacity: 0.75;
     border-radius: 20%;
     display: block;
-    
 }
 
 .animal-image-div {
@@ -45,6 +43,7 @@ body {
 
 .animal-image {
     border-radius: 50px;
+    border: solid 7px #b6fcc5;
     /* float: center; */
     margin: 5px;
     
@@ -69,5 +68,25 @@ body {
     text-align: center;
 }
 
+.theme-button {
+    border-radius: 10px;
+    border: solid 4px #28cc9e;
+    color: #20a882;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px;
+}
 
+#summer-button {
+    background-color: #ddfee4;
+}
 
+#winter-button {
+    background-color: #eeeeee;
+    color: #00adb5;
+}
+
+#galaxy-button {
+    background-color: #25161b;
+    color: #453953;
+}
