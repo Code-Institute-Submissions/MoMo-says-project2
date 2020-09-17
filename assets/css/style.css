@@ -4,6 +4,18 @@ body {
     font-family: 'Varela Round', sans-serif;
 }
 
+/*---------- General styling ----------*/
+
+.theme-button {
+    border-radius: 10px;
+    border: solid 4px #28cc9e;
+    color: #20a882;
+    background-color: #ddfee4;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px;
+}
+
 /*---------- Header ----------*/
 
 .header-section {
@@ -42,6 +54,7 @@ body {
     padding: 10px;
     background-color: #b6fcc5;
     color: #188163;
+    font-weight: 600;
     max-width: 300px;
     /* float: left; */
     opacity: 0.85;
@@ -66,6 +79,7 @@ body {
     padding: 10px;
     background-color: #b6fcc5;
     color: #188163;
+    font-weight: 600;
     max-width: 200px;
     /* float: right; */
     opacity: 0.85;
@@ -82,14 +96,6 @@ body {
     background-color: #ddfee4;
     text-align: center;
     padding: 20px 0 20px 0;
-}
-
-.theme-button {
-    border-radius: 10px;
-    border: solid 4px #28cc9e;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 15px;
 }
 
 #summer-button {

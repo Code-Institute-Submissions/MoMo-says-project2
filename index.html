@@ -22,6 +22,23 @@
 
 	<section class="game-section">
 
+<!-- b -->
+
+<div class="container">
+  <ul class="list-inline">
+    <li><button class="theme-button" title="How to play" data-toggle="popover" data-placement="bottom" data-content="To start the game press any animal button.
+		Observe the pattern playing and replicate it by pressing the buttons.">How to play <i class="far fa-question-circle"></i></button></li>
+  </ul>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+
+
 <button class="theme-button" id="how-to-play-button" data-toggle="collapse" data-target="#demo">How to play <i class="far fa-question-circle"></i></button>
     <div id="demo" class="collapse how-to-play-text">
         <h4>How to play</h4>
