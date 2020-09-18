@@ -48,6 +48,10 @@ Bootstrap
 
 The project uses Bootstrap to simplify the structural development of the webpages HTML and CSS. https://getbootstrap.com/
 
+Code copied (and afterwards altered) from bootstrap:
+- Popover button [link to original code](https://www.w3schools.com/bootstrap/bootstrap_popover.asp)
+- Collapsible button [link to original code](https://www.w3schools.com/bootstrap/bootstrap_collapse.asp)
+
 ### Library
 
 - Fontawesome
