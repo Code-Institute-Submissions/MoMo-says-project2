@@ -76,25 +76,29 @@ body {
     /* opacity: 1; */
 }
 
-#pig {
-    border: solid 7px green;
+#elephant {
+    border: solid 7px #ff9980;
 
 }
 
-#sealion {
-    border: solid 7px blue;
+#pig {
+    border: solid 7px #b3ffb3;
 
 }
 
 #rattlesnake {
-    border: solid 7px yellow;
+    border: solid 7px #ffff80;
 
 }
 
-#elephant {
-    border: solid 7px red;
+#sealion {
+    border: solid 7px #99ccff;
 
 }
+
+
+
+
 
 .highscore-text {
     padding: 10px;

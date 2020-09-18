@@ -1,16 +1,24 @@
-$("#pig").click(function(){ // When I click on <p> run this code });
-    $("#pig").css("border", "red");
-    console.log("hej")
+$("document").ready(function() {
+
+    $("#pig").click(function(){ // When I click on <p> run this code });
+        $("#pig").css("border", "solid 7px red")
+        });
+    $("#sealion").click(function(){
+        $("#sealion").css("border", "solid 7px red");
+    $("#rattlesnake").click(function(){ // When I click on <p> run this code });
+        $("#rattlesnake").css("border", "solid 7px red")
+        });
+    $("#elephant").click(function(){ // When I click on <p> run this code });
+        $("#elephant").css("border", "solid 7px blue")
+        });        
+    });
+
 });
 
-console.log("Hello")
 
 
 
 
-// $("#pig").mouseenter(function() {
-//   $("pig").removeClass("make-red").addClass("make-border");
-// });
-// $("button").mouseleave(function() {
-//   $("button").removeClass("make-border").addClass("make-red");
-// });
+
+
+console.log("Hello");
