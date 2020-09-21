@@ -39,12 +39,16 @@ body {
     background-color: #ddfee4;
     margin-bottom: 0px;
     padding: 15px;
+    max-width: 100%;
+    width: auto;
 }
 
 #how-to-play-button {
     background-color: #ddfee4;
     color: #20a882;
-    display: block;
+    /* display: block; */
+    width: 170px;
+    float: left;
 }
 
 .fa-question-circle {
@@ -56,12 +60,13 @@ body {
     background-color: #b6fcc5;
     color: #188163;
     font-weight: 600;
-    max-width: 250px;
+    width: 250px;
     /* float: left; */
     opacity: 0.85;
     border-radius: 50px;
     /* display: block; */
     margin: 15px;
+    float: left;
 }
 
 .animal-image-div {
@@ -97,21 +102,19 @@ body {
 
 }
 
-
-
-
-
 .highscore-text {
     padding: 10px;
     background-color: #b6fcc5;
     color: #188163;
     font-weight: 600;
-    max-width: 200px;
+    max-width: 220px;
+    max-height: 200px;
     /* float: right; */
     opacity: 0.85;
-    border-radius: 50px;
+    border-radius: 30px;
     display: block;
     margin: 15px;
+    float: right;
 
 }
 
