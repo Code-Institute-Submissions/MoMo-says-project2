@@ -56,7 +56,7 @@ body {
     background-color: #b6fcc5;
     color: #188163;
     font-weight: 600;
-    max-width: 200px;
+    max-width: 250px;
     /* float: left; */
     opacity: 0.85;
     border-radius: 50px;
@@ -65,7 +65,8 @@ body {
 }
 
 .animal-image-div {
-    display: block;
+    /* display: block; */
+    min-width: 380px;
 }
 
 .animal-image {

@@ -14,7 +14,12 @@
 	<title>MoMo says</title>
 </head>
 
+
+
 <body>
+
+
+
 <!-- The "container-fluid" class was copied from bootstrap to achive a responsive div -->
 	<section class="header-section">
 		<div class="container-fluid">
@@ -22,43 +27,45 @@
         </div>
 	</section>
 
-	<section class="game-section">
-
-<!-- The popover button was copied from bootstrap -->
+<section class="game-section">
 <div class="container">
-  <ul class="list-inline">
-    <li><button class="theme-button" title="How to play" data-toggle="popover" data-placement="bottom" data-content="To start the game press any animal button.
-		Observe the pattern playing and replicate it by pressing the buttons.">How to play <i class="far fa-question-circle"></i></button></li>
-  </ul>
-</div>
-
-<script>
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
-});
-</script>
-
-
-<!-- Collapsible button copied from bootstrap -->
-<button class="theme-button" id="how-to-play-button" data-toggle="collapse" data-target="#demo">How to play <i class="far fa-question-circle"></i></button>
-    <div id="demo" class="collapse how-to-play-text">
+  <div class="row">
+    <div class="col">
+    <!-- Collapsible button copied from bootstrap -->
+      <button class="theme-button" id="how-to-play-button" data-toggle="collapse" data-target="#demo">How to play <i class="far fa-question-circle"></i></button>
+        <div id="demo" class="collapse how-to-play-text">
         <h4>How to play</h4>
 		<p>- To start the game press any animal button.</p>
 		<p>- Observe the pattern playing and replicate it by pressing the buttons.</p>
     </div> 
+    </div>
+    <div class="col animal-image-div">
 
-		<div class="animal-image-div">
 			<img src="assets/animal-images/elephant.png" id="elephant" class="animal-image" alt="Image of a elephant">
             <img src="assets/animal-images/hog.png" id="pig" class="animal-image" alt="Image of a pig">
             <br>
 			<img src="assets/animal-images/rattlesnake.png" id="rattlesnake" class="animal-image" alt="Image of a rattlesnake">
 			<img src="assets/animal-images/sealion.png" id="sealion" class="animal-image" alt="Image of a sealion">
-        </div>
-		<div class="highscore-text">
+        
+    </div>
+    <div class="col">
+      <div class="highscore-text">
 			<h4>High score</h4>
 			<p>Current: </p>
 			<p>Highest: </p>
 		</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+		
+		
 	</section>
 
 	<section class="footer-section">
