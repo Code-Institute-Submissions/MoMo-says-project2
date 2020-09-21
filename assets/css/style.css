@@ -38,9 +38,9 @@ body {
     text-align: center;
     background-color: #ddfee4;
     margin-bottom: 0px;
-    padding: 15px;
+    padding: 5% 0 5% 0;
     max-width: 100%;
-    width: auto;
+    height: auto;
 }
 
 #how-to-play-button {
@@ -60,25 +60,28 @@ body {
     background-color: #b6fcc5;
     color: #188163;
     font-weight: 600;
-    width: 250px;
-    /* float: left; */
+    max-width: 220px;
+    max-height: auto;
     opacity: 0.85;
     border-radius: 50px;
     /* display: block; */
-    margin: 15px;
-    float: left;
+    margin: 15px 15px 15px 15px;
+    /* position: relative; */
+    
 }
 
 .animal-image-div {
     /* display: block; */
-    min-width: 380px;
+    min-width: 400px;
+    margin: 15px 15px 15px 15px;
 }
 
 .animal-image {
     border-radius: 50px;
     border: solid 7px #b6fcc5;
     margin: 5px;
-    max-width: 150px;
+    max-width: 200px;
+    min-width: 150px;
     /* opacity: 1; */
 }
 
@@ -108,13 +111,13 @@ body {
     color: #188163;
     font-weight: 600;
     max-width: 220px;
-    max-height: 200px;
+    max-height: auto;
     /* float: right; */
     opacity: 0.85;
     border-radius: 30px;
-    display: block;
-    margin: 15px;
-    float: right;
+    /* display: block; */
+    margin: 15px 15px 15px 15px;
+    /* float: right; */
 
 }
 
