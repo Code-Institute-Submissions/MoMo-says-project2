@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Varela Round', sans-serif;
+    background-color: #ddfee4;
 }
 
 /*---------- General styling ----------*/
@@ -64,14 +65,10 @@ body {
     max-height: auto;
     opacity: 0.85;
     border-radius: 50px;
-    /* display: block; */
     margin: 15px 15px 15px 15px;
-    /* position: relative; */
-    
 }
 
 .animal-image-div {
-    /* display: block; */
     min-width: 400px;
     margin: 15px 15px 15px 15px;
 }
@@ -112,12 +109,10 @@ body {
     font-weight: 600;
     max-width: 220px;
     max-height: auto;
-    /* float: right; */
     opacity: 0.85;
     border-radius: 30px;
-    /* display: block; */
     margin: 15px 15px 15px 15px;
-    /* float: right; */
+    
 
 }
 
