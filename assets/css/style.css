@@ -73,6 +73,11 @@ body {
     margin: 15px 15px 15px 15px;
 }
 
+.active-panel {
+    border: solid 7px white !important;
+    opacity: 0.4;
+}
+
 .animal-panels {
     border-radius: 50px;
     border: solid 7px #b6fcc5;
@@ -112,8 +117,6 @@ body {
     opacity: 0.85;
     border-radius: 30px;
     margin: 15px 15px 15px 15px;
-    
-
 }
 
 
