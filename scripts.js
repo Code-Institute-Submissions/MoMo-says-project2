@@ -27,13 +27,13 @@ const rattlesnakePanel = document.querySelector('.rattlesnake-panel');
 const sealionPanel = document.querySelector('.sealion-panel');
 
 const getRandomPanel = () => {
-    const panels = [
+    const animalPanels = [
         elephantPanel, 
         pigPanel, 
         rattlesnakePanel, 
         sealionPanel
     ]
-    return panels[parseInt(Math.random() * panels.length)];
+    return animalPanels[parseInt(Math.random() * animalPanels.length)];
 };
 
 const sequence = [
@@ -58,6 +58,9 @@ const flash = animalPanels => {
     });
 };
 
+const panelClicked = (animalPanels) => {
+    console.log(animalPanels);
+}
 
 const main = async () => {
     console.log('hello');
