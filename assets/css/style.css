@@ -68,12 +68,12 @@ body {
     margin: 15px 15px 15px 15px;
 }
 
-.animal-image-div {
+.animal-panel-div {
     min-width: 400px;
     margin: 15px 15px 15px 15px;
 }
 
-.animal-image {
+.animal-panels {
     border-radius: 50px;
     border: solid 7px #b6fcc5;
     margin: 5px;
@@ -82,22 +82,22 @@ body {
     /* opacity: 1; */
 }
 
-#elephant {
+.elephant-panel {
     border: solid 7px #ff9980;
 
 }
 
-#pig {
+.pig-panel {
     border: solid 7px #b3ffb3;
 
 }
 
-#rattlesnake {
+.rattlesnake-panel {
     border: solid 7px #ffff80;
 
 }
 
-#sealion {
+.sealion-panel {
     border: solid 7px #99ccff;
 
 }

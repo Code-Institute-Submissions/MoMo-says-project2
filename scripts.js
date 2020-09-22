@@ -21,6 +21,21 @@ $("document").ready(function() {
 console.log("Hello");
 
 
-// start board sequence
+const elephantButton = document.querySelector('#elephant');
+const pigButton = document.querySelector('#pig');
+const rattlesnakeButton = document.querySelector('#rattlesnake');
+const sealionButton = document.querySelector('#sealion');
 
-// start user replicating sequence
+const sequences = [
+    elephantButton, 
+    pigButton, 
+    rattlesnakeButton, 
+    sealionButton
+];
+
+const flash = (panel) => {
+    return new Promis((resolve, reject) => {
+        button
+    })
+}
+
