@@ -26,7 +26,7 @@ const pigPanel = document.querySelector('.pig-panel');
 const rattlesnakePanel = document.querySelector('.rattlesnake-panel');
 const sealionPanel = document.querySelector('.sealion-panel');
 
-const getRandomPanel = () => {
+const getRandomAnimalPanel = () => {
     const animalPanels = [
         elephantPanel, 
         pigPanel, 
@@ -36,12 +36,9 @@ const getRandomPanel = () => {
     return animalPanels[parseInt(Math.random() * animalPanels.length)];
 };
 
-const sequence = [
-    getRandomPanel(),
-    getRandomPanel(),
-    getRandomPanel(),
-    getRandomPanel(),
-];
+const sequence = [getRandomAnimalPanel()];
+const sequenceToGuess = [...sequence];   
+
 
 const flash = animalPanels => {
     return new Promise((resolve, reject) => {
@@ -58,16 +55,26 @@ const flash = animalPanels => {
     });
 };
 
-const panelClicked = (animalPanels) => {
-    console.log(animalPanels);
-}
+let canClick = false;
+const animalPanelClicked = (animalPanels) => {
+    if (!canClick) return;
+    const expectedAnimalPanel = sequenceToGuess.shift();
+    if (expectedAnimalPanel === animalPanelClicked) {
+        if (sequenceToGuess.length === 0) {
+            //start new round
+        }
+    } else {
+        // end game
+        alert('game over');
+    }
+};
 
 const main = async () => {
     console.log('hello');
     for (const animalPanels of sequence) {
         await flash(animalPanels);
-    
     }
+    canClick = true;
 };
 
 setTimeout(main, 4000);
