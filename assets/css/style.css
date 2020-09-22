@@ -84,8 +84,13 @@ body {
     margin: 5px;
     max-width: 200px;
     min-width: 150px;
-    /* opacity: 1; */
+    cursor: pointer;
 }
+
+.animal-panels:hover {
+    opacity: 0.8;
+}
+
 
 .elephant-panel {
     border: solid 7px #ff9980;
