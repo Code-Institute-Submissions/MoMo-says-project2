@@ -27,24 +27,24 @@ const rattlesnakePanel = document.querySelector('.rattlesnake-panel');
 const sealionPanel = document.querySelector('.sealion-panel');
 
 const getRandomAnimalPanel = () => {
-    const animalPanels = [
+    const animalPanel = [
         elephantPanel, 
         pigPanel, 
         rattlesnakePanel, 
         sealionPanel
     ]
-    return animalPanels[parseInt(Math.random() * animalPanels.length)];
+    return animalPanel[parseInt(Math.random() * animalPanel.length)];
 };
 
 const sequence = [getRandomAnimalPanel()];
-const sequenceToGuess = [...sequence];   
+let sequenceToGuess = [...sequence];   
 
 
-const flash = animalPanels => {
+const flash = animalPanel => {
     return new Promise((resolve, reject) => {
-        animalPanels.className += ' active-panel';
+        animalPanel.className += ' active-panel';
         setTimeout(() => {
-            animalPanels.className = animalPanels.className.replace (
+            animalPanel.className = animalPanel.className.replace (
                 ' active-panel',
                 ''
             );
@@ -56,12 +56,16 @@ const flash = animalPanels => {
 };
 
 let canClick = false;
-const animalPanelClicked = (animalPanels) => {
+
+const animalPanelClicked = animalPanelClicked => {
     if (!canClick) return;
     const expectedAnimalPanel = sequenceToGuess.shift();
     if (expectedAnimalPanel === animalPanelClicked) {
         if (sequenceToGuess.length === 0) {
             //start new round
+            sequence.push(getRandomAnimalPanel());
+            sequenceToGuess = [...sequence];
+            startFlashing();
         }
     } else {
         // end game
@@ -69,12 +73,14 @@ const animalPanelClicked = (animalPanels) => {
     }
 };
 
-const main = async () => {
-    console.log('hello');
-    for (const animalPanels of sequence) {
-        await flash(animalPanels);
+const startFlashing = async () => {
+    canClick = false;
+    for (const animalPanel of sequence) {
+        await flash(animalPanel);
     }
     canClick = true;
-};
+}
 
-setTimeout(main, 4000);
+setTimeout(startFlashing, 5000);
+
+

@@ -78,7 +78,7 @@ body {
     opacity: 0.4;
 }
 
-.animal-panels {
+.animal-panel {
     border-radius: 50px;
     border: solid 7px #b6fcc5;
     margin: 5px;
@@ -87,7 +87,7 @@ body {
     cursor: pointer;
 }
 
-.animal-panels:hover {
+.animal-panel:hover {
     opacity: 0.8;
 }
 
