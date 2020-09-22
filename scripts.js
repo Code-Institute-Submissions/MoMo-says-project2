@@ -26,11 +26,21 @@ const pigPanel = document.querySelector('.pig-panel');
 const rattlesnakePanel = document.querySelector('.rattlesnake-panel');
 const sealionPanel = document.querySelector('.sealion-panel');
 
+const getRandomPanel = () => {
+    const panels = [
+        elephantPanel, 
+        pigPanel, 
+        rattlesnakePanel, 
+        sealionPanel
+    ]
+    return panels[parseInt(Math.random() * panels.length)];
+};
+
 const sequence = [
-    elephantPanel, 
-    pigPanel, 
-    rattlesnakePanel, 
-    sealionPanel
+    getRandomPanel(),
+    getRandomPanel(),
+    getRandomPanel(),
+    getRandomPanel(),
 ];
 
 const flash = animalPanels => {
@@ -41,8 +51,10 @@ const flash = animalPanels => {
                 ' active-panel',
                 ''
             );
-            resolve();
-        }, 500);
+            setTimeout(() => {
+                resolve();
+            }, 500);
+        }, 1000);
     });
 };
 
@@ -55,4 +67,4 @@ const main = async () => {
     }
 };
 
-setTimeout(main, 3000);
+setTimeout(main, 4000);
