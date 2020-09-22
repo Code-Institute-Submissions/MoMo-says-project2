@@ -67,6 +67,15 @@ Other Technologies
 
 The project uses a favicon made with the favicon.ico generator tool to make the page more visually appealing. The image is a cropped version of the company logo. https://www.favicon-generator.org/
 
+### Youtube
+
+- Cody Seibert
+
+    The projects game section in scripts.js was originaly from Cody Seibert and has later on been slightly altered to fit the project
+    
+    [Web Dev Junkie](https://www.youtube.com/watch?v=W0MxUHlZo6U)
+
+
 
 ## Testing
 
@@ -76,16 +85,20 @@ The project uses a favicon made with the favicon.ico generator tool to make the 
 
 ## Credits
 
-
 ### Content
+Company Logo made with the online tool [hatchful](hatchful.shopify.com)
 
+Grid responsiveness from [Bootstrap](https://getbootstrap.com/docs/4.5/layout/grid/)
+
+Markdown styling from Github guides for [headings](https://guides.github.com/features/mastering-markdown/)
 
 ### Media
+
 #### Images: 
 
-MoMo logo image made with [hatchful](https://hatchful.shopify.com)
+MoMo logo image and MoMo favicon made with [hatchful](https://hatchful.shopify.com)
 
-Image of hog is created by Kimberly Lake and retrived via [unsplashed](https://unsplash.com/photos/VBmRbvMrb7A), thank you Kimberly!
+Image of pig is created by Kimberly Lake and retrived via [unsplashed](https://unsplash.com/photos/VBmRbvMrb7A), thank you Kimberly!
 
 Image of sealion is created by Duncan Sanchez and retrived via [unsplashed](https://unsplash.com/photos/l6aAMUH_oW8), thank you Duncan!
 
@@ -97,3 +110,6 @@ Image of elephant is created by Maurits Bausenhart and retrived via [unsplashed]
 
 ### Acknowledgements
 
+I received visual and structural inspiration for this project from:
+
+[freesimon.org](http://www.freesimon.org/welcome/)
