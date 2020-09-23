@@ -22,7 +22,7 @@ let sequenceToGuess = [...sequence];
 function flash(animalPanel) {
     return new Promise(function(resolve, reject) {
         animalPanel.className += ' active-panel';
-        play()
+        play();
         setTimeout(function() {
             animalPanel.className = animalPanel.className.replace (
                 ' active-panel',
@@ -69,13 +69,13 @@ setTimeout(startFlashing, 3000);
 // This code was adapted from https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
 function play() {
         var audio = document.getElementById('audio-elephant');
-        if (audio.paused) {
-            audio.play();
+        var clone = audio.cloneNode(true);
+        if (clone.paused) {
+            clone.play();
 
-        }else{
-            audio.pause();
-            audio.currentTime = 0
-
+        } else {
+            clone.pause();
+            clone.currentTime = 0
         }
     }
 
