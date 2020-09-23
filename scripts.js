@@ -30,7 +30,7 @@ const flash = animalPanel => {
             setTimeout(() => {
                 resolve();
             }, 500);
-        }, 1000);
+        }, 500);
     });
 };
 
@@ -62,12 +62,12 @@ const startFlashing = async () => {
     canClick = true;
 }
 
-setTimeout(startFlashing, 4000);
+setTimeout(startFlashing, 3000);
 
 
 // This code was adapted from https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
 function play() {
-        var audio = document.getElementById('audio');
+        var audio = document.getElementById('audio-elephant');
         if (audio.paused) {
             audio.play();
 
