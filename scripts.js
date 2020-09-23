@@ -1,6 +1,5 @@
 
-
-
+// This code was adapted from Cody Seibert
 const elephantPanel = document.querySelector('.elephant-panel');
 const pigPanel = document.querySelector('.pig-panel');
 const rattlesnakePanel = document.querySelector('.rattlesnake-panel');
@@ -43,9 +42,11 @@ const animalPanelClicked = animalPanelClicked => {
     if (expectedAnimalPanel === animalPanelClicked) {
         if (sequenceToGuess.length === 0) {
             //start new round
+            setTimeout(() => {
             sequence.push(getRandomAnimalPanel());
             sequenceToGuess = [...sequence];
             startFlashing();
+            }, 500);
         }
     } else {
         // end game
@@ -61,6 +62,9 @@ const startFlashing = async () => {
     canClick = true;
 }
 
-setTimeout(startFlashing, 5000);
+setTimeout(startFlashing, 4000);
+
+
+
 
 
