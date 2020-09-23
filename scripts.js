@@ -65,6 +65,16 @@ const startFlashing = async () => {
 setTimeout(startFlashing, 4000);
 
 
+// This code was adapted from https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
+function play() {
+        var audio = document.getElementById('audio');
+        if (audio.paused) {
+            audio.play();
 
+        }else{
+            audio.pause();
+            audio.currentTime = 0
 
+        }
+    }
 
