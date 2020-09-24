@@ -1,5 +1,7 @@
 
 // This code was adapted from Cody Seibert https://www.youtube.com/watch?v=W0MxUHlZo6U
+
+// Game section
 const elephantPanel = document.querySelector('.elephant-panel');
 const pigPanel = document.querySelector('.pig-panel');
 const rattlesnakePanel = document.querySelector('.rattlesnake-panel');
@@ -94,4 +96,7 @@ function play() {
         clone.currentTime = 0
     }
 }
+
+
+// Theme buttons
 
