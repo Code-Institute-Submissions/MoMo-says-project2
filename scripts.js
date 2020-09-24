@@ -63,20 +63,35 @@ async function startFlashing() {
     canClick = true;
 }
 
-setTimeout(startFlashing, 3000);
+// setTimeout(startFlashing, 3000); from https://stackoverflow.com/questions/54681854/run-js-functions-run-in-sequence-onclick
+$(document).ready(function() {
+    $(".animal-panel").click(function() {
+    setTimeout(startFlashing, 1000);
+    });
+});
 
 
 // This code was adapted from https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
 // This code about cloning was adapted from https://stackoverflow.com/questions/40822531/jquery-audio-how-to-allow-overlapping-sounds
-function play() {
-        var audio = document.getElementById('audio-elephant');
-        var clone = audio.cloneNode(true);
-        if (clone.paused) {
-            clone.play();
 
-        } else {
-            clone.pause();
-            clone.currentTime = 0
-        }
+let firstClickAudio = true
+
+
+function play() {
+    // First time we click the button we don't want audio to play to indicate that the game has not begun yet.
+    if (firstClickAudio === true) {
+        firstClickAudio = false
+        return
     }
+    
+    var audio = document.getElementById('audio-elephant');
+    var clone = audio.cloneNode(true);
+    if (clone.paused) {
+        clone.play();
+
+    } else {
+        clone.pause();
+        clone.currentTime = 0
+    }
+}
 
