@@ -7,15 +7,7 @@ body {
 
 /*---------- General styling ----------*/
 
-.theme-button {
-    border-radius: 10px;
-    border: solid 4px #28cc9e;
-    color: #20a882;
-    background-color: #ddfee4;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 15px;
-}
+
 
 /*---------- Header ----------*/
 
@@ -146,4 +138,28 @@ body {
 #galaxy-button {
     background-color: #25161b;
     color: #453953;
+}
+
+.theme-button-green {
+    border-radius: 10px;
+    border: solid 4px #28cc9e;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px;
+}
+
+.theme-button-dark {
+    border-radius: 10px;
+    border: solid 4px #453953;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px;
+}
+
+.theme-button-white {
+    border-radius: 10px;
+    border: solid 4px #00adb5;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px;
 }

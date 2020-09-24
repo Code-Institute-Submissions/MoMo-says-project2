@@ -100,3 +100,12 @@ function play() {
 
 // Theme buttons
 
+// document.getElementById('theme-button-green').onclick = function () { 
+//     document.getElementById('theme_css').href = '../red.css';
+// };
+
+$(document).ready(function() {
+    $(".animal-panel").click(function() {
+    setTimeout(startFlashing, 1000);
+    });
+});
