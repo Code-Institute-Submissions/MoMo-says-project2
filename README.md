@@ -92,6 +92,13 @@ Grid responsiveness from [Bootstrap](https://getbootstrap.com/docs/4.5/layout/gr
 
 Markdown styling from Github guides for [headings](https://guides.github.com/features/mastering-markdown/)
 
+Code about playing audio onclick was adapted from [Arunkumar via stackoverflow](https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click)
+
+Code about cloning in javascript was adapted from [Luka Kvavilashvili via stackoverflow](https://stackoverflow.com/questions/40822531/jquery-audio-how-to-allow-overlapping-sounds)
+
+
+
+
 ### Media
 
 #### Images: 

@@ -67,6 +67,7 @@ setTimeout(startFlashing, 3000);
 
 
 // This code was adapted from https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
+// This code about cloning was adapted from https://stackoverflow.com/questions/40822531/jquery-audio-how-to-allow-overlapping-sounds
 function play() {
         var audio = document.getElementById('audio-elephant');
         var clone = audio.cloneNode(true);
