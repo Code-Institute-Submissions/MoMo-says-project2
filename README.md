@@ -80,6 +80,15 @@ The project uses a favicon made with the favicon.ico generator tool to make the 
 ## Testing
 
 
+
+- Bugs:
+Recived:
+"NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission."
+When the site automatically played up the game flash sequence. To fix the problem I added a call to the automatic starting function of sequence to first
+be played after one ofe the animal buttons have been clicked. After this was implemented there was no longer a error message.
+
+https://stackoverflow.com/questions/57504122/browser-denying-javascript-play
+
 ## Deployment
 
 

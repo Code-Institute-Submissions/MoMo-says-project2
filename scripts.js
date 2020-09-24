@@ -1,5 +1,5 @@
 
-// This code was adapted from Cody Seibert
+// This code was adapted from Cody Seibert https://www.youtube.com/watch?v=W0MxUHlZo6U
 const elephantPanel = document.querySelector('.elephant-panel');
 const pigPanel = document.querySelector('.pig-panel');
 const rattlesnakePanel = document.querySelector('.rattlesnake-panel');
@@ -83,7 +83,7 @@ function play() {
         firstClickAudio = false
         return
     }
-    
+
     var audio = document.getElementById('audio-elephant');
     var clone = audio.cloneNode(true);
     if (clone.paused) {
