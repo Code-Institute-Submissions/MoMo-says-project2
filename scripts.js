@@ -151,7 +151,7 @@ function switchWinter () {
 function switchGalaxy () {
     document.getElementById("logo").src = "/assets/icons/dark-logo.png";
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/galaxy.jpg)";
-    document.querySelector('body').style.backgroundColor = "#25161b";
+    document.querySelector('body').style.backgroundColor = "#2a1c21";
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
     buttonList[i].className = "theme-button theme-button-dark";

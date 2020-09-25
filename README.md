@@ -89,6 +89,12 @@ be played after one ofe the animal buttons have been clicked. After this was imp
 
 https://stackoverflow.com/questions/57504122/browser-denying-javascript-play
 
+- Wrong color of logo
+When I uploaded the dark MoMo logo the background color was #25161b when swatched before I uploaded it to the page and
+afterwards it became slightly lighter, making it visibly stand out from the background color that had the swatched hex color.
+To get the later hex color of the logo I needed to do a printscreen of the webpage with the logo uploaded and swatch the color
+to recive #2a1c21 and then use that color as my default dark themed hex color.
+
 ## Deployment
 
 

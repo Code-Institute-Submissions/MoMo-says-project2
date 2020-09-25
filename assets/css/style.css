@@ -41,9 +41,9 @@ body {
     float: left;
 } */
 
-.fa-question-circle {
+/* .fa-question-circle {
     color: #20a882;
-}
+} */
 
 .how-to-play-text {
     padding: 10px;
@@ -132,7 +132,7 @@ body {
 }
 
 #galaxy-button {
-    background-color: #25161b;
+    background-color: #2a1c21;
     color: #453953;
 }
 
