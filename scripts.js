@@ -109,3 +109,32 @@ $(document).ready(function() {
     setTimeout(startFlashing, 1000);
     });
 });
+
+$
+
+
+// function switchWinter() {
+//     $(".theme-button-green").addClass(".theme-button-white");
+//     $(".theme-button-green").removeClass(".theme-button-green");
+// }
+
+
+
+function switchSummer () {
+    document.getElementById('logo').src = '/assets/icons/green-logo.png';
+    document.querySelector('.game-section').src = "/assets/background-images/summer.jpg";
+    document.getElementById("mainBody").style.backgroundColor = "green";
+}
+
+function switchWinter () {
+    document.getElementById("logo").src = "/assets/icons/white-logo.png";
+    document.querySelector('.game-section').src = "/assets/background-images/winter.jpg";
+    document.getElementById("mainBody").style.backgroundColor = "white";
+}
+
+function switchGalaxy () {
+    document.getElementById("logo").src = "/assets/icons/dark-logo.png";
+    document.querySelector('.game-section').src = "/assets/background-images/galaxy.jpg";
+
+}
+

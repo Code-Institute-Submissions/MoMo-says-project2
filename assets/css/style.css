@@ -148,6 +148,14 @@ body {
     margin: 15px;
 }
 
+.theme-button-white {
+    border-radius: 10px;
+    border: solid 4px #00adb5;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px;
+}
+
 .theme-button-dark {
     border-radius: 10px;
     border: solid 4px #453953;
@@ -156,10 +164,3 @@ body {
     margin: 15px;
 }
 
-.theme-button-white {
-    border-radius: 10px;
-    border: solid 4px #00adb5;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 15px;
-}
