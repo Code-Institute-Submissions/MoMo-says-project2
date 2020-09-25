@@ -119,22 +119,39 @@ $
 // }
 
 
+// https://www.w3schools.com/jsref/met_document_queryselectorall.asp
+// var x = document.querySelectorAll("p");
+// var i;
+// for (i = 0; i < x.length; i++) {
+//   x[i].style.backgroundColor = "red";
+// } 
+// querySelectorAll makes an array, to use it we need to make a loop
 
 function switchSummer () {
     document.getElementById('logo').src = '/assets/icons/green-logo.png';
-    document.querySelector('.game-section').src = "/assets/background-images/summer.jpg";
-    document.getElementById("mainBody").style.backgroundColor = "green";
+    document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/summer.jpg)";
+    var buttonList = document.querySelectorAll(".theme-button");
+    for (var i = 0; i < buttonList.length; i++) {
+    buttonList[i].className = "theme-button theme-button-green";
+    }   
+    // document.getElementById("mainBody").style.backgroundColor = "green";
 }
 
 function switchWinter () {
     document.getElementById("logo").src = "/assets/icons/white-logo.png";
-    document.querySelector('.game-section').src = "/assets/background-images/winter.jpg";
-    document.getElementById("mainBody").style.backgroundColor = "white";
+    document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/winter.jpg)";
+    var buttonList = document.querySelectorAll(".theme-button");
+    for (var i = 0; i < buttonList.length; i++) {
+    buttonList[i].className = "theme-button theme-button-white";
+    } 
 }
 
 function switchGalaxy () {
     document.getElementById("logo").src = "/assets/icons/dark-logo.png";
-    document.querySelector('.game-section').src = "/assets/background-images/galaxy.jpg";
-
+    document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/galaxy.jpg)";
+    var buttonList = document.querySelectorAll(".theme-button");
+    for (var i = 0; i < buttonList.length; i++) {
+    buttonList[i].className = "theme-button theme-button-dark";
+    } 
 }
 
