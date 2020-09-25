@@ -175,3 +175,10 @@ function switchGalaxy () {
     } 
 }
 
+function muteAudio () {
+
+}
+
+function enableAudio () {
+    
+}
