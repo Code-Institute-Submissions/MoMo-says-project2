@@ -130,6 +130,7 @@ $
 function switchSummer () {
     document.getElementById('logo').src = '/assets/icons/green-logo.png';
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/summer.jpg)";
+    document.querySelector('body').style.backgroundColor = "#ddfee4";
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
     buttonList[i].className = "theme-button theme-button-green";
@@ -140,6 +141,7 @@ function switchSummer () {
 function switchWinter () {
     document.getElementById("logo").src = "/assets/icons/white-logo.png";
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/winter.jpg)";
+    document.querySelector('body').style.backgroundColor = "#eeeeee";
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
     buttonList[i].className = "theme-button theme-button-white";
@@ -149,6 +151,7 @@ function switchWinter () {
 function switchGalaxy () {
     document.getElementById("logo").src = "/assets/icons/dark-logo.png";
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/galaxy.jpg)";
+    document.querySelector('body').style.backgroundColor = "#25161b";
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
     buttonList[i].className = "theme-button theme-button-dark";

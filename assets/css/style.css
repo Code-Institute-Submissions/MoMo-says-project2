@@ -12,7 +12,6 @@ body {
 /*---------- Header ----------*/
 
 .header-section {
-    background-color: #ddfee4;
     text-align: center;
 }
 
@@ -29,20 +28,18 @@ body {
     background-size: cover;
     opacity: 0.9;
     text-align: center;
-    background-color: #ddfee4;
     margin-bottom: 0px;
     padding: 5% 0 5% 0;
     max-width: 100%;
     height: auto;
 }
 
-#how-to-play-button {
+/* #how-to-play-button {
     background-color: #ddfee4;
     color: #20a882;
-    /* display: block; */
     width: 170px;
     float: left;
-}
+} */
 
 .fa-question-circle {
     color: #20a882;
@@ -120,7 +117,6 @@ body {
 /*---------- Footer ----------*/
 
 .footer-section {
-    background-color: #ddfee4;
     text-align: center;
     padding: 20px 0 20px 0;
 }
