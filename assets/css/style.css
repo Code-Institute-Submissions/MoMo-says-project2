@@ -45,7 +45,7 @@ body {
     color: #20a882;
 } */
 
-.how-to-play-text {
+.game-section-text {
     padding: 10px;
     background-color: #b6fcc5;
     color: #188163;
@@ -53,7 +53,7 @@ body {
     max-width: 220px;
     max-height: auto;
     opacity: 0.85;
-    border-radius: 50px;
+    border-radius: 30px;
     margin: 15px 15px 15px 15px;
 }
 
@@ -101,17 +101,7 @@ body {
 
 }
 
-.highscore-text {
-    padding: 10px;
-    background-color: #b6fcc5;
-    color: #188163;
-    font-weight: 600;
-    max-width: 220px;
-    max-height: auto;
-    opacity: 0.85;
-    border-radius: 30px;
-    margin: 15px 15px 15px 15px;
-}
+
 
 
 /*---------- Footer ----------*/
@@ -132,7 +122,7 @@ body {
 }
 
 #galaxy-button {
-    background-color: #2a1c21;
+    background-color: #25161b;
     color: #453953;
 }
 

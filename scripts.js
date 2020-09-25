@@ -131,6 +131,8 @@ function switchSummer () {
     document.getElementById('logo').src = '/assets/icons/green-logo.png';
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/summer.jpg)";
     document.querySelector('body').style.backgroundColor = "#ddfee4";
+    document.querySelector('.game-section-text').style.backgroundColor = "#b6fcc5";
+    document.querySelector('.game-section-text').style.color = "#188163";
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
     buttonList[i].className = "theme-button theme-button-green";
@@ -142,6 +144,8 @@ function switchWinter () {
     document.getElementById("logo").src = "/assets/icons/white-logo.png";
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/winter.jpg)";
     document.querySelector('body').style.backgroundColor = "#eeeeee";
+    document.querySelector('.game-section-text').style.backgroundColor = "#eeeeee";
+    document.querySelector('.game-section-text').style.color = "#00adb5";
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
     buttonList[i].className = "theme-button theme-button-white";
@@ -152,9 +156,10 @@ function switchGalaxy () {
     document.getElementById("logo").src = "/assets/icons/dark-logo.png";
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/galaxy.jpg)";
     document.querySelector('body').style.backgroundColor = "#2a1c21";
+    document.querySelector('.game-section-text').style.backgroundColor = "#201317";
+    document.querySelector('.game-section-text').style.color = "#655379";
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
     buttonList[i].className = "theme-button theme-button-dark";
     } 
 }
-
