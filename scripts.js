@@ -49,7 +49,7 @@ function animalPanelClicked(clickedPanel) {
             sequence.push(getRandomAnimalPanel());
             sequenceToGuess = [...sequence];
             startFlashing();
-            }, 500);
+            }, 7000);
         }
     } else {
         // end game
@@ -216,3 +216,26 @@ if (currentCount == 100) {
         el.innerText = ++currentCount;
     }
 }
+
+
+//New Simon says code 
+
+//Variables
+UderSeq = [];
+momoSeq = [];
+var id, color, level = 0;
+var boardSound = [
+
+];
+
+
+
+$(document.ready(function () {
+    $(".start").click(function() {
+
+    });
+});
+
+function startSequence() {
+
+});
