@@ -32,8 +32,8 @@ function flash(animalPanel) {
             );
             setTimeout(function() {
                 resolve();
-            }, 500);
-        }, 500);
+            }, 1000);
+        }, 1000);
     });
 };
 
@@ -78,7 +78,6 @@ $(document).ready(function() {
 
 let firstClickAudio = true
 
-
 function play() {
     // First time we click the button we don't want audio to play to indicate that the game has not begun yet.
     if (firstClickAudio === true) {
@@ -86,16 +85,30 @@ function play() {
         return
     }
 
-    var audio = document.getElementById('audio-elephant');
-    var clone = audio.cloneNode(true);
-    if (clone.paused) {
-        clone.play();
+    var audio1 = document.getElementById('audio-elephant');
+        audio1.play();
+      }
+    // var audio2 = document.getElementById('audio-pig');
+    // var audio3 = document.getElementById('audio-rattlesnake');
+    // var audio4 = document.getElementById('audio-sealion');
 
-    } else {
-        clone.pause();
-        clone.currentTime = 0
-    }
-}
+    // var clone = audio1.cloneNode(true);
+    // if (clone.paused) {
+    //     clone.play();
+
+    // } else {
+    //     clone.pause();
+    //     clone.currentTime = 0
+    // }
+
+
+// function audioPlay() {
+//     audio = new Audio(); 
+//     document.getElementById('audio-elephant');
+//     audio.loop = true;
+//     audio.play();
+// }
+
 
 
 // Theme buttons
@@ -175,9 +188,12 @@ function switchGalaxy () {
     } 
 }
 
-function muteAudio () {
 
+function muteAudio() {
+    var elems = document.querySelectorAll("audio-elephant, audio-pig, audio-rattlesnake, audio-sealion");
+    [].forEach.call(elems, function(elem) { muteMe(elem); });
 }
+
 
 function enableAudio () {
     
@@ -193,11 +209,10 @@ function incrementScore() {
 let el = document.getElementById("current-highscore");
 // Set currentCount to the text of the element
 let currentCount = el.innerText;
-
-if (currentCount == 10) {
-    alert("You've won!!");
-} else {
-    // Decrement current count and set it as the new text in our element
-    el.innerText = ++currentCount;
-}
+if (currentCount == 100) {
+        alert("You've won!!");
+    } else {
+        // Decrement current count and set it as the new text in our element
+        el.innerText = ++currentCount;
+    }
 }
