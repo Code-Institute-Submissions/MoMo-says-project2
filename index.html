@@ -34,15 +34,15 @@
                 </p>
 			</div>
 			<div class="col-lg-2 animal-panel-div">
-				<img src="assets/animal-images/elephant.png" onclick="animalPanelClicked(event.currentTarget);play();" class="animal-panel elephant-panel" alt="Elephant image">
-				<img src="assets/animal-images/pig.png" onclick="animalPanelClicked(event.currentTarget);play();" class="animal-panel pig-panel" alt="Pig image">
+				<img src="assets/animal-images/elephant.png" onclick="animalPanelClicked(event.currentTarget);play();incrementScore();" class="animal-panel elephant-panel" alt="Elephant image">
+				<img src="assets/animal-images/pig.png" onclick="animalPanelClicked(event.currentTarget);play();incrementScore();" class="animal-panel pig-panel" alt="Pig image">
 				<br>
-				<img src="assets/animal-images/rattlesnake.png" onclick="animalPanelClicked(event.currentTarget);play();" class="animal-panel rattlesnake-panel" alt="Rattlesnake image">
-				<img src="assets/animal-images/sealion.png" onclick="animalPanelClicked(event.currentTarget);play();" class="animal-panel sealion-panel" alt="Sealion image">
+				<img src="assets/animal-images/rattlesnake.png" onclick="animalPanelClicked(event.currentTarget);play();incrementScore();" class="animal-panel rattlesnake-panel" alt="Rattlesnake image">
+				<img src="assets/animal-images/sealion.png" onclick="animalPanelClicked(event.currentTarget);play();incrementScore();" class="animal-panel sealion-panel" alt="Sealion image">
             </div>
 			<div class="col-lg-2 game-section-text">
                 <h4>High score</h4>
-				<p>Current: </p>
+				<p>Current: <span id="current-highscore">0</span></p>
 				<p>Highest: </p>
 			</div>
 		</div>

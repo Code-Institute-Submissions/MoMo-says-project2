@@ -182,3 +182,22 @@ function muteAudio () {
 function enableAudio () {
     
 }
+
+// Highscore https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+JSF101+2017_T1/courseware/4cd02de5ab24459ba03f7239d0b12503/d75df08ae0974428bc64fe2033ca10eb/?activate_block_id=block-v1%3ACodeInstitute%2BJSF101%2B2017_T1%2Btype%40sequential%2Bblock%40d75df08ae0974428bc64fe2033ca10eb
+//From Code Institute - Course JavaScript Fundamentals The Document Object Model Setting Properties - part 1
+
+
+
+function incrementScore() {
+// Get element with the id of hp
+let el = document.getElementById("current-highscore");
+// Set currentCount to the text of the element
+let currentCount = el.innerText;
+
+if (currentCount == 10) {
+    alert("You've won!!");
+} else {
+    // Decrement current count and set it as the new text in our element
+    el.innerText = ++currentCount;
+}
+}
