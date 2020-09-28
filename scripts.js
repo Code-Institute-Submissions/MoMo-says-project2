@@ -225,17 +225,37 @@ UderSeq = [];
 momoSeq = [];
 var id, color, level = 0;
 var boardSound = [
-
+document.getElementById('audio-elephant');
+document.getElementById('audio-pig');
+document.getElementById('audio-rattlesnake');
+document.getElementById('audio-sealion');
 ];
 
-
-
+//1- start board sequence 
 $(document.ready(function () {
     $(".start").click(function() {
-
+        startSequence();
     });
 });
 
-function startSequence() {
 
+/*momo sequence*/
+function startSequence() {
+    console.log(level)
+    $(".display").text(level);
+    getRandomNum();
+    var i = 0;
+    var myInterval = setInterval(function() {
+        
+    }, 1000);
 });
+
+
+//generate random number 
+
+function getRandomNum() {
+    var random = Math.floor(Math.random) * 4); 
+    momoSeq(random);
+}
+
+//2- user replicates sequence
