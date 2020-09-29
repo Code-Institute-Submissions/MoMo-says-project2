@@ -3,6 +3,7 @@
 //Variables
 UderSeq = [];
 momoSeq = [];
+const NUM_OF_LEVELS = 3
 var id, color, level = 0;
 var boardSound = [
 document.getElementById('audio-elephant'),
@@ -15,7 +16,7 @@ document.getElementById('audio-sealion'),
 $(document.ready(function () {
     $(".start").click(function() {
         level++;
-        startSequence();
+        momoSequence();
     });
 });
 
@@ -23,11 +24,49 @@ $(document.ready(function () {
 $(".pad").click(function() {
     id = $(this).attr("id");
     color = $(this).attr("class").split(" ")[1];
+    userSeq.push(id);
+    console.log(id+" "+color);
     addClassSound(id, color);
+    //check user sequence
+    if(!chechUserSeq()) {
+        displayError();
+        userSeq = [];
+    }
+    //checking end of sequence
+    if(userSeq.lengt == momoSeq.lengt) {
+        level++;
+        userSeq = [];
+        momoSequence();
+    }
 });
 
+/* checking user seq agaings momo's */
+function checkUserSeq() {
+    for(var i = 0; i < userSeq.length; i++) {
+        if(userSeq[i] != momoSeq[i]) {
+            return false;
+        }
+    });
+});
+
+// display error
+function displayError() {
+    console.log("error");
+    var counter = 0;
+    var myError = setInterval(function() {
+        $(".display").text("Error");
+        counter++;
+        if(counter == 3) {
+            $(".display").text(level);
+            clearInterval(myError);
+            userSeq = [];
+            counter = 0;
+        }
+    }, 500);
+}
+
 /*momo sequence*/
-function startSequence() {
+function momoSequence() {
     console.log(level);
     $(".display").text(level);
     getRandomNum();
