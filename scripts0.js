@@ -32,8 +32,8 @@ function flash(animalPanel) {
             );
             setTimeout(function() {
                 resolve();
-            }, 1000);
-        }, 1000);
+            }, 500);
+        }, 500);
     });
 };
 
@@ -49,7 +49,7 @@ function animalPanelClicked(clickedPanel) {
             sequence.push(getRandomAnimalPanel());
             sequenceToGuess = [...sequence];
             startFlashing();
-            }, 7000);
+            }, 1500);
         }
     } else {
         // end game
@@ -92,30 +92,24 @@ function play() {
     // var audio3 = document.getElementById('audio-rattlesnake');
     // var audio4 = document.getElementById('audio-sealion');
 
-    // var clone = audio1.cloneNode(true);
-    // if (clone.paused) {
-    //     clone.play();
+    var clone = audio1.cloneNode(true);
+    if (clone.paused) {
+        clone.play();
 
-    // } else {
-    //     clone.pause();
-    //     clone.currentTime = 0
-    // }
-
-
-// function audioPlay() {
-//     audio = new Audio(); 
-//     document.getElementById('audio-elephant');
-//     audio.loop = true;
-//     audio.play();
-// }
+    } else {
+        clone.pause();
+        clone.currentTime = 0
+    }
 
 
+function audioPlay() {
+    audio = new Audio(); 
+    document.getElementById('audio-elephant');
+    audio.loop = true;
+    audio.play();
+}
 
-// Theme buttons
 
-// document.getElementById('theme-button-green').onclick = function () { 
-//     document.getElementById('theme_css').href = '../red.css';
-// };
 
 $(document).ready(function() {
     $(".animal-panel").click(function() {
@@ -123,13 +117,8 @@ $(document).ready(function() {
     });
 });
 
-$
 
 
-// function switchWinter() {
-//     $(".theme-button-green").addClass(".theme-button-white");
-//     $(".theme-button-green").removeClass(".theme-button-green");
-// }
 
 
 // https://www.w3schools.com/jsref/met_document_queryselectorall.asp
@@ -155,7 +144,6 @@ function switchSummer () {
     for (var i = 0; i < buttonList.length; i++) {
     buttonList[i].className = "theme-button theme-button-green";
     }   
-    // document.getElementById("mainBody").style.backgroundColor = "green";
 }
 
 function switchWinter () {
