@@ -1,9 +1,9 @@
 //New Simon says code 
 
 //Variables
-UderSeq = [];
+userSeq = [];
 momoSeq = [];
-const NUM_OF_LEVELS = 3
+const NUM_OF_LEVELS = 100
 var id, color, level = 0;
 var boardSound = [
 document.getElementById('audio-elephant'),
@@ -33,12 +33,20 @@ $(".pad").click(function() {
         userSeq = [];
     }
     //checking end of sequence
-    if(userSeq.lengt == momoSeq.lengt) {
+    if(userSeq.lengt == momoSeq.lengt && userSeq.length < NUM_OF_LEVELS) {
         level++;
         userSeq = [];
         momoSequence();
     }
+    // checking for winner
+    if(userSeq.length == NUM_OF_LEVELS) {
+        $(".display").text("Win");
+    }
+    })
 });
+
+
+
 
 /* checking user seq agaings momo's */
 function checkUserSeq() {
@@ -95,7 +103,7 @@ function getRandomNum() {
 /* add temporary class and sound */
 function addClassSound(id, color) {
     $("#"+id).addClass(color+'-active');
-    // playSound(id)
+    playSound(id)
     setTimout)(function() {
         $("#"+id).removeClass(color+"-active");
     }, 500);
@@ -103,7 +111,10 @@ function addClassSound(id, color) {
 
 /*play board sound */
 function playSound(id) {
-
+    var sound = new Audio(boardSound(id));
+    sound.play();
 }
 
 //2- user replicates sequence
+
+
