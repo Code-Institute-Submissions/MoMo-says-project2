@@ -15,10 +15,16 @@ document.getElementById('audio-sealion'),
 $(document.ready(function () {
     $(".start").click(function() {
         level++;
-        startSequence()
-    })
-})
+        startSequence();
+    });
+});
 
+//useer pad listener
+$(".pad").click(function() {
+    id = $(this).attr("id");
+    color = $(this).attr("class").split(" ")[1];
+    addClassSound(id, color);
+});
 
 /*momo sequence*/
 function startSequence() {
@@ -30,7 +36,11 @@ function startSequence() {
         id = momoSeq[1];
         color = $("#"+id).attr("class").split(" ")[l];
         console.log(id+" "+color);
-        addClassSound();
+        addClassSound(id, color);
+        i++;
+        if (i == momoSeq.length) {
+        clearInterval(myInterval);
+        }
     }, 1000);
 
 });
@@ -46,12 +56,15 @@ function getRandomNum() {
 /* add temporary class and sound */
 function addClassSound(id, color) {
     $("#"+id).addClass(color+'-active');
-
-    setTimout {
+    // playSound(id)
+    setTimout)(function() {
         $("#"+id).removeClass(color+"-active");
     }, 500);
 }
 
+/*play board sound */
+function playSound(id) {
 
+}
 
 //2- user replicates sequence
