@@ -12,8 +12,10 @@ var boardSound = [
 "/assets/audio/sealion.mp3",
 ];
 
-let firstClickAudio = true
+
 //1- start board sequence 
+let firstClickAudio = true
+
 $(document).ready(function () {
     $(".animal-panel").click(function() {
         if (firstClickAudio === true) {
@@ -33,14 +35,14 @@ function activePanel() {
     addClassSound(id);
     //check user sequence
     if(!checkUserSeq()) {
-        displayError();
+        displayWrong();
         userSeq = [];
     }
     //checking end of sequence
     if(userSeq.length == momoSeq.length && userSeq.length < NUM_OF_LEVELS) {
         level++;
         userSeq = [];
-        error == false;
+        // wrong == false;
         console.log("start momo")
         momoSequence();
     }
@@ -51,8 +53,6 @@ function activePanel() {
 };
 
 
-
-
 /* checking user seq agaings momo's */
 function checkUserSeq() {
     for(var i = 0; i < userSeq.length; i++) {
@@ -60,20 +60,18 @@ function checkUserSeq() {
             return false;
         }
     }
+    return true
 }
 
-// if userSeq == false 
-//     display error in #current
 
-// display error
-function displayError() {
+function displayWrong() {
     console.log("Wrong");
     $("#current-highscore").text("Wrong");
 }
 
 /*momo sequence*/
 function momoSequence() {
-    console.log(level);
+    console.log("level "+level);
     $("#current-highscore").text(level);
     getRandomNum();
     var i = 0;
@@ -90,13 +88,12 @@ function momoSequence() {
 
 
 //generate random number 
-
 function getRandomNum() {
     var random = Math.floor(Math.random() * 4); 
     momoSeq.push(random);
 }
 
-/* add temporary class and sound */
+// add active panel
 function addClassSound(id, color) {
     $("#"+id).addClass("active-panel");
     playSound(id)
@@ -105,6 +102,8 @@ function addClassSound(id, color) {
     }, 500);
 }
 
+
+// Mute button
 let mute = false
 
 function muteAudio() {
@@ -121,8 +120,7 @@ function enableAudio() {
 }
 
 
-
-/*play board sound */
+// play board sound 
 function playSound(id) {
     if (!mute) {
         var sound = new Audio(boardSound[id]);
