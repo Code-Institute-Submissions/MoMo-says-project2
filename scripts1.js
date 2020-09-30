@@ -3,7 +3,7 @@
 //Variables
 userSeq = [];
 momoSeq = [];
-const NUM_OF_LEVELS = 100
+const NUM_OF_LEVELS = 100;
 var id, level = 0;
 var boardSound = [
 "/assets/audio/elephantcub.mp3",
@@ -18,7 +18,6 @@ $(document).ready(function () {
     $(".animal-panel").click(function() {
         if (firstClickAudio === true) {
             firstClickAudio = false
-            level++;
             momoSequence();
             return
         }
@@ -27,7 +26,7 @@ $(document).ready(function () {
 });
 
 
-//useer pad listener
+//user pad listener
 function activePanel() {
     id = $(this).attr("id");
     userSeq.push(id);
@@ -67,9 +66,10 @@ function displayError() {
     var counter = 0;
     var myError = setInterval(function() {
         $(".display").text("Error");
+        // document.getElementById("current-highscore").text("Error");
         counter++;
         if(counter == 3) {
-            $(".display").text(level);
+            $("#current-highscore").text(level);
             clearInterval(myError);
             userSeq = [];
             counter = 0;
@@ -111,9 +111,27 @@ function addClassSound(id, color) {
     }, 500);
 }
 
-/*play board sound */
-function playSound(id) {
-    var sound = new Audio(boardSound[id]);
-    sound.play();
+let mute = false
+
+function muteAudio() {
+    document.querySelector('.mute-button').style.display = "None";
+    document.querySelector('.enable-audio-button').style.display = "Inline-block";
+
+    mute = true   
 }
 
+function enableAudio() {
+    document.querySelector('.enable-audio-button').style.display = "None";
+    document.querySelector('.mute-button').style.display = "Inline-block";
+    mute = false   
+}
+
+
+
+/*play board sound */
+function playSound(id) {
+    if (!mute) {
+        var sound = new Audio(boardSound[id]);
+        sound.play();
+    }
+}
