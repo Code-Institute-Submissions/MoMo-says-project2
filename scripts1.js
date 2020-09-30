@@ -37,14 +37,16 @@ function activePanel() {
         userSeq = [];
     }
     //checking end of sequence
-    if(userSeq.lengt == momoSeq.lengt && userSeq.length < NUM_OF_LEVELS) {
+    if(userSeq.length == momoSeq.length && userSeq.length < NUM_OF_LEVELS) {
         level++;
         userSeq = [];
+        error == false;
+        console.log("start momo")
         momoSequence();
     }
     // checking for winner
     if(userSeq.length == NUM_OF_LEVELS) {
-        $(".display").text("Win");
+        document.querySelector('#current-highscore').alert("Win");
     }
 };
 
@@ -60,27 +62,19 @@ function checkUserSeq() {
     }
 }
 
+// if userSeq == false 
+//     display error in #current
+
 // display error
 function displayError() {
-    console.log("error");
-    var counter = 0;
-    var myError = setInterval(function() {
-        $(".display").text("Error");
-        // document.getElementById("current-highscore").text("Error");
-        counter++;
-        if(counter == 3) {
-            $("#current-highscore").text(level);
-            clearInterval(myError);
-            userSeq = [];
-            counter = 0;
-        }
-    }, 500);
+    console.log("Wrong");
+    $("#current-highscore").text("Wrong");
 }
 
 /*momo sequence*/
 function momoSequence() {
     console.log(level);
-    $(".display").text(level);
+    $("#current-highscore").text(level);
     getRandomNum();
     var i = 0;
     var myInterval = setInterval(function() {
