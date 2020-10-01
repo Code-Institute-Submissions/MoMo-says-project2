@@ -12,6 +12,7 @@ var boardSound = [
 "/assets/audio/sealion.mp3",
 ];
 
+const isStorage = "undefined" !== typeof localStorage;
 
 //1- start board sequence 
 let firstClickAudio = true
@@ -34,15 +35,17 @@ function activePanel(id) {
     console.log("User: " + id);
     userSeq.push(id);
     addClassSound(id);
+    if(!checkUserSeq()) {
+            displayWrong();
+            userSeq = [];
+        return
+        }
     if(userSeq.length == momoSeq.length && userSeq.length < NUM_OF_LEVELS) {
         level++;
         userSeq = [];
         momoSequence();
-    //check user sequence 
-    if(!checkUserSeq()) {
-        displayWrong();
-        userSeq = [];
-    }
+        //check user sequence 
+        
     }
     // checking for winner
     if(userSeq.length == NUM_OF_LEVELS) {
@@ -53,11 +56,11 @@ function activePanel(id) {
 
 /* checking user seq agaings momo's */
 function checkUserSeq(i) {
-    // for(var i = 0; i < userSeq.length; i++) {
-        // for(var i = 0; i < userSeq.length; i++) {
+    for(var i = 0; i < userSeq.length; i++) {
         if(userSeq[i] != momoSeq[i]) {
             return false;
         }
+    }
     return true
 }
 
@@ -67,10 +70,11 @@ function displayWrong() {
     console.log("Wrong");
     $("#current-highscore").text("Wrong");
     wrongAudio.play();
-    alert("Wrong! Try again!");
+    // alert("Wrong! Try again!");
     userSeq = [];
     momoSeq = [];
     level = 0;
+    isStorage && localStorage.setItem("highest-highscore", elements.scores);
 }
 
 /*momo sequence*/
@@ -106,8 +110,16 @@ function addClassSound(id, color) {
     }, 500);
 }
 
+if (isStorage && localStorage.getItem("highest-highscore")) {
+    customElements.scores = localStorage.getItem("highest-highscore").split(",")
+}
 
-// Mute button
+// function highscore() {
+//  if (userSeq > 
+// }
+
+
+// mute button
 let mute = false
 
 function muteAudio() {
