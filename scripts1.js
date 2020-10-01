@@ -12,6 +12,12 @@ var boardSound = [
 "/assets/audio/sealion.mp3",
 ];
 
+var localStorageName = "MoMoSays";
+var localhighScore;
+
+localhighScore = localStorage.getItem(localStorageName) == null ? 0 :
+            localStorage.getItem(localStorageName);
+
 // const isStorage = "undefined" !== typeof localStorage;
 
 //1- start board sequence 
@@ -28,6 +34,7 @@ $(document).ready(function () {
         activePanel(id);
     })
 });
+
 
 
 //user pad listener
@@ -69,11 +76,14 @@ function displayWrong() {
     var wrongAudio = document.getElementById("tarzan");
     console.log("Wrong");
     $("#current-highscore").text("Wrong");
-    wrongAudio.play();
-    // alert("Wrong! Try again!");
+    // wrongAudio.play();
     userSeq = [];
     momoSeq = [];
     level = 0;
+        if (!mute) {
+        // sound.play();
+        wrongAudio.play();
+    }
     // isStorage && localStorage.setItem("current-highscore", elements.scores);
 }
 
@@ -109,6 +119,19 @@ function addClassSound(id, color) {
         $("#"+id).removeClass("active-panel");
     }, 500);
 }
+
+
+// function() {
+//     highScore = Math.max(score, highScore);
+//     localStorage.setItem(localStorageName, highScore);
+
+	
+// create: function() {
+//     localHighScore = Math.max(score, localhighScore);
+//     localStorage.setItem(localStorageName, localhighScore);
+//     document.getElementById("highest-highscore").innerText = localhighScore;
+// // PROBLEEEMAS
+
 
 // Code from Styled JavaScript https://www.youtube.com/watch?v=NmXEJIBsN-4
 // if (isStorage && localStorage.getItem("current-highscore")) {
