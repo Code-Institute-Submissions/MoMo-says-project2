@@ -14,10 +14,9 @@ var boardSound = [
 
 
 //1- start board sequence 
-
+let firstClickAudio = true
 
 $(document).ready(function () {
-    let firstClickAudio = true
     $(".animal-panel").click(function() {
         if (firstClickAudio === true) {
             firstClickAudio = false
@@ -137,14 +136,5 @@ function resetGame() {
     momoSeq = [];
     level = 0;
     document.getElementById('current-highscore').innerText = "0";
-    let firstClickAudio = true
-    $(".animal-panel").click(function() {
-        if (firstClickAudio === true) {
-            firstClickAudio = false
-            momoSequence();
-            return
-        }
-    id = $(this).attr("id");
-    activePanel(id);
-    })
+            momoSequence();  
 };
