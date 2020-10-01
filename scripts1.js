@@ -1,9 +1,9 @@
 //New Simon says code 
 
-//Variables
+/* variables */
 userSeq = [];
 momoSeq = [];
-const NUM_OF_LEVELS = 100;
+const NUM_OF_LEVELS = 20;
 var level = 0;
 var boardSound = [
 "/assets/audio/elephantcub.mp3",
@@ -20,7 +20,7 @@ localhighScore = localStorage.getItem(localStorageName) == null ? 0 :
 
 // const isStorage = "undefined" !== typeof localStorage;
 
-//1- start board sequence 
+/* start board sequence */
 let firstClickAudio = true
 
 $(document).ready(function () {
@@ -37,26 +37,29 @@ $(document).ready(function () {
 
 
 
-//user pad listener
+/* user pad listener */
 function activePanel(id) {
     console.log("User: " + id);
     userSeq.push(id);
     addClassSound(id);
+
+    /* check user sequence */
     if(!checkUserSeq()) {
             displayWrong();
             userSeq = [];
         return
         }
+        /* check user length */
     if(userSeq.length == momoSeq.length && userSeq.length < NUM_OF_LEVELS) {
         level++;
         userSeq = [];
         momoSequence();
-        //check user sequence 
+        
         
     }
-    // checking for winner
+    /* checking for winner */
     if(userSeq.length == NUM_OF_LEVELS) {
-        document.querySelector('#current-highscore').alert("Win");
+        alert("Congratulations, you win!");
     }
 };
 
@@ -76,18 +79,16 @@ function displayWrong() {
     var wrongAudio = document.getElementById("tarzan");
     console.log("Wrong");
     $("#current-highscore").text("Wrong");
-    // wrongAudio.play();
     userSeq = [];
     momoSeq = [];
     level = 0;
         if (!mute) {
-        // sound.play();
         wrongAudio.play();
     }
     // isStorage && localStorage.setItem("current-highscore", elements.scores);
 }
 
-/*momo sequence*/
+/* momo sequence */
 function momoSequence() {
     console.log("Score: "+level);
     $("#current-highscore").text(level);
@@ -105,13 +106,13 @@ function momoSequence() {
 }
 
 
-//generate random number 
+/* generate random number */ 
 function getRandomNum() {
     var random = Math.floor(Math.random() * 4); 
     momoSeq.push(random);
 }
 
-// add active panel
+/* add active panel */
 function addClassSound(id, color) {
     $("#"+id).addClass("active-panel");
     playSound(id)
@@ -160,7 +161,7 @@ function enableAudio() {
 }
 
 
-// play board sound 
+/* play board sound */ 
 function playSound(id) {
     if (!mute) {
         var sound = new Audio(boardSound[id]);
