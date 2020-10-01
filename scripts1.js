@@ -3,8 +3,8 @@
 /* variables */
 userSeq = [];
 momoSeq = [];
-const NUM_OF_LEVELS = 20;
-var level = 0;
+const NUM_OF_SCORE = 20;
+var score = 0;
 var boardSound = [
 "/assets/audio/elephantcub.mp3",
 "/assets/audio/pig.mp3",
@@ -15,8 +15,14 @@ var boardSound = [
 var localStorageName = "MoMoSays";
 var localhighScore;
 
-localhighScore = localStorage.getItem(localStorageName) == null ? 0 :
-            localStorage.getItem(localStorageName);
+// localhighScore = localStorage.getItem(localStorageName) == null ? 0 :
+//                  localStorage.getItem(localStorageName);
+
+if(localStorage.getItem(localStorageName) == null) {
+    localHighScore = 0;
+} else {
+    localHighScore = localStorage.getItem(localStorageName);
+}
 
 // const isStorage = "undefined" !== typeof localStorage;
 
@@ -36,7 +42,6 @@ $(document).ready(function () {
 });
 
 
-
 /* user pad listener */
 function activePanel(id) {
     console.log("User: " + id);
@@ -49,16 +54,16 @@ function activePanel(id) {
             userSeq = [];
         return
         }
+
         /* check user length */
-    if(userSeq.length == momoSeq.length && userSeq.length < NUM_OF_LEVELS) {
-        level++;
+    if(userSeq.length == momoSeq.length && userSeq.length < NUM_OF_SCORE) {
+        score++;
         userSeq = [];
         momoSequence();
-        
-        
     }
+
     /* checking for winner */
-    if(userSeq.length == NUM_OF_LEVELS) {
+    if(userSeq.length == NUM_OF_SCORE) {
         alert("Congratulations, you win!");
     }
 };
@@ -79,19 +84,22 @@ function displayWrong() {
     var wrongAudio = document.getElementById("tarzan");
     console.log("Wrong");
     $("#current-highscore").text("Wrong");
+    $("#highest-highscore").text(localHighScore);
+    console.log(localHighScore)
     userSeq = [];
     momoSeq = [];
-    level = 0;
+    score = 0;
         if (!mute) {
         wrongAudio.play();
-    }
+        }
+        
     // isStorage && localStorage.setItem("current-highscore", elements.scores);
 }
 
 /* momo sequence */
 function momoSequence() {
-    console.log("Score: "+level);
-    $("#current-highscore").text(level);
+    console.log("Score: "+score);
+    $("#current-highscore").text(score);
     getRandomNum();
     var i = 0;
     var myInterval = setInterval(function() {
@@ -127,11 +135,22 @@ function addClassSound(id, color) {
 //     localStorage.setItem(localStorageName, highScore);
 
 	
-// create: function() {
-//     localHighScore = Math.max(score, localhighScore);
-//     localStorage.setItem(localStorageName, localhighScore);
-//     document.getElementById("highest-highscore").innerText = localhighScore;
-// // PROBLEEEMAS
+function setHighScore() {
+    localHighScore = Math.max(score, localhighScore);
+    localStorage.setItem(localStorageName, localhighScore);
+    // document.getElementById("highest-highscore").innerText = localhighScore;
+       
+    let text = document.getElementById("highest-highscore");
+    text.innerText = localhighScore;
+
+        // game.width / 2, game.height / 2, "Game Over\n\nYour score: " + score + "\nBest score: " + highScore + "\n\nTap to restart", style
+    
+    
+    // text.anchor.set(0.5);
+    // game.input.onDown.add(this.restartGame, this);
+}
+
+
 
 
 // Code from Styled JavaScript https://www.youtube.com/watch?v=NmXEJIBsN-4
@@ -148,11 +167,13 @@ function addClassSound(id, color) {
 // mute button
 let mute = false
 
+
 function muteAudio() {
     document.querySelector('.mute-button').style.display = "None";
     document.querySelector('.enable-audio-button').style.display = "Inline-block";
     mute = true   
 }
+
 
 function enableAudio() {
     document.querySelector('.enable-audio-button').style.display = "None";
@@ -169,10 +190,11 @@ function playSound(id) {
     }
 }
 
+
 function resetGame() {
     userSeq = [];
     momoSeq = [];
-    level = 0;
+    score = 0;
     document.getElementById('current-highscore').innerText = "0";
             momoSequence();  
 };
