@@ -31,6 +31,7 @@ $(document).ready(function () {
 //user pad listener
 function activePanel() {
     id = $(this).attr("id");
+    console.log(id);
     userSeq.push(id);
     addClassSound(id);
     //check user sequence
