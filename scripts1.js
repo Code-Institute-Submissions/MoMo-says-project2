@@ -44,7 +44,7 @@ function activePanel() {
         level++;
         userSeq = [];
         // wrong == false;
-        console.log("start momo")
+        console.log("start new level")
         momoSequence();
     }
     // checking for winner
@@ -66,8 +66,10 @@ function checkUserSeq() {
 
 
 function displayWrong() {
+    var wrongAudio = document.getElementById("tarzan");
     console.log("Wrong");
     $("#current-highscore").text("Wrong");
+        wrongAudio.play();
 }
 
 /*momo sequence*/
@@ -110,7 +112,6 @@ let mute = false
 function muteAudio() {
     document.querySelector('.mute-button').style.display = "None";
     document.querySelector('.enable-audio-button').style.display = "Inline-block";
-
     mute = true   
 }
 
