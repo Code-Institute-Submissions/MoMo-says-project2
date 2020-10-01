@@ -144,20 +144,7 @@ function resetGame() {
             momoSequence();
             return
         }
-        id = $(this).attr("id");
-        activePanel(id);
+    id = $(this).attr("id");
+    activePanel(id);
     })
-}
-
-// $(document).ready(function () {
-//     let firstClickAudio = true
-//     $(".animal-panel").click(function() {
-//         if (firstClickAudio === true) {
-//             firstClickAudio = false
-//             momoSequence();
-//             return
-//         }
-//         id = $(this).attr("id");
-//         activePanel(id);
-//     })
-// });
+};
