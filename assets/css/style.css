@@ -57,7 +57,7 @@ body {
     margin: 15px 15px 15px 15px;
 }
 
-.audio-button {
+.audio-button, .reset-button {
     font-size: 40px;
     margin: 10px;
     border: solid 2px;

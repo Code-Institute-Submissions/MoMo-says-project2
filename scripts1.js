@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 //user pad listener
 function activePanel(id) {
-    console.log("clicked on: " + id);
+    console.log("User: " + id);
     userSeq.push(id);
     addClassSound(id);
     if(userSeq.length == momoSeq.length && userSeq.length < NUM_OF_LEVELS) {
@@ -81,7 +81,7 @@ function momoSequence() {
     var i = 0;
     var myInterval = setInterval(function() {
         id = momoSeq[i];
-        console.log("Momo"+id);
+        console.log("Momo: "+id);
         addClassSound(id);
         i++;
         if (i == momoSeq.length) {
@@ -129,4 +129,10 @@ function playSound(id) {
         var sound = new Audio(boardSound[id]);
         sound.play();
     }
+}
+
+function resetGame() {
+    userSeq = [];
+    momoSeq = [];
+    level = 0;
 }
