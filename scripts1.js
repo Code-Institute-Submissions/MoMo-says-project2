@@ -4,7 +4,7 @@
 userSeq = [];
 momoSeq = [];
 const NUM_OF_LEVELS = 100;
-var id, level = 0;
+var level = 0;
 var boardSound = [
 "/assets/audio/elephantcub.mp3",
 "/assets/audio/pig.mp3",
@@ -23,29 +23,26 @@ $(document).ready(function () {
             momoSequence();
             return
         }
-        activePanel();
+        id = $(this).attr("id");
+        activePanel(id);
     })
 });
 
 
 //user pad listener
-function activePanel() {
-    id = $(this).attr("id");
-    console.log(id);
+function activePanel(id) {
+    console.log("clicked on: " + id);
     userSeq.push(id);
     addClassSound(id);
-    //check user sequence
+    if(userSeq.length == momoSeq.length && userSeq.length < NUM_OF_LEVELS) {
+        level++;
+        userSeq = [];
+        momoSequence();
+    //check user sequence 
     if(!checkUserSeq()) {
         displayWrong();
         userSeq = [];
     }
-    //checking end of sequence
-    if(userSeq.length == momoSeq.length && userSeq.length < NUM_OF_LEVELS) {
-        level++;
-        userSeq = [];
-        // wrong == false;
-        console.log("start new level")
-        momoSequence();
     }
     // checking for winner
     if(userSeq.length == NUM_OF_LEVELS) {
@@ -55,12 +52,12 @@ function activePanel() {
 
 
 /* checking user seq agaings momo's */
-function checkUserSeq() {
-    for(var i = 0; i < userSeq.length; i++) {
+function checkUserSeq(i) {
+    // for(var i = 0; i < userSeq.length; i++) {
+        // for(var i = 0; i < userSeq.length; i++) {
         if(userSeq[i] != momoSeq[i]) {
             return false;
         }
-    }
     return true
 }
 
@@ -69,18 +66,22 @@ function displayWrong() {
     var wrongAudio = document.getElementById("tarzan");
     console.log("Wrong");
     $("#current-highscore").text("Wrong");
-        wrongAudio.play();
+    wrongAudio.play();
+    alert("Wrong! Try again!");
+    userSeq = [];
+    momoSeq = [];
+    level = 0;
 }
 
 /*momo sequence*/
 function momoSequence() {
-    console.log("level "+level);
+    console.log("Score: "+level);
     $("#current-highscore").text(level);
     getRandomNum();
     var i = 0;
     var myInterval = setInterval(function() {
         id = momoSeq[i];
-        console.log(id+" ");
+        console.log("Momo"+id);
         addClassSound(id);
         i++;
         if (i == momoSeq.length) {
