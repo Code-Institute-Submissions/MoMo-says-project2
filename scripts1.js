@@ -12,7 +12,7 @@ var boardSound = [
 "/assets/audio/sealion.mp3",
 ];
 
-const isStorage = "undefined" !== typeof localStorage;
+// const isStorage = "undefined" !== typeof localStorage;
 
 //1- start board sequence 
 let firstClickAudio = true
@@ -74,7 +74,7 @@ function displayWrong() {
     userSeq = [];
     momoSeq = [];
     level = 0;
-    isStorage && localStorage.setItem("highest-highscore", elements.scores);
+    // isStorage && localStorage.setItem("current-highscore", elements.scores);
 }
 
 /*momo sequence*/
@@ -110,9 +110,11 @@ function addClassSound(id, color) {
     }, 500);
 }
 
-if (isStorage && localStorage.getItem("highest-highscore")) {
-    customElements.scores = localStorage.getItem("highest-highscore").split(",")
-}
+// Code from Styled JavaScript https://www.youtube.com/watch?v=NmXEJIBsN-4
+// if (isStorage && localStorage.getItem("current-highscore")) {
+//     customElements.scores = localStorage.getItem("current-highscore").split(",")
+//     push.("highest-highscore");
+// }
 
 // function highscore() {
 //  if (userSeq > 
