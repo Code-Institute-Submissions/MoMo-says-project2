@@ -50,25 +50,25 @@ function animalPanelClicked(clickedPanel) {
             sequenceToGuess = [...sequence];
             startFlashing();
             }, 1500);
-        }
+        };
     } else {
         // end game
         alert('game over');
-    }
+    };
 };
 
 async function startFlashing() {
     canClick = false;
     for (const animalPanel of sequence) {
         await flash(animalPanel);
-    }
+    };
     canClick = true;
-}
+};
 
 // setTimeout(startFlashing, 3000); from https://stackoverflow.com/questions/54681854/run-js-functions-run-in-sequence-onclick
 $(document).ready(function() {
     $(".animal-panel").click(function() {
-    setTimeout(startFlashing, 1000);
+        setTimeout(startFlashing, 1000);
     });
 });
 
@@ -83,32 +83,26 @@ function play() {
     if (firstClickAudio === true) {
         firstClickAudio = false
         return
-    }
-
+    };
     var audio1 = document.getElementById('audio-elephant');
         audio1.play();
-      }
-    // var audio2 = document.getElementById('audio-pig');
-    // var audio3 = document.getElementById('audio-rattlesnake');
-    // var audio4 = document.getElementById('audio-sealion');
+};
 
-    var clone = audio1.cloneNode(true);
+
+var clone = audio1.cloneNode(true);
     if (clone.paused) {
         clone.play();
-
     } else {
         clone.pause();
         clone.currentTime = 0
-    }
-
+    };
 
 function audioPlay() {
     audio = new Audio(); 
     document.getElementById('audio-elephant');
     audio.loop = true;
     audio.play();
-}
-
+};
 
 
 $(document).ready(function() {
@@ -118,17 +112,6 @@ $(document).ready(function() {
 });
 
 
-
-
-
-// https://www.w3schools.com/jsref/met_document_queryselectorall.asp
-// var x = document.querySelectorAll("p");
-// var i;
-// for (i = 0; i < x.length; i++) {
-//   x[i].style.backgroundColor = "red";
-// } 
-// querySelectorAll makes an array, to use it we need to make a loop
-
 function switchSummer () {
     document.getElementById('logo').src = '/assets/icons/green-logo.png';
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/summer.jpg)";
@@ -137,29 +120,29 @@ function switchSummer () {
     document.querySelector('.game-section-text').style.color = "#188163";
     var gameSectionText = document.querySelectorAll(".game-section-text");
     for (var i = 0; i < gameSectionText.length; i++) {
-    gameSectionText[i].style.backgroundColor = "#b6fcc5";
-    gameSectionText[i].style.color = "#188163";
-    } 
+        gameSectionText[i].style.backgroundColor = "#b6fcc5";
+        gameSectionText[i].style.color = "#188163";
+    };
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
-    buttonList[i].className = "theme-button theme-button-green";
-    }   
-}
+        buttonList[i].className = "theme-button theme-button-green";
+    };   
+};
 
 function switchWinter () {
     document.getElementById("logo").src = "/assets/icons/white-logo.png";
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/winter.jpg)";
     document.querySelector('body').style.backgroundColor = "#eeeeee";
-        var gameSectionText = document.querySelectorAll(".game-section-text");
+    var gameSectionText = document.querySelectorAll(".game-section-text");
     for (var i = 0; i < gameSectionText.length; i++) {
-    gameSectionText[i].style.backgroundColor = "#eeeeee";
-    gameSectionText[i].style.color = "#098b90";
+        gameSectionText[i].style.backgroundColor = "#eeeeee";
+        gameSectionText[i].style.color = "#098b90";
     } 
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
-    buttonList[i].className = "theme-button theme-button-white";
-    } 
-}
+        buttonList[i].className = "theme-button theme-button-white";
+    };
+};
 
 function switchGalaxy () {
     document.getElementById("logo").src = "/assets/icons/dark-logo.png";
@@ -167,14 +150,14 @@ function switchGalaxy () {
     document.querySelector('body').style.backgroundColor = "#2a1c21";
     var gameSectionText = document.querySelectorAll(".game-section-text");
     for (var i = 0; i < gameSectionText.length; i++) {
-    gameSectionText[i].style.backgroundColor = "#201317";
-    gameSectionText[i].style.color = "#655379";
-    } 
+        gameSectionText[i].style.backgroundColor = "#201317";
+        gameSectionText[i].style.color = "#655379";
+    };
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
-    buttonList[i].className = "theme-button theme-button-dark";
-    } 
-}
+        buttonList[i].className = "theme-button theme-button-dark";
+    };
+};
 
 
 function incrementScore() {
@@ -187,6 +170,6 @@ if (currentCount == 100) {
     } else {
         // Decrement current count and set it as the new text in our element
         el.innerText = ++currentCount;
-    }
-}
+    };
+};
 

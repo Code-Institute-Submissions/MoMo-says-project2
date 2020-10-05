@@ -48,19 +48,19 @@ function activePanel(id) {
         displayWrong();
         userSeq = [];
         return
-    }
+    };
 
         /* check user length */
     if(userSeq.length == momoSeq.length && userSeq.length < NUM_OF_SCORE) {
         score++;
         userSeq = [];
         momoSequence();
-    }
+    };
 
     /* checking for winner */
     if(userSeq.length == NUM_OF_SCORE) {
         alert("Congratulations, you win!");
-    }
+    };
 };
 
 
@@ -69,10 +69,10 @@ function checkUserSeq(i) {
     for(var i = 0; i < userSeq.length; i++) {
         if(userSeq[i] != momoSeq[i]) {
         return false;
-        }
-    }
+        };
+    };
     return true
-}
+};
 
 
 function displayWrong() {
@@ -89,8 +89,8 @@ function displayWrong() {
     score = 0;
     if (!mute) {
         wrongAudio.play();
-    }
-}
+    };
+};
 
 /* momo sequence */
 function momoSequence() {
@@ -105,16 +105,16 @@ function momoSequence() {
         i++;
         if (i == momoSeq.length) {
             clearInterval(myInterval);
-        }
+        };
     }, 1000);
-}
+};
 
 
 /* generate random number */ 
 function getRandomNum() {
     var random = Math.floor(Math.random() * 4); 
     momoSeq.push(random);
-}
+};
 
 /* add active panel */
 function addClassSound(id, color) {
@@ -123,7 +123,7 @@ function addClassSound(id, color) {
     setTimeout(function() {
         $("#"+id).removeClass("active-panel");
     }, 500);
-}
+};
 
 
 /* mute button */
@@ -134,14 +134,14 @@ function muteAudio() {
     document.querySelector('.mute-button').style.display = "None";
     document.querySelector('.enable-audio-button').style.display = "Inline-block";
     mute = true   
-}
+};
 
 
 function enableAudio() {
     document.querySelector('.enable-audio-button').style.display = "None";
     document.querySelector('.mute-button').style.display = "Inline-block";
     mute = false   
-}
+};
 
 
 /* play board sound */ 
@@ -149,8 +149,8 @@ function playSound(id) {
     if (!mute) {
         var sound = new Audio(boardSound[id]);
         sound.play();
-    }
-}
+    };
+};
 
 
 function resetGame() {
@@ -177,8 +177,8 @@ function switchSummer () {
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
         buttonList[i].className = "theme-button theme-button-green";
-    }   
-}
+    };
+};
 
 function switchWinter () {
     document.getElementById("logo").src = "/assets/icons/white-logo.png";
@@ -192,8 +192,8 @@ function switchWinter () {
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
         buttonList[i].className = "theme-button theme-button-white";
-    } 
-}
+    }; 
+};
 
 function switchGalaxy () {
     document.getElementById("logo").src = "/assets/icons/dark-logo.png";
@@ -203,9 +203,9 @@ function switchGalaxy () {
     for (var i = 0; i < gameSectionText.length; i++) {
         gameSectionText[i].style.backgroundColor = "#201317";
         gameSectionText[i].style.color = "#655379";
-    } 
+    }; 
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
         buttonList[i].className = "theme-button theme-button-dark";
-    } 
-}
+    }; 
+};
