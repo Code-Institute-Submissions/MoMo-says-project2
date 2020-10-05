@@ -30,7 +30,7 @@ $(".animal-panel").click(function() {
         firstClickAudio = false
         momoSequence();
         return
-    }
+    };
     id = $(this).attr("id");
     activePanel(id);
     })
@@ -173,7 +173,7 @@ function switchSummer () {
     for (var i = 0; i < gameSectionText.length; i++) {
         gameSectionText[i].style.backgroundColor = "#b6fcc5";
         gameSectionText[i].style.color = "#188163";
-    } 
+    };
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
         buttonList[i].className = "theme-button theme-button-green";
@@ -188,7 +188,7 @@ function switchWinter () {
     for (var i = 0; i < gameSectionText.length; i++) {
         gameSectionText[i].style.backgroundColor = "#eeeeee";
         gameSectionText[i].style.color = "#098b90";
-    } 
+    }; 
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
         buttonList[i].className = "theme-button theme-button-white";

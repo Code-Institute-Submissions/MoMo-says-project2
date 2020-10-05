@@ -34,28 +34,23 @@ body {
     height: auto;
 }
 
-/* #how-to-play-button {
-    background-color: #ddfee4;
-    color: #20a882;
-    width: 170px;
-    float: left;
-} */
-
-/* .fa-question-circle {
-    color: #20a882;
-} */
 
 .game-section-text {
     padding: 10px;
     background-color: #b6fcc5;
     color: #188163;
     font-weight: 600;
-    max-width: 250px;
+    max-width: 270px;
     max-height: auto;
     opacity: 0.85;
     border-radius: 30px;
-    margin: 15px 15px 15px 15px;
+    margin: 20px 15px 15px 15px;
 }
+
+.game-section-text p {
+    margin: 20px;
+}
+
 
 .audio-button, .reset-button {
     font-size: 40px;

@@ -9,19 +9,23 @@ This is a school project with the main focus to display my skills in HTML, css a
 ### Userstories
 -   As a usertype, I want to play a fun game, to pass my time.
 
--	As a usertype, the instructions to be simple and easy to understand, so I can play more easily.
+-	As a usertype, the instructions to be simple and easy to understand, so I can play the game easily.
 
--	As a usertype, to see my high score, I that I can compare my own scores.
+-	As a usertype, to see my current score and my highest score, I that I can compare my own scores.
 
 -	As a usertype, I want to have a restart button, so that I can restart if I want to.
+
+-	As a usertype, I want to have a mute button, so that I can mute audio if I want to.
 
 -	As a usertype, I want there to be a clear structure of the game, so that it does not confuse me.
 
 ### Ownerstories
 
--   As an ownertype, create a simple yet exiting game, so that user will want to play more than once.
+-   As an ownertype, I want to create a simple yet exiting and responsive game, so that user will want to play more than once.
 
--	As an ownertype, create a fun game, so that users will frequently visit the page.
+-   As a ownertype, I want the instructions to be simple and easy for the user to understand, so that they can play easily.
+
+-	As an ownertype, I want to have creative and interactive features, to appeal to the user wich in turn will use the websiite more.
 
 
 ## Features
