@@ -89,7 +89,7 @@ body {
 
 .active-panel {
     border: solid 7px white !important;
-    opacity: 0.4;
+    opacity: 0.4 !important;
 }
 
 .animal-panel {

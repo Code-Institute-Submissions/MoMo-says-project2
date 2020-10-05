@@ -88,7 +88,7 @@ return true
 function displayWrong() {
     var wrongAudio = document.getElementById("tarzan");
     console.log("Wrong");
-    $("#current-highscore").text(id+", wrong");
+    $("#current-highscore").text(score+", wrong");
 
     localHighScore = Math.max(score, localHighScore);
     localStorage.setItem(localStorageName, localHighScore);
