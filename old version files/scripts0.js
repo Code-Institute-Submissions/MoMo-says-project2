@@ -177,21 +177,6 @@ function switchGalaxy () {
 }
 
 
-function muteAudio() {
-    var elems = document.querySelectorAll("audio-elephant, audio-pig, audio-rattlesnake, audio-sealion");
-    [].forEach.call(elems, function(elem) { muteMe(elem); });
-}
-
-
-function enableAudio () {
-    
-}
-
-// Highscore https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+JSF101+2017_T1/courseware/4cd02de5ab24459ba03f7239d0b12503/d75df08ae0974428bc64fe2033ca10eb/?activate_block_id=block-v1%3ACodeInstitute%2BJSF101%2B2017_T1%2Btype%40sequential%2Bblock%40d75df08ae0974428bc64fe2033ca10eb
-//From Code Institute - Course JavaScript Fundamentals The Document Object Model Setting Properties - part 1
-
-
-
 function incrementScore() {
 // Get element with the id of hp
 let el = document.getElementById("current-highscore");

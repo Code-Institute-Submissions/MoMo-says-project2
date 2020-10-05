@@ -1,4 +1,4 @@
-//New Simon says code 
+//Momo says code 
 
 /* variables */
 userSeq = [];
@@ -15,22 +15,13 @@ var boardSound = [
 var localStorageName = "MoMoSays";
 var localHighScore;
 
+
+//This code was adapted from phaserjs https://phaserjs.com/saving-high-score
 localHighScore = localStorage.getItem(localStorageName) == null ? 0 :
                  localStorage.getItem(localStorageName);
                  $("#highest-highscore").text(localHighScore);
 
 
-// localStorage.setItem(localHighScore);
-
-// if(localStorage.getItem(localStorageName) == null) {
-//     localHighScore = 0;
-// } else {
-//     localHighScore = localStorage.getItem(localStorageName);
-// }
-
-// const isStorage = "undefined" !== typeof localStorage;
-
-/* start board sequence */
 let firstClickAudio = true
 
 $(document).ready(function () {
@@ -140,30 +131,6 @@ function addClassSound(id, color) {
 }
 
 
-// function() {
-//     highScore = Math.max(score, highScore);
-//     localStorage.setItem(localStorageName, highScore);
-// function setHighScore() {
-//     localHighScore = Math.max(score, localhighScore);
-//     if (score < localhighScore) {
-//         $("#highest-highscore").text(score);
-//     localStorage.setItem(localStorageName, localhighScore);
-//     }
-//     else  {
-//         return
-//     }
-
-// document.getElementById("highest-highscore").innerText = localhighScore;
-    
-// let text = document.getElementById("highest-highscore");
-// text.innerText = localhighScore;
-
-
-
-
-
-
-
 /* mute button */
 let mute = false
 
@@ -199,3 +166,51 @@ document.getElementById('current-highscore').innerText = "0";
         momoSequence();  
 };
 
+
+/* Theme butttons  */
+function switchSummer () {
+    document.getElementById('logo').src = '/assets/icons/green-logo.png';
+    document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/summer.jpg)";
+    document.querySelector('body').style.backgroundColor = "#ddfee4";
+    document.querySelector('.game-section-text').style.backgroundColor = "#b6fcc5";
+    document.querySelector('.game-section-text').style.color = "#188163";
+    var gameSectionText = document.querySelectorAll(".game-section-text");
+    for (var i = 0; i < gameSectionText.length; i++) {
+    gameSectionText[i].style.backgroundColor = "#b6fcc5";
+    gameSectionText[i].style.color = "#188163";
+    } 
+    var buttonList = document.querySelectorAll(".theme-button");
+    for (var i = 0; i < buttonList.length; i++) {
+    buttonList[i].className = "theme-button theme-button-green";
+    }   
+}
+
+function switchWinter () {
+    document.getElementById("logo").src = "/assets/icons/white-logo.png";
+    document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/winter.jpg)";
+    document.querySelector('body').style.backgroundColor = "#eeeeee";
+        var gameSectionText = document.querySelectorAll(".game-section-text");
+    for (var i = 0; i < gameSectionText.length; i++) {
+    gameSectionText[i].style.backgroundColor = "#eeeeee";
+    gameSectionText[i].style.color = "#098b90";
+    } 
+    var buttonList = document.querySelectorAll(".theme-button");
+    for (var i = 0; i < buttonList.length; i++) {
+    buttonList[i].className = "theme-button theme-button-white";
+    } 
+}
+
+function switchGalaxy () {
+    document.getElementById("logo").src = "/assets/icons/dark-logo.png";
+    document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/galaxy.jpg)";
+    document.querySelector('body').style.backgroundColor = "#2a1c21";
+    var gameSectionText = document.querySelectorAll(".game-section-text");
+    for (var i = 0; i < gameSectionText.length; i++) {
+    gameSectionText[i].style.backgroundColor = "#201317";
+    gameSectionText[i].style.color = "#655379";
+    } 
+    var buttonList = document.querySelectorAll(".theme-button");
+    for (var i = 0; i < buttonList.length; i++) {
+    buttonList[i].className = "theme-button theme-button-dark";
+    } 
+}
