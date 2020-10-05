@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+/*---------- Body ----------*/
+
 body {
     font-family: 'Varela Round', sans-serif;
     background-color: #ddfee4;
 }
-
-/*---------- General styling ----------*/
-
 
 
 /*---------- Header ----------*/
@@ -34,23 +33,22 @@ body {
     height: auto;
 }
 
-
 .game-section-text {
     padding: 10px;
     background-color: #b6fcc5;
     color: #188163;
     font-weight: 600;
-    max-width: 270px;
+    max-width: 330px;
     max-height: auto;
     opacity: 0.85;
     border-radius: 30px;
     margin: 20px 15px 15px 15px;
+    position: relative;
 }
 
 .game-section-text p {
     margin: 20px;
 }
-
 
 .audio-button, .reset-button {
     font-size: 40px;
@@ -100,7 +98,6 @@ body {
     opacity: 0.8;
 }
 
-
 .elephant-panel {
     border: solid 7px #ff9980;
 
@@ -120,8 +117,6 @@ body {
     border: solid 7px #99ccff;
 
 }
-
-
 
 
 /*---------- Footer ----------*/
@@ -170,3 +165,7 @@ body {
     margin: 15px;
 }
 
+@media (min-width: 768px) { 
+    
+
+}
