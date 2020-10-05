@@ -1,4 +1,4 @@
-//Momo says code 
+/* Momo says code */ 
 
 /* variables */
 userSeq = [];
@@ -33,46 +33,45 @@ $(".animal-panel").click(function() {
     }
     id = $(this).attr("id");
     activePanel(id);
-})
+    })
 });
-
 
 
 /* user pad listener */
 function activePanel(id) {
-console.log("User: " + id);
-userSeq.push(id);
-addClassSound(id);
+    console.log("User: " + id);
+    userSeq.push(id);
+    addClassSound(id);
 
-/* check user sequence */
-if(!checkUserSeq()) {
+    /* check user sequence */
+    if(!checkUserSeq()) {
         displayWrong();
         userSeq = [];
-    return
+        return
     }
 
-    /* check user length */
-if(userSeq.length == momoSeq.length && userSeq.length < NUM_OF_SCORE) {
-    score++;
-    userSeq = [];
-    momoSequence();
-}
+        /* check user length */
+    if(userSeq.length == momoSeq.length && userSeq.length < NUM_OF_SCORE) {
+        score++;
+        userSeq = [];
+        momoSequence();
+    }
 
-/* checking for winner */
-if(userSeq.length == NUM_OF_SCORE) {
-    alert("Congratulations, you win!");
-}
+    /* checking for winner */
+    if(userSeq.length == NUM_OF_SCORE) {
+        alert("Congratulations, you win!");
+    }
 };
 
 
-/* checking user seq agaings momo's */
+/* checking user seq against momo's */
 function checkUserSeq(i) {
-for(var i = 0; i < userSeq.length; i++) {
-    if(userSeq[i] != momoSeq[i]) {
+    for(var i = 0; i < userSeq.length; i++) {
+        if(userSeq[i] != momoSeq[i]) {
         return false;
+        }
     }
-}
-return true
+    return true
 }
 
 
@@ -80,21 +79,17 @@ function displayWrong() {
     var wrongAudio = document.getElementById("tarzan");
     console.log("Wrong");
     $("#current-highscore").text(score+", wrong");
-
+    //This code was adapted from phaserjs https://phaserjs.com/saving-high-score
     localHighScore = Math.max(score, localHighScore);
     localStorage.setItem(localStorageName, localHighScore);
     console.log(localHighScore)
     $("#highest-highscore").text(localHighScore);
-
-
     userSeq = [];
     momoSeq = [];
     score = 0;
     if (!mute) {
         wrongAudio.play();
     }
-        
-
 }
 
 /* momo sequence */
@@ -109,7 +104,7 @@ function momoSequence() {
         addClassSound(id);
         i++;
         if (i == momoSeq.length) {
-        clearInterval(myInterval);
+            clearInterval(myInterval);
         }
     }, 1000);
 }
@@ -117,8 +112,8 @@ function momoSequence() {
 
 /* generate random number */ 
 function getRandomNum() {
-var random = Math.floor(Math.random() * 4); 
-momoSeq.push(random);
+    var random = Math.floor(Math.random() * 4); 
+    momoSeq.push(random);
 }
 
 /* add active panel */
@@ -136,16 +131,16 @@ let mute = false
 
 
 function muteAudio() {
-document.querySelector('.mute-button').style.display = "None";
-document.querySelector('.enable-audio-button').style.display = "Inline-block";
-mute = true   
+    document.querySelector('.mute-button').style.display = "None";
+    document.querySelector('.enable-audio-button').style.display = "Inline-block";
+    mute = true   
 }
 
 
 function enableAudio() {
-document.querySelector('.enable-audio-button').style.display = "None";
-document.querySelector('.mute-button').style.display = "Inline-block";
-mute = false   
+    document.querySelector('.enable-audio-button').style.display = "None";
+    document.querySelector('.mute-button').style.display = "Inline-block";
+    mute = false   
 }
 
 
@@ -159,15 +154,15 @@ function playSound(id) {
 
 
 function resetGame() {
-userSeq = [];
-momoSeq = [];
-score = 0;
-document.getElementById('current-highscore').innerText = "0";
-        momoSequence();  
+    userSeq = [];
+    momoSeq = [];
+    score = 0;
+    document.getElementById('current-highscore').innerText = "0";
+    momoSequence();  
 };
 
 
-/* Theme butttons  */
+/* Theme butttons */
 function switchSummer () {
     document.getElementById('logo').src = '/assets/icons/green-logo.png';
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/summer.jpg)";
@@ -176,12 +171,12 @@ function switchSummer () {
     document.querySelector('.game-section-text').style.color = "#188163";
     var gameSectionText = document.querySelectorAll(".game-section-text");
     for (var i = 0; i < gameSectionText.length; i++) {
-    gameSectionText[i].style.backgroundColor = "#b6fcc5";
-    gameSectionText[i].style.color = "#188163";
+        gameSectionText[i].style.backgroundColor = "#b6fcc5";
+        gameSectionText[i].style.color = "#188163";
     } 
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
-    buttonList[i].className = "theme-button theme-button-green";
+        buttonList[i].className = "theme-button theme-button-green";
     }   
 }
 
@@ -191,12 +186,12 @@ function switchWinter () {
     document.querySelector('body').style.backgroundColor = "#eeeeee";
         var gameSectionText = document.querySelectorAll(".game-section-text");
     for (var i = 0; i < gameSectionText.length; i++) {
-    gameSectionText[i].style.backgroundColor = "#eeeeee";
-    gameSectionText[i].style.color = "#098b90";
+        gameSectionText[i].style.backgroundColor = "#eeeeee";
+        gameSectionText[i].style.color = "#098b90";
     } 
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
-    buttonList[i].className = "theme-button theme-button-white";
+        buttonList[i].className = "theme-button theme-button-white";
     } 
 }
 
@@ -206,11 +201,11 @@ function switchGalaxy () {
     document.querySelector('body').style.backgroundColor = "#2a1c21";
     var gameSectionText = document.querySelectorAll(".game-section-text");
     for (var i = 0; i < gameSectionText.length; i++) {
-    gameSectionText[i].style.backgroundColor = "#201317";
-    gameSectionText[i].style.color = "#655379";
+        gameSectionText[i].style.backgroundColor = "#201317";
+        gameSectionText[i].style.color = "#655379";
     } 
     var buttonList = document.querySelectorAll(".theme-button");
     for (var i = 0; i < buttonList.length; i++) {
-    buttonList[i].className = "theme-button theme-button-dark";
+        buttonList[i].className = "theme-button theme-button-dark";
     } 
 }
