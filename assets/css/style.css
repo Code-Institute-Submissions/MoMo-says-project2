@@ -47,8 +47,9 @@ body {
     max-height: auto;
     opacity: 0.85;
     border-radius: 30px;
-    margin: 20px 15px 15px 15px;
+    margin: 20px 30px 20px 30px;
     position: relative;
+    display: inline-block;
 }
 
 .game-section-text p {
@@ -82,7 +83,8 @@ body {
 
 .animal-panel-div {
     min-width: 400px;
-    margin: 15px 15px 15px 15px;
+    margin: 20px 10px 20px 10px;
+    display: inline-block;
 }
 
 .active-panel {
@@ -193,7 +195,7 @@ body {
 }
 
 @media all and (min-width: 800px) {
-  /* We tell both sidebars to share a row */
+  /* We tell both game-section-text to share a row */
   #left, #right { flex: 1 auto; }
     .animal-panel-div { flex: 1 0px; }
     #left { order: 1; }
@@ -202,8 +204,7 @@ body {
     .footer-section  { order: 4; }
 }
 
-@media all and (min-width: 1120px) {
-  /* We tell both sidebars to share a row */
+@media all and (min-width: 1185px) {
   #left, #right { flex: 1 auto; }
     .animal-panel-div { flex: 1 0px; }
     #left { order: 1; }
@@ -223,8 +224,9 @@ body {
   .footer-section  { order: 4; }
 } */ 
 
-@media all and (min-width: 300px) {
+/* @media all and (max-width: 800px) {
     .animal-panel-div, #left, #right {
         display: inline-block;
+        width: 90%;
     }
-}
+}  */
