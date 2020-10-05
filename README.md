@@ -95,6 +95,9 @@ afterwards it became slightly lighter, making it visibly stand out from the back
 To get the later hex color of the logo I needed to do a printscreen of the webpage with the logo uploaded and swatch the color
 to recive #2a1c21 and then use that color as my default dark themed hex color.
 
+- NaN in Highest highscore
+
+
 ## Deployment
 
 
