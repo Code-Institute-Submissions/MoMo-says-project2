@@ -162,7 +162,7 @@ function resetGame() {
 };
 
 
-/* Theme butttons */
+/* theme butttons */
 function switchSummer () {
     document.getElementById('logo').src = '/assets/icons/green-logo.png';
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/summer.jpg)";
