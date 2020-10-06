@@ -172,13 +172,10 @@ body {
     margin: 15px;
 }
 
-/* @media (max-width: 1120px) { 
-    .game-section-text, .animal-panel {
-    display: inline-block;
-    };
-};
 
-@media (min-width: 992px) { 
+/*---------- Media queries ----------*/
+
+/* @media (min-width: 992px) { 
     .game-section-text, .animal-panel {
     display: inline-block;
     };
@@ -189,19 +186,16 @@ body {
   flex-flow: row wrap;
 }
 
-/* We tell all items to be 100% width, via flex-basis */
 .wrapper > * {
   flex: 1 100%;
 }
 
 @media all and (min-width: 800px) {
-  /* We tell both game-section-text to share a row */
   #left, #right { flex: 1 auto; }
     .animal-panel-div { flex: 1 0px; }
     #left { order: 1; }
     .animal-panel-div { order: 3; }
     #right { order: 2; }
-    .footer-section  { order: 4; }
 }
 
 @media all and (min-width: 1187px) {
@@ -210,24 +204,4 @@ body {
     #left { order: 1; }
     .animal-panel-div { order: 2; }
     #right { order: 3; }
-    .footer-section  { order: 4; }
 }
-
-/* Large screens
-@media all and (min-width: 800px) {
-  /* We invert order of first sidebar and main
-   * And tell the main element to take twice as much width as the other two sidebars 
-   */
-  /* .animal-panel-div { flex: 1 0px; }
-  #left { order: 1; }
-  .animal-panel-div { order: 2; }
-  #right { order: 3; }
-  .footer-section  { order: 4; }
-} */ 
-
-/* @media all and (max-width: 800px) {
-    .animal-panel-div, #left, #right {
-        display: inline-block;
-        width: 90%;
-    }
-}  */
