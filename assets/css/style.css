@@ -204,7 +204,7 @@ body {
     .footer-section  { order: 4; }
 }
 
-@media all and (min-width: 1185px) {
+@media all and (min-width: 1187px) {
   #left, #right { flex: 1 auto; }
     .animal-panel-div { flex: 1 0px; }
     #left { order: 1; }
@@ -212,6 +212,7 @@ body {
     #right { order: 3; }
     .footer-section  { order: 4; }
 }
+
 /* Large screens
 @media all and (min-width: 800px) {
   /* We invert order of first sidebar and main
