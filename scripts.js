@@ -5,6 +5,8 @@ userSeq = [];
 momoSeq = [];
 const NUM_OF_SCORE = 20;
 var score = 0;
+var localStorageName = "MoMoSays";
+var localHighScore;
 var boardSound = [
 "/assets/audio/elephantcub.mp3",
 "/assets/audio/pig.mp3",
@@ -12,11 +14,7 @@ var boardSound = [
 "/assets/audio/sealion.mp3",
 ];
 
-var localStorageName = "MoMoSays";
-var localHighScore;
 
-
-//This code was adapted from phaserjs https://phaserjs.com/saving-high-score
 localHighScore = localStorage.getItem(localStorageName) == null ? 0 :
                  localStorage.getItem(localStorageName);
                  $("#highest-highscore").text(localHighScore);
@@ -79,7 +77,6 @@ function displayWrong() {
     var wrongAudio = document.getElementById("tarzan");
     console.log("Wrong");
     $("#current-highscore").text(score+", wrong");
-    //This code was adapted from phaserjs https://phaserjs.com/saving-high-score
     localHighScore = Math.max(score, localHighScore);
     localStorage.setItem(localStorageName, localHighScore);
     console.log(localHighScore)
@@ -91,6 +88,7 @@ function displayWrong() {
         wrongAudio.play();
     };
 };
+
 
 /* momo sequence */
 function momoSequence() {

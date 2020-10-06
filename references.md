@@ -16,9 +16,12 @@ style.css:
 
 
 scripts.js:
-- On line 81, the code for  was adapted from:
- []()
+- The Simon says code for the second and final javascript file was adapted from Root Tech via youtube:
+[Video #1](https://www.youtube.com/watch?v=9MTR3V2XpRI)
+[Video #2](https://www.youtube.com/watch?v=iXscqYgZ7HQ&t=9s)
 
+- On line 18-20 and 80-83, the code for local storage was adapted from:
+ [phaserjs.com](https://phaserjs.com/saving-high-score)
 
 
 scripts0.js:
@@ -35,5 +38,3 @@ scripts0.js:
  - On line 81, the code for cloning was adapted from:
  [Luka Kvavilashvili on stackoverflow.com](https://stackoverflow.com/questions/40822531/jquery-audio-how-to-allow-overlapping-sounds)
  
- - On line 81, the code for cloning was adapted from:
- [Luka Kvavilashvili on stackoverflow.com](https://stackoverflow.com/questions/40822531/jquery-audio-how-to-allow-overlapping-sounds)
