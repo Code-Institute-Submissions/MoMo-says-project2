@@ -1,8 +1,9 @@
-// Game section
+/* Game section */
 const elephantPanel = document.querySelector('.elephant-panel');
 const pigPanel = document.querySelector('.pig-panel');
 const rattlesnakePanel = document.querySelector('.rattlesnake-panel');
 const sealionPanel = document.querySelector('.sealion-panel');
+
 
 function getRandomAnimalPanel() {
     const animalPanel = [
@@ -13,6 +14,7 @@ function getRandomAnimalPanel() {
     ]
     return animalPanel[parseInt(Math.random() * animalPanel.length)];
 };
+
 
 const sequence = [getRandomAnimalPanel()];
 let sequenceToGuess = [...sequence];   
@@ -34,7 +36,9 @@ function flash(animalPanel) {
     });
 };
 
+
 let canClick = false;
+
 
 function animalPanelClicked(clickedPanel) {
     if (!canClick) return;
@@ -54,6 +58,7 @@ function animalPanelClicked(clickedPanel) {
     };
 };
 
+
 async function startFlashing() {
     canClick = false;
     for (const animalPanel of sequence) {
@@ -62,17 +67,16 @@ async function startFlashing() {
     canClick = true;
 };
 
-// setTimeout(startFlashing, 3000); from https://stackoverflow.com/questions/54681854/run-js-functions-run-in-sequence-onclick
+
 $(document).ready(function() {
     $(".animal-panel").click(function() {
         setTimeout(startFlashing, 1000);
     });
 });
 
-// This code was adapted from https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
-// This code about cloning was adapted from https://stackoverflow.com/questions/40822531/jquery-audio-how-to-allow-overlapping-sounds
 
 let firstClickAudio = true
+
 
 function play() {
     // First time we click the button we don't want audio to play to indicate that the game has not begun yet.
@@ -81,7 +85,7 @@ function play() {
         return
     };
     var audio1 = document.getElementById('audio-elephant');
-        audio1.play();
+    audio1.play();
 };
 
 
@@ -92,6 +96,7 @@ var clone = audio1.cloneNode(true);
         clone.pause();
         clone.currentTime = 0
     };
+
 
 function audioPlay() {
     audio = new Audio(); 
@@ -125,6 +130,7 @@ function switchSummer () {
     };   
 };
 
+
 function switchWinter () {
     document.getElementById("logo").src = "/assets/icons/white-logo.png";
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/winter.jpg)";
@@ -157,11 +163,11 @@ function switchGalaxy () {
 
 
 function incrementScore() {
-// Get element with the id of hp
-let el = document.getElementById("current-highscore");
-// Set currentCount to the text of the element
-let currentCount = el.innerText;
-if (currentCount == 100) {
+    // Get element with the id of hp
+    let el = document.getElementById("current-highscore");
+    // Set currentCount to the text of the element
+    let currentCount = el.innerText;
+    if (currentCount == 100) {
         alert("You've won!!");
     } else {
         // Decrement current count and set it as the new text in our element
