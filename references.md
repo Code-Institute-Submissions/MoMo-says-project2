@@ -1,13 +1,9 @@
 References:
 
-body:
-- The "container-fluid" class was copied from bootstrap to achive a responsive div.
-https://getbootstrap.com/docs/4.5/layout/overview/#containers
 
-
-
-index.html:
-
+index0.html and index.html:
+- The container-fluid class was adapted from bootstrap to achive a responsive div:
+[getbootstrap.com](https://getbootstrap.com/docs/4.0/layout/overview/)
 
 
 style.css:
