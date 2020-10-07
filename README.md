@@ -67,8 +67,8 @@ current and highest. The highest score is locally stored so when the webpage is 
 and reopened the highest score is still visible.
 ![Header](.png)
 
-Feature 7 - index.html > Theme buttons: allows users to interact with the interface design
-of the webpage by switching diffrent colored themes.
+Feature 7 - index.html > Theme buttons: three separate buttons allows users to interact with the
+interface design of the webpage by switching between three diffrent colored themes.
 ![Header](.png)
 
 
@@ -79,12 +79,16 @@ of the webpage by switching diffrent colored themes.
 ### Languages
 - HTML
 - CSS
-    The project is built up on HTML and CSS to make the basic structure of the webpage and to style it.
+- Javascript
+    The project is built with on HTML and CSS to make the basic structure of the webpage and to style it.
+    Javascript is used to create the interactive features like the game, highscore (current and highest)
+    and theme buttons.
+
 
 ### Framework
 - Bootstrap
     
-    The project uses Bootstrap to simplify the structural development of the webpages HTML and CSS.
+    The project uses Bootstrap to simplify the structural development of HTML and CSS within the webpage.
 https://getbootstrap.com/
 
 ### Library
@@ -99,44 +103,38 @@ https://fontawesome.com/
 https://www.w3schools.com/colors/colors_picker.asp
 
 ### Languages
-
 - HTML
 - CSS
+- Javascript
+    The project is built up on HTML and CSS to make the basic structure of the webpage and to style it.
+    Javascript is used to create interactive features like the game, mute button, restart button,
+    highscores (current and highest) and three diffrent theme buttons.
 
-The project is built up on HTML and CSS to make the basic structure of the webpage and to style it.
 
 ### Framework
-
-Bootstrap
-
-The project uses Bootstrap to simplify the structural development of the webpages HTML and CSS. https://getbootstrap.com/
-
-Code copied (and afterwards altered) from bootstrap:
-- Popover button [link to original code](https://www.w3schools.com/bootstrap/bootstrap_popover.asp)
-- Collapsible button [link to original code](https://www.w3schools.com/bootstrap/bootstrap_collapse.asp)
+- Bootstrap
+    
+    The project uses Bootstrap to simplify the structural development of the webpages HTML and CSS.
+https://getbootstrap.com/
 
 ### Library
 
-- Fontawesome
+- jQuery
+    The project used the javaScript library jQuery to simplify the construction of the javascript files.
+    [jquery.com](https://jquery.com/)
 
-    The project used fontawesome icons to make the webpage more intuitive and more visually appealing. https://fontawesome.com/
+- Fontawesome
+    The project used fontawesome icons to make the webpage more intuitive and more visually appealing.
+    [fontawesome.com](https://fontawesome.com/)
 
 - w3schools
+    The project used w3shools online color picker to easily find and test diffrent colors for the pricing headings.
+    [w3schools.com](https://www.w3schools.com/colors/colors_picker.asp)
 
-    The project used w3shools online color picker to easily find and test diffrent colors for the pricing headings. https://www.w3schools.com/colors/colors_picker.asp
+#### Other Technologies
 
-Other Technologies
-- Favicon.ico and app icon generator
-
-The project uses a favicon made with the favicon.ico generator tool to make the page more visually appealing. The image is a cropped version of the company logo. https://www.favicon-generator.org/
-
-### Youtube
-
-- Cody Seibert
-
-    The projects game section in scripts.js was originaly from Cody Seibert and has later on been slightly altered to fit the project
-    
-    [Web Dev Junkie](https://www.youtube.com/watch?v=W0MxUHlZo6U)
+- Favicon
+    The project uses a favicon made with the favicon.ico generator tool to make the page more visually appealing. The image is a cropped version of the company logo. https://www.favicon-generator.org/
 
 
 
