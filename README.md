@@ -30,8 +30,8 @@ This is a school project with the main focus to display my skills in HTML, css a
 ### Wireframes
 
 Wireframes for this project was made with [Balsamiq](https://balsamiq.com/).
-![Header](assets/wireframes/balsamiq-wireframes-v.1.png)
-![Header](assets/wireframes/balsamiq-wireframes-v.2.png)
+![Header](assets/wireframes/balsamiq-wireframe-v.1.png)
+![Header](assets/wireframes/balsamiq-wireframe-v.2.png)
 
 ## Features
 
