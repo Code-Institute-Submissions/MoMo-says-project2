@@ -1,4 +1,4 @@
-# MoMo says
+# MoMo Says
 Welcome to the MoMo README file.
 
 This is a school project with the main focus to display my skills in HTML, css and javascript. This website's goal is for users and owners to play an animal themed simon says game with three interactive webpage themes.
@@ -6,7 +6,7 @@ This is a school project with the main focus to display my skills in HTML, css a
 
 ## UX/UI
 
-### User stories (UX)
+### User Stories (UX)
 -   As a usertype, I want to play a fun game, to pass my time.
 
 -	As a usertype, the instructions to be simple and easy to understand, so I can play the game easily.
@@ -19,7 +19,7 @@ This is a school project with the main focus to display my skills in HTML, css a
 
 -	As a usertype, I want there to be a clear structure of the game, so that it does not confuse me.
 
-### Ownerstories (UX)
+### Owner Stories (UX)
 
 -   As an ownertype, I want to create a simple yet exiting and responsive game, so that user will want to play more than once.
 
@@ -41,6 +41,7 @@ Wireframe version 2
 
 ## Features
 
+### Existing Features
 Feature 1 - index.html > (Homepage): allows users to access the full webpage including
 the "How to play", MoMo game, highscore and theme buttons.
 ![Header](.png)
@@ -71,14 +72,31 @@ of the webpage by switching diffrent colored themes.
 ![Header](.png)
 
 
-
-### Existing Features
-
-
 ### Features Left to Implement
 
-
 ## Technologies Used
+
+### Languages
+- HTML
+- CSS
+    The project is built up on HTML and CSS to make the basic structure of the webpage and to style it.
+
+### Framework
+- Bootstrap
+    
+    The project uses Bootstrap to simplify the structural development of the webpages HTML and CSS.
+https://getbootstrap.com/
+
+### Library
+- Fontawesome
+    
+    The project used fontawesome icons to make the webpage more intuitive and more visually appealing.
+https://fontawesome.com/
+
+- w3schools
+    
+    The project used w3shools online color picker to easily find and test diffrent colors for the pricing headings.
+https://www.w3schools.com/colors/colors_picker.asp
 
 ### Languages
 
