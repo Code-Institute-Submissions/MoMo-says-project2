@@ -113,9 +113,8 @@ https://www.w3schools.com/colors/colors_picker.asp
 
 ### Framework
 - Bootstrap
-    
     The project uses Bootstrap to simplify the structural development of the webpages HTML and CSS.
-https://getbootstrap.com/
+    [getbootstrap.com](https://getbootstrap.com/)
 
 ### Library
 
@@ -134,15 +133,22 @@ https://getbootstrap.com/
 #### Other Technologies
 
 - Favicon
-    The project uses a favicon made with the favicon.ico generator tool to make the page more visually appealing. The image is a cropped version of the company logo. https://www.favicon-generator.org/
+    The project uses a favicon made with the favicon.ico generator tool to make the page more visually appealing.
+    The image is a cropped version of the company logo.
+    [favicon-generator.org](https://www.favicon-generator.org/)
 
+- Audiotrimmer
+    The project used an online audio cutter to shorten the lenght of the audio files used in the MoMo game.
+    [audiotrimmer.com](https://audiotrimmer.com/#)
 
 
 ## Testing
 
+### Manual Testing
 
+### Code Testing
 
-- Bugs:
+### Bugs:
 Recived:
 "NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission."
 When the site automatically played up the game flash sequence. To fix the problem I added a call to the automatic starting function of sequence to first
@@ -156,7 +162,7 @@ afterwards it became slightly lighter, making it visibly stand out from the back
 To get the later hex color of the logo I needed to do a printscreen of the webpage with the logo uploaded and swatch the color
 to recive #2a1c21 and then use that color as my default dark themed hex color.
 
-- NaN in Highest highscore
+- NaN in Highest highscore (Had to clear cache)
 
 
 ## Deployment
@@ -191,6 +197,18 @@ Image of sealion is created by Duncan Sanchez and retrived via [unsplashed](http
 Image of rattlesnake is created by NOAA and retrived via [unsplashed](https://unsplash.com/photos/VrQRpV4c9jY), thank you NOAA!
 
 Image of elephant is created by Maurits Bausenhart and retrived via [unsplashed](https://unsplash.com/photos/Ay67yB6vmF8), thank you Maurits!
+
+#### Audio
+
+Audio of pig is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/snort-466308/)
+
+Audio of sealion is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/sealion-466230/)
+
+Audio of rattlesnake is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/rattlesnake4-466284/snake/)
+
+Audio of elephant is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/elephantcub-466266/)
+
+Audio of Tarzan is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/tarzan-428614/)
 
 
 
