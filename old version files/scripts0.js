@@ -21,7 +21,7 @@ let sequenceToGuess = [...sequence];
 
 
 function flash(animalPanel) {
-    return new Promise(function(resolve, reject) {
+    return new Promise(function(resolve) {
         animalPanel.className += ' active-panel';
         play();
         setTimeout(function() {

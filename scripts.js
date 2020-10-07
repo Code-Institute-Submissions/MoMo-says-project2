@@ -115,7 +115,7 @@ function getRandomNum() {
 };
 
 /* add active panel */
-function addClassSound(id, color) {
+function addClassSound(id) {
     $("#"+id).addClass("active-panel");
     playSound(id)
     setTimeout(function() {

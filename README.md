@@ -6,7 +6,7 @@ This is a school project with the main focus to display my skills in HTML, css a
 
 ## UX
 
-### Userstories
+### User stories
 -   As a usertype, I want to play a fun game, to pass my time.
 
 -	As a usertype, the instructions to be simple and easy to understand, so I can play the game easily.
