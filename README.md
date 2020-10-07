@@ -25,8 +25,13 @@ This is a school project with the main focus to display my skills in HTML, css a
 
 -   As a ownertype, I want the instructions to be simple and easy for the user to understand, so that they can play easily.
 
--	As an ownertype, I want to have creative and interactive features, to appeal to the user wich in turn will use the websiite more.
+-	As an ownertype, I want to have creative and interactive features, to appeal to the user which in turn will use the website more.
 
+### Wireframes
+
+Wireframes for this project was made with [Balsamiq](https://balsamiq.com/).
+![Header](assets/wireframes/balsamiq-wireframes-v.1.png)
+![Header](assets/wireframes/balsamiq-wireframes-v.2.png)
 
 ## Features
 
