@@ -25,38 +25,49 @@ This is a school project with the main focus to display my skills in HTML, css a
 
 -   As a ownertype, I want the instructions to be simple and easy for the user to understand, so that they can play easily.
 
--	As an ownertype, I want to have creative and interactive features, to appeal to the user which in turn will use the website more.
+-	As an ownertype, I want to have creative, consistent and interactive features, to appeal to the user which in turn will use the website more.
 
 ### Wireframes (UI)
 
 Wireframes for this project was made with [Balsamiq](https://balsamiq.com/).
-Before I started programming the webpage the version 1 wireframe was the general layout aim.
-But a few hours into the development process I decided to make minor changes in the layout to make the webpage more responsive and user friendly and thus created the version 2 wireframe.
+Before I started programming the webpage the version 1 wireframe was the general interface design aim.
+But a few hours into the development process I decided to make minor changes in the interface design to make the webpage more responsive and user friendly and thus created the version 2 wireframe.
 
+Wireframe version 1
 ![Header](assets/wireframes/balsamiq-wireframe-v.1.png)
 
-
+Wireframe version 2
 ![Header](assets/wireframes/balsamiq-wireframe-v.2.png)
 
 ## Features
 
-Feature 1 - index.html > logo header: interactive MoMo logo that is consistent throughout the webpage, despite theme changes.
+Feature 1 - index.html > (Homepage): allows users to access the full webpage including
+the "How to play", MoMo game, highscore and theme buttons.
 ![Header](.png)
 
-Feature 2 - index.html (Homepage): allows users to access the full webpage including
-the "How to play" instructions, MoMo game, highscore and theme buttons.
+Feature 2 - index.html > Logo header: interactive MoMo logo that is consistent
+throughout the webpage, despite viewport width and theme changes.
 ![Header](.png)
 
-Feature 3 - index.html > "How to play": allows users to read instructions for how to play the game.
+Feature 3 - index.html > "How to play": allows users to read clear instructions for
+how to play the game.
 ![Header](.png)
 
-Feature 4 - index.html > MoMo game: allows the user to play a interactive memory game. 
+Feature 4 - index.html > MoMo game: allows the user to play a interactive memory
+game. 
 ![Header](.png)
 
-Feature 5 - index.html > Highscore: allows users to see their own score, both current and highest.
+Feature 5 - index.html > Mute and restart buttons: allows users to turn off and on the
+audio and restart the game at any time.
 ![Header](.png)
 
-Feature 6 - index.html > Theme buttons: allows users to interact with the layout of the webpage by switching themes.
+Feature 6 - index.html > Highscore: allows users to see their own score, both
+current and highest. The highest score is locally stored so when the webpage is closed
+and reopened the highest score is still visible.
+![Header](.png)
+
+Feature 7 - index.html > Theme buttons: allows users to interact with the interface design
+of the webpage by switching diffrent colored themes.
 ![Header](.png)
 
 
