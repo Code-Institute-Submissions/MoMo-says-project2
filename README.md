@@ -4,9 +4,9 @@ Welcome to the MoMo README file.
 This is a school project with the main focus to display my skills in HTML, css and javascript. This website's goal is for users and owners to play an animal themed simon says game with three interactive webpage themes.
 
 
-## UX
+## UX/UI
 
-### User stories
+### User stories (UX)
 -   As a usertype, I want to play a fun game, to pass my time.
 
 -	As a usertype, the instructions to be simple and easy to understand, so I can play the game easily.
@@ -19,7 +19,7 @@ This is a school project with the main focus to display my skills in HTML, css a
 
 -	As a usertype, I want there to be a clear structure of the game, so that it does not confuse me.
 
-### Ownerstories
+### Ownerstories (UX)
 
 -   As an ownertype, I want to create a simple yet exiting and responsive game, so that user will want to play more than once.
 
@@ -27,13 +27,38 @@ This is a school project with the main focus to display my skills in HTML, css a
 
 -	As an ownertype, I want to have creative and interactive features, to appeal to the user which in turn will use the website more.
 
-### Wireframes
+### Wireframes (UI)
 
 Wireframes for this project was made with [Balsamiq](https://balsamiq.com/).
+Before I started programming the webpage the version 1 wireframe was the general layout aim.
+But a few hours into the development process I decided to make minor changes in the layout to make the webpage more responsive and user friendly and thus created the version 2 wireframe.
+
 ![Header](assets/wireframes/balsamiq-wireframe-v.1.png)
+
+
 ![Header](assets/wireframes/balsamiq-wireframe-v.2.png)
 
 ## Features
+
+Feature 1 - index.html > logo header: interactive MoMo logo that is consistent throughout the webpage, despite theme changes.
+![Header](.png)
+
+Feature 2 - index.html (Homepage): allows users to access the full webpage including
+the "How to play" instructions, MoMo game, highscore and theme buttons.
+![Header](.png)
+
+Feature 3 - index.html > "How to play": allows users to read instructions for how to play the game.
+![Header](.png)
+
+Feature 4 - index.html > MoMo game: allows the user to play a interactive memory game. 
+![Header](.png)
+
+Feature 5 - index.html > Highscore: allows users to see their own score, both current and highest.
+![Header](.png)
+
+Feature 6 - index.html > Theme buttons: allows users to interact with the layout of the webpage by switching themes.
+![Header](.png)
+
 
 
 ### Existing Features
