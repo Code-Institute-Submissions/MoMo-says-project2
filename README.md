@@ -80,32 +80,6 @@ interface design of the webpage by switching between three diffrent colored them
 - HTML
 - CSS
 - Javascript
-    The project is built with on HTML and CSS to make the basic structure of the webpage and to style it.
-    Javascript is used to create the interactive features like the game, highscore (current and highest)
-    and theme buttons.
-
-
-### Framework
-- Bootstrap
-    
-    The project uses Bootstrap to simplify the structural development of HTML and CSS within the webpage.
-https://getbootstrap.com/
-
-### Library
-- Fontawesome
-    
-    The project used fontawesome icons to make the webpage more intuitive and more visually appealing.
-https://fontawesome.com/
-
-- w3schools
-    
-    The project used w3shools online color picker to easily find and test diffrent colors for the pricing headings.
-https://www.w3schools.com/colors/colors_picker.asp
-
-### Languages
-- HTML
-- CSS
-- Javascript
     The project is built up on HTML and CSS to make the basic structure of the webpage and to style it.
     Javascript is used to create interactive features like the game, mute button, restart button,
     highscores (current and highest) and three diffrent theme buttons.
@@ -115,6 +89,7 @@ https://www.w3schools.com/colors/colors_picker.asp
 - Bootstrap
     The project uses Bootstrap to simplify the structural development of the webpages HTML and CSS.
     [getbootstrap.com](https://getbootstrap.com/)
+
 
 ### Library
 
@@ -130,6 +105,7 @@ https://www.w3schools.com/colors/colors_picker.asp
     The project used w3shools online color picker to easily find and test diffrent colors for the pricing headings.
     [w3schools.com](https://www.w3schools.com/colors/colors_picker.asp)
 
+
 #### Other Technologies
 
 - Favicon
@@ -140,6 +116,10 @@ https://www.w3schools.com/colors/colors_picker.asp
 - Audiotrimmer
     The project used an online audio cutter to shorten the lenght of the audio files used in the MoMo game.
     [audiotrimmer.com](https://audiotrimmer.com/#)
+
+- Balsamiq
+    The project used the wireframe Balsamiq to create simple visual wireframes.
+    [Balsamiq](https://balsamiq.com/).
 
 
 ## Testing
