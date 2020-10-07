@@ -182,8 +182,6 @@ Code about playing audio onclick was adapted from [Arunkumar via stackoverflow](
 Code about cloning in javascript was adapted from [Luka Kvavilashvili via stackoverflow](https://stackoverflow.com/questions/40822531/jquery-audio-how-to-allow-overlapping-sounds)
 
 
-
-
 ### Media
 
 #### Images: 
@@ -197,6 +195,13 @@ Image of sealion is created by Duncan Sanchez and retrived via [unsplashed](http
 Image of rattlesnake is created by NOAA and retrived via [unsplashed](https://unsplash.com/photos/VrQRpV4c9jY), thank you NOAA!
 
 Image of elephant is created by Maurits Bausenhart and retrived via [unsplashed](https://unsplash.com/photos/Ay67yB6vmF8), thank you Maurits!
+
+Summer background image is created by Claudel Rheaultis and retrived via [unsplashed](https://unsplash.com/photos/ZVbv1akA-l4), thank you Claudel!
+
+Winter background image is created by Dominik Dombrowski and retrived via [unsplashed](https://unsplash.com/photos/KNUp-YBwBSE), thank you Dominik!
+
+Galaxy background image is created by Jeremy Thomas and retrived via [unsplashed](https://unsplash.com/photos/4dpAqfTbvKA), thank you Jeremy!
+
 
 #### Audio
 
@@ -214,6 +219,7 @@ Audio of Tarzan is created by Partners In Rhyme and retrived via [freesoundeffec
 
 ### Acknowledgements
 
-I received visual and structural inspiration for this project from:
+The project was inspired visually and structurally by:
 
 [freesimon.org](http://www.freesimon.org/welcome/)
+
