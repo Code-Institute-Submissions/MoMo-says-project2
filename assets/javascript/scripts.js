@@ -5,8 +5,9 @@ userSeq = [];
 momoSeq = [];
 const NUM_OF_SCORE = 20;
 var score = 0;
-var localStorageName = "MoMoSays";
+var localStorageScore = "MoMoSays";
 var localHighScore;
+
 var boardSound = [
 "/assets/audio/elephantcub.mp3",
 "/assets/audio/pig.mp3",
@@ -78,7 +79,7 @@ function displayWrong() {
     console.log("Wrong");
     $("#current-highscore").text(score+", wrong");
     localHighScore = Math.max(score, localHighScore);
-    localStorage.setItem(localStorageName, localHighScore);
+    localStorage.setItem(localStorageScore, localHighScore);
     console.log(localHighScore)
     $("#highest-highscore").text(localHighScore);
     userSeq = [];
