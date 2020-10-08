@@ -121,6 +121,10 @@ interface design of the webpage by switching between three diffrent colored them
     The project used the wireframe Balsamiq to create simple visual wireframes.
     [Balsamiq](https://balsamiq.com/).
 
+- Lunapic
+    The project used the online tool to lower opacity of the summer background image.
+    [lunapic.com]https://www11.lunapic.com/editor/
+
 
 ## Testing
 
