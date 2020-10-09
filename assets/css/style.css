@@ -48,8 +48,13 @@ body {
 
 .center-button {
     width: 100%;
-    max-width: 500px;
+    max-width: 348px;
     height: 100%;
+    padding-top: 145px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
     border-radius: 50px;
     z-index: +1;
     background-color: #b6fcc5;
@@ -58,23 +63,6 @@ body {
     opacity: 0.9;
     position: absolute;
     font-size: 40px;
-    /* padding-top: 30%; */
-    top: 0%;
-    left: 0%;
-
-    /* margin: 5px;
-    max-width: 400px;
-
-    min-width: 350px; */
-    /* margin: 20px 10px 20px 10px; */
-    /* max-width:45%;
-    max-height:45%;
-    top:50%;
-    left:50%; */
-
-    
-
-    display: inherit;
 }
 
 .start-button {
