@@ -47,7 +47,8 @@ body {
 }
 
 .center-button {
-    width: 80%;
+    width: 100%;
+    max-width: 500px;
     height: 100%;
     border-radius: 50px;
     z-index: +1;
@@ -56,25 +57,37 @@ body {
     text-align: center;
     opacity: 0.9;
     position: absolute;
-    /* margin: 0 0 0 50px; */
     font-size: 40px;
-    padding-top: 30%;
-    margin-left: 0;
-    margin-right: 0;
+    /* padding-top: 30%; */
+    top: 0%;
+    left: 0%;
+
+    /* margin: 5px;
+    max-width: 400px;
+
+    min-width: 350px; */
+    /* margin: 20px 10px 20px 10px; */
+    /* max-width:45%;
+    max-height:45%;
+    top:50%;
+    left:50%; */
+
+    
+
+    display: inherit;
 }
 
 .start-button {
     display: block;
 }
 
-.restart-button {
+.wrong-restart-button {
     display: none;
 }
 
-.winner-text {
+.winner-restart-text {
     display: none;
 }
-
 
 .game-section-text p {
     margin: 20px;
