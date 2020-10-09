@@ -25,6 +25,7 @@ body {
 .game-section {
     background-image: url("/assets/background-images/summer.png");
     background-size: cover;
+    min-width: 360px;
     text-align: center;
     margin-bottom: 0px;
     padding: 5% 0 5% 0;
@@ -41,7 +42,7 @@ body {
     max-height: auto;
     opacity: 0.85;
     border-radius: 30px;
-    margin: 20px 30px 20px 30px;
+    margin: 20px auto 20px auto;
     position: relative;
     display: inline-block;
 }
@@ -215,7 +216,7 @@ body {
   flex: 1 100%;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 770px) {
   #left, #right { flex: 1 auto; }
     .animal-panel-div { flex: 1 0px; }
     #left { order: 1; }
@@ -223,7 +224,7 @@ body {
     #right { order: 2; }
 }
 
-@media all and (min-width: 1187px) {
+@media all and (min-width: 1150px) {
   #left, #right { flex: 1 auto; }
     .animal-panel-div { flex: 1 0px; }
     #left { order: 1; }
