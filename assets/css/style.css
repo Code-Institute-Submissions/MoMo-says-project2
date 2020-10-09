@@ -46,6 +46,36 @@ body {
     display: inline-block;
 }
 
+.center-button {
+    width: 80%;
+    height: 100%;
+    border-radius: 50px;
+    z-index: +1;
+    background-color: #b6fcc5;
+    color: #188163;
+    text-align: center;
+    opacity: 0.9;
+    position: absolute;
+    /* margin: 0 0 0 50px; */
+    font-size: 40px;
+    padding-top: 30%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.start-button {
+    display: block;
+}
+
+.restart-button {
+    display: none;
+}
+
+.winner-text {
+    display: none;
+}
+
+
 .game-section-text p {
     margin: 20px;
 }
