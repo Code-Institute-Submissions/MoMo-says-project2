@@ -34,13 +34,13 @@ body {
 }
 
 .game-section-text {
-    padding: 10px;
+    padding: 0px;
     background-color: #b6fcc5;
     color: #188163;
     font-weight: 600;
-    width: 348px;
-    max-width: 350px;
-    height: 345px;
+    width: 340px;
+    max-width: 340px;
+    height: 340px;
     opacity: 0.85;
     border-radius: 30px;
     margin: 20px 30px 20px 30px;
@@ -52,11 +52,11 @@ body {
     width: 100%;
     max-width: 340px;
     height: 100%;
-    max-height: 339px;
+    max-height: 340px;
     padding-top: 145px;
     left: 0; 
     right: 0; 
-    top: 5px;
+    top: 0;
     bottom: 0;
     margin-left: auto; 
     margin-right: auto; 
@@ -112,11 +112,13 @@ body {
 }
 
 .animal-panel-div {
-    min-width: 400px;
+    min-width: 340px;
+        max-width: 340px;
     height: 344px;
-    max-height: 345px;
-    margin: 20px 10px 20px 10px;
+    max-height: 340px;
+    margin: 20px 30px 20px 30px;
     display: inline-block;
+    padding: 0;
 }
 
 .active-panel {
@@ -127,7 +129,7 @@ body {
 .animal-panel {
     border-radius: 50px;
     border: solid 7px #b6fcc5;
-    margin: 5px 3px 5px 3px;
+    margin: 5px 2px 5px 2px;
     max-width: 200px;
     min-width: 150px;
     cursor: pointer;
@@ -225,13 +227,23 @@ body {
 } */
 
 
-@media only screen and (max-width: 1235px) and (min-width: 770px) {
+@media only screen and (max-width: 1190px) and (min-width: 791px) {
   #left, #right { flex: 1 auto; }
     .animal-panel-div { flex: 1 0px; }
     #left { order: 1; }
     .animal-panel-div { order: 3; }
     #right { order: 2; }
 }
+
+
+
+/* @media only screen and (max-width: 100%) and (min-width: 1220px) {
+  #left, #right { flex: 1 auto; }
+    .animal-panel-div { flex: 1 0px; }
+    #left { order: 1; }
+    .animal-panel-div { order: 2; }
+    #right { order: 3; }
+} */
 
 /* @media all and (min-width: 1236px) {
   #left, #right { flex: 1 auto; }
