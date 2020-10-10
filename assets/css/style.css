@@ -129,7 +129,7 @@ body {
 .animal-panel {
     border-radius: 50px;
     border: solid 7px #b6fcc5;
-    margin: 3px 2px 4px 2px;
+    margin: 3px 1px 4px 1px;
     max-width: 163px;
     min-width: 160px;
     cursor: pointer;
