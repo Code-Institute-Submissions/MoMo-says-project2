@@ -129,9 +129,9 @@ body {
 .animal-panel {
     border-radius: 50px;
     border: solid 7px #b6fcc5;
-    margin: 5px 2px 5px 2px;
-    max-width: 200px;
-    min-width: 150px;
+    margin: 3px 2px 4px 2px;
+    max-width: 163px;
+    min-width: 160px;
     cursor: pointer;
 }
 
@@ -219,7 +219,7 @@ body {
 }
 
 
-@media only screen and (max-width: 1190px) and (min-width: 791px) {
+@media only screen and (max-width: 1186px) and (min-width: 787px) {
   #left, #right { flex: 1 auto; }
     .animal-panel-div { flex: 1 0px; }
     #left { order: 1; }
