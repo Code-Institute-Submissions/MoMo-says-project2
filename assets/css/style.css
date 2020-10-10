@@ -48,6 +48,10 @@ body {
     display: inline-block;
 }
 
+#how-to-play-header {
+    margin-top: 25px;
+}
+
 .center-button {
     width: 100%;
     max-width: 340px;
