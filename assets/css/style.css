@@ -69,13 +69,13 @@ body {
     background-color: #b6fcc5;
     color: #188163;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.8;
     position: absolute;
     font-size: 40px;
 }
 
 .start-button {
-    display: block;
+    display: none;
 }
 
 .wrong-restart-button {
@@ -83,7 +83,7 @@ body {
 }
 
 .winner-restart-text {
-    display: none;
+    display: block;
 }
 
 .game-section-text p {
