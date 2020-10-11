@@ -33,6 +33,11 @@ body {
     height: auto;
 }
 
+.game-div {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .game-section-text {
     padding: 0px;
     background-color: #b6fcc5;
