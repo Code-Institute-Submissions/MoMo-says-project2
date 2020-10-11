@@ -164,6 +164,17 @@ function resetGame() {
 };
 
 
+function resetGamePanel() {
+    userSeq = [];
+    momoSeq = [];
+    score = 0;
+    document.getElementById('current-highscore').innerText = "0";
+    document.querySelector('.game-panel').style.display = "none";
+    momoSequence();  
+};
+
+
+
 /* theme butttons */
 function switchSummer () {
     document.getElementById('logo').src = '/assets/icons/green-logo.png';
