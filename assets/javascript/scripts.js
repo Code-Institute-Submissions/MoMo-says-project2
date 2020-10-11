@@ -24,15 +24,15 @@ localHighScore = localStorage.getItem(localStorageName) == null ? 0 :
                  $("#highest-highscore").text(localHighScore);
 
 
-let firstClickAudio = true
+// let firstClickAudio = true
 
 $(document).ready(function () {
 $(".animal-panel").click(function() {
-    if (firstClickAudio === true) {
-        firstClickAudio = false
-        momoSequence();
-        return
-    };
+    // if (firstClickAudio === true) {
+    //     firstClickAudio = false
+    //     momoSequence();
+    //     return
+    // };
     id = $(this).attr("id");
     activePanel(id);
     })
@@ -85,6 +85,7 @@ function displayWrong() {
     localStorage.setItem(localStorageName, localHighScore);
     console.log(localHighScore)
     $("#highest-highscore").text(localHighScore);
+    document.querySelector('.wrong-restart-button').style.display = "block";
     userSeq = [];
     momoSeq = [];
     score = 0;

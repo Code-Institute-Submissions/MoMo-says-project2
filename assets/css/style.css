@@ -79,16 +79,16 @@ body {
 }
 
 .start-button {
-    display: none;
+    display: block;
     padding-top: 140px;
 }
 
 .wrong-restart-button {
-    display: block;
+    display: none;
     padding-top: 80px;
 }
 
-.winner-restart-text {
+.winner-restart-button {
     display: none;
     padding-top: 80px;
 }
