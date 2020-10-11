@@ -57,7 +57,6 @@ body {
     max-width: 340px;
     height: 100%;
     max-height: 340px;
-    padding-top: 145px;
     left: 0; 
     right: 0; 
     top: 0;
@@ -75,15 +74,18 @@ body {
 }
 
 .start-button {
-    display: none;
+    display: block;
+    padding-top: 140px;
 }
 
 .wrong-restart-button {
     display: none;
+    padding-top: 80px;
 }
 
 .winner-restart-text {
-    display: block;
+    display: none;
+    padding-top: 80px;
 }
 
 .game-section-text p {
