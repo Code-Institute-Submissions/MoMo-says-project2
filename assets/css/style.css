@@ -79,12 +79,12 @@ body {
 }
 
 .start-button {
-    display: block;
+    display: none;
     padding-top: 140px;
 }
 
 .wrong-restart-button {
-    display: none;
+    display: block;
     padding-top: 80px;
 }
 

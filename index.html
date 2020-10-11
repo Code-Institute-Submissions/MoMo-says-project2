@@ -33,17 +33,19 @@
                         <p class="center-button start-button">
                             START <i class="fas fa-play-circle"></i>
                         </p>
-                        <p class="center-button wrong-restart-button">
+                        <p class="center-button wrong-restart-button" onclick="resetGame()">
                             <i class="fas fa-times"></i>
                             <br>
                             WRONG
                             <br>
-                            RESTART
+                            <i class="fas reset-button fa-redo"></i>
                         </p>
-                        <p class="center-button winner-restart-text">
-                        <i class="fas fa-trophy"></i>
-                        <br>
-                        WINNER! RESTART
+                        <p class="center-button winner-restart-text" onclick="resetGame()">
+                            <i class="fas fa-trophy"></i>
+                            <br>
+                            WINNER!
+                            <br>
+                            <i class="fas reset-button fa-redo"></i>
                         </p>
                     </div>
                     
@@ -58,7 +60,7 @@
                     <p>
                         <i class="fas fa-volume-up audio-button mute-button" onclick="muteAudio()"></i>
                         <i class="fas fa-volume-mute audio-button enable-audio-button" onclick="enableAudio()"></i>
-                        <i class="fas reset-button fa-redo" id="reset" onclick="resetGame()"></i>
+                        <i class="fas reset-button fa-redo" onclick="resetGame()"></i>
                     </p>
                     <h3>High score</h3>
                     <p>Current: <span id="current-highscore">0</span></p>
