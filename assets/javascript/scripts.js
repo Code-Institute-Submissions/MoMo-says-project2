@@ -78,17 +78,19 @@ function checkUserSeq(i) {
 
 
 function displayWrong() {
+    document.querySelector('.wrong-restart-button').style.display = "block";
     var wrongAudio = document.getElementById("tarzan");
     console.log("Wrong");
-    $("#current-highscore").text(score+", wrong");
+    $("#current-highscore").text(score);
     localHighScore = Math.max(score, localHighScore);
     localStorage.setItem(localStorageName, localHighScore);
     console.log(localHighScore)
     $("#highest-highscore").text(localHighScore);
-    document.querySelector('.wrong-restart-button').style.display = "block";
+    
     userSeq = [];
     momoSeq = [];
     score = 0;
+
     if (!mute) {
         wrongAudio.play();
     };
@@ -170,7 +172,9 @@ function resetGamePanel() {
     momoSeq = [];
     score = 0;
     document.getElementById('current-highscore').innerText = "0";
-    document.querySelector('.game-panel').style.display = "none";
+    document.querySelector('.start-button').style.display = "none";
+    document.querySelector('.wrong-restart-button').style.display = "none";
+    document.querySelector('.winner-restart-button').style.display = "none";
     momoSequence();  
 };
 
