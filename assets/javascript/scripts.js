@@ -3,7 +3,7 @@
 /* variables */
 userSeq = [];
 momoSeq = [];
-const NUM_OF_SCORE = 20;
+const NUM_OF_SCORE = 10;
 var score = 0;
 var localStorageHighScore = "MoMoHighScore";
 
@@ -40,15 +40,8 @@ localTheme = localStorage.getItem(localStorageTheme) == null ? 0 :
                     };
 
 
-// let firstClickAudio = true
-
 $(document).ready(function () {
 $(".animal-panel").click(function() {
-    // if (firstClickAudio === true) {
-    //     firstClickAudio = false
-    //     momoSequence();
-    //     return
-    // };
     id = $(this).attr("id");
     activePanel(id);
     })
@@ -82,7 +75,7 @@ function activePanel(id) {
 };
 
 
-/* checking user seq against momo's */
+/* checking user seq against momo seq */
 function checkUserSeq(i) {
     for(var i = 0; i < userSeq.length; i++) {
         if(userSeq[i] != momoSeq[i]) {
@@ -92,7 +85,7 @@ function checkUserSeq(i) {
     return true
 };
 
-
+/* wrong function */
 function displayWrong() {
     document.querySelector('.wrong-restart-button').style.display = "block";
     var wrongAudio = document.getElementById("tarzan");
@@ -135,6 +128,7 @@ function getRandomNum() {
     momoSeq.push(random);
 };
 
+
 /* add active panel */
 function addClassSound(id) {
     $("#"+id).addClass("active-panel");
@@ -145,17 +139,16 @@ function addClassSound(id) {
 };
 
 
-/* mute button */
 let mute = false
 
-
+/* mute audio button */
 function muteAudio() {
     document.querySelector('.mute-button').style.display = "None";
     document.querySelector('.enable-audio-button').style.display = "Inline-block";
     mute = true   
 };
 
-
+/* enable audio button */
 function enableAudio() {
     document.querySelector('.enable-audio-button').style.display = "None";
     document.querySelector('.mute-button').style.display = "Inline-block";
@@ -172,6 +165,7 @@ function playSound(id) {
 };
 
 
+/* reset game */
 function resetGame() {
     userSeq = [];
     momoSeq = [];
@@ -181,6 +175,7 @@ function resetGame() {
 };
 
 
+/* reset game panel */
 function resetGamePanel() {
     userSeq = [];
     momoSeq = [];
@@ -193,6 +188,7 @@ function resetGamePanel() {
 };
 
 
+/* winner function */
 function gameWinner() {
     document.querySelector('.winner-restart-button').style.display = "block";
 };
