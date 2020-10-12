@@ -5,11 +5,13 @@ userSeq = [];
 momoSeq = [];
 const NUM_OF_SCORE = 20;
 var score = 0;
-var localStorageName = "MoMoSays";
+var localStorageHighScore = "MoMoHighScore";
 
-var localStorageName = "SavedTheme";
+var localStorageTheme = "MoMoTheme";
 
 var localHighScore;
+
+var localTheme;
 
 var boardSound = [
 "/assets/audio/elephantcub.mp3",
@@ -19,9 +21,14 @@ var boardSound = [
 ];
 
 
-localHighScore = localStorage.getItem(localStorageName) == null ? 0 :
-                 localStorage.getItem(localStorageName);
+localHighScore = localStorage.getItem(localStorageHighScore) == null ? 0 :
+                 localStorage.getItem(localStorageHighScore);
                  $("#highest-highscore").text(localHighScore);
+
+
+localTheme = localStorage.getItem(localStorageTheme) == null ? 0 :
+                 localStorage.getItem(localStorageTheme);
+                 $switch().();
 
 
 // let firstClickAudio = true
@@ -83,7 +90,7 @@ function displayWrong() {
     console.log("Wrong");
     $("#current-highscore").text(score);
     localHighScore = Math.max(score, localHighScore);
-    localStorage.setItem(localStorageName, localHighScore);
+    localStorage.setItem(localStorageHighScore, localHighScore);
     console.log(localHighScore)
     $("#highest-highscore").text(localHighScore);
     userSeq = [];
@@ -189,6 +196,7 @@ function switchSummer () {
     document.querySelector('body').style.backgroundColor = "#ddfee4";
     document.querySelector('.game-section-text').style.backgroundColor = "#b6fcc5";
     document.querySelector('.game-section-text').style.color = "#188163";
+    localStorage.setItem(localStorageTheme, "summer");
     var gameSectionText = document.querySelectorAll(".game-section-text");
     for (var i = 0; i < gameSectionText.length; i++) {
         gameSectionText[i].style.backgroundColor = "#b6fcc5";
@@ -209,6 +217,7 @@ function switchWinter () {
     document.getElementById("logo").src = "/assets/icons/white-logo.png";
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/winter.jpg)";
     document.querySelector('body').style.backgroundColor = "#eeeeee";
+    localStorage.setItem(localStorageTheme, "winter");
         var gameSectionText = document.querySelectorAll(".game-section-text");
     for (var i = 0; i < gameSectionText.length; i++) {
         gameSectionText[i].style.backgroundColor = "#eeeeee";
@@ -229,6 +238,7 @@ function switchGalaxy () {
     document.getElementById("logo").src = "/assets/icons/dark-logo.png";
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/galaxy.jpg)";
     document.querySelector('body').style.backgroundColor = "#2a1c21";
+    localStorage.setItem(localStorageTheme, "galaxy");
     var gameSectionText = document.querySelectorAll(".game-section-text");
     for (var i = 0; i < gameSectionText.length; i++) {
         gameSectionText[i].style.backgroundColor = "#201317";
