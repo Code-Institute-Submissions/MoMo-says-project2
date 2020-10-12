@@ -86,11 +86,9 @@ function displayWrong() {
     localStorage.setItem(localStorageName, localHighScore);
     console.log(localHighScore)
     $("#highest-highscore").text(localHighScore);
-    
     userSeq = [];
     momoSeq = [];
     score = 0;
-
     if (!mute) {
         wrongAudio.play();
     };
@@ -200,6 +198,11 @@ function switchSummer () {
     for (var i = 0; i < buttonList.length; i++) {
         buttonList[i].className = "theme-button theme-button-green";
     };
+    var gamePanel = document.querySelectorAll(".center-button");
+    for (var i = 0; i < gamePanel.length; i++) {
+        gamePanel[i].style.backgroundColor = "#b6fcc5";
+        gamePanel[i].style.color = "#188163";
+    };
 };
 
 function switchWinter () {
@@ -215,6 +218,11 @@ function switchWinter () {
     for (var i = 0; i < buttonList.length; i++) {
         buttonList[i].className = "theme-button theme-button-white";
     }; 
+    var gamePanel = document.querySelectorAll(".center-button");
+    for (var i = 0; i < gamePanel.length; i++) {
+        gamePanel[i].style.backgroundColor = "#eeeeee";
+        gamePanel[i].style.color = "#098b90";
+    };
 };
 
 function switchGalaxy () {
@@ -230,4 +238,9 @@ function switchGalaxy () {
     for (var i = 0; i < buttonList.length; i++) {
         buttonList[i].className = "theme-button theme-button-dark";
     }; 
+    var gamePanel = document.querySelectorAll(".center-button");
+    for (var i = 0; i < gamePanel.length; i++) {
+        gamePanel[i].style.backgroundColor = "#201317";
+        gamePanel[i].style.color = "#655379";
+    };
 };
