@@ -27,8 +27,16 @@ localHighScore = localStorage.getItem(localStorageHighScore) == null ? 0 :
 
 
 localTheme = localStorage.getItem(localStorageTheme) == null ? 0 :
-                 localStorage.getItem(localStorageTheme);
-                 $switch().();
+             localStorage.getItem(localStorageTheme);
+                    if(localStorageTheme === "summer") {
+                        switchSummer();
+                    };
+                    if(localStorageTheme === "winter") {
+                        switchWinter();
+                    };
+                    if(localStorageTheme === "galaxy") {
+                        switchGalaxy();
+                    };
 
 
 // let firstClickAudio = true
