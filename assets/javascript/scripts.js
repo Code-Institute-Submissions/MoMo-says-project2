@@ -61,7 +61,7 @@ function activePanel(id) {
 
     /* checking for winner */
     if(userSeq.length == NUM_OF_SCORE) {
-        alert("Congratulations, you win!");
+        gameWinner();
     };
 };
 
@@ -178,6 +178,10 @@ function resetGamePanel() {
     momoSequence();  
 };
 
+
+function gameWinner() {
+    document.querySelector('.winner-restart-button').style.display = "block";
+};
 
 
 /* theme butttons */
