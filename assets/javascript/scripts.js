@@ -28,13 +28,14 @@ localHighScore = localStorage.getItem(localStorageHighScore) == null ? 0 :
 
 localTheme = localStorage.getItem(localStorageTheme) == null ? 0 :
              localStorage.getItem(localStorageTheme);
-                    if(localStorageTheme === "summer") {
+             console.log(localTheme);
+                    if(localTheme === "summer") {
                         switchSummer();
                     };
-                    if(localStorageTheme === "winter") {
+                    if(localTheme === "winter") {
                         switchWinter();
                     };
-                    if(localStorageTheme === "galaxy") {
+                    if(localTheme === "galaxy") {
                         switchGalaxy();
                     };
 
