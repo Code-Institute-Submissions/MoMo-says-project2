@@ -6,18 +6,14 @@ momoSeq = [];
 const NUM_OF_SCORE = 10;
 var score = 0;
 var localStorageHighScore = "MoMoHighScore";
-
 var localStorageTheme = "MoMoTheme";
-
 var localHighScore;
-
 var localTheme;
-
 var boardSound = [
-"/assets/audio/elephantcub.mp3",
-"/assets/audio/pig.mp3",
-"/assets/audio/rattlesnake.mp3",
-"/assets/audio/sealion.mp3",
+    "/assets/audio/elephantcub.mp3",
+    "/assets/audio/pig.mp3",
+    "/assets/audio/rattlesnake.mp3",
+    "/assets/audio/sealion.mp3",
 ];
 
 
@@ -41,10 +37,10 @@ localTheme = localStorage.getItem(localStorageTheme) == null ? 0 :
 
 
 $(document).ready(function () {
-$(".animal-panel").click(function() {
-    id = $(this).attr("id");
-    activePanel(id);
-    })
+    $(".animal-panel").click(function() {
+        id = $(this).attr("id");
+        activePanel(id);
+    });
 });
 
 
@@ -79,7 +75,7 @@ function activePanel(id) {
 function checkUserSeq(i) {
     for(var i = 0; i < userSeq.length; i++) {
         if(userSeq[i] != momoSeq[i]) {
-        return false;
+            return false;
         };
     };
     return true
@@ -147,6 +143,7 @@ function muteAudio() {
     document.querySelector('.enable-audio-button').style.display = "Inline-block";
     mute = true   
 };
+
 
 /* enable audio button */
 function enableAudio() {
