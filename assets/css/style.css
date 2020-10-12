@@ -106,13 +106,10 @@ body {
     box-sizing: border-box;
 }
 
-.audio-button:hover, .reset-button:hover {
+.audio-button:hover, .reset-button:hover, .start-button:hover, .wrong-restart-button:hover, .winner-restart-button:hover {
     opacity: 0.7;
 }
 
-.reset-button-pressed {
-    background-color:#25161b
-}
 
 .mute-button {
     display: inline-block;
