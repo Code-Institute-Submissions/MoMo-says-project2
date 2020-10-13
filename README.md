@@ -98,7 +98,9 @@ and reopened the highest score is still visible.
 ![Header](.png)
 
 Feature 11 - index.html > Theme buttons: three separate buttons allows users to interact with the
-interface design of the webpage by switching between three diffrent colored themes.
+interface design of the webpage by switching between three diffrent colored themes. The current or
+recently pressed theme is locally stored so when the webpage is refreshed or closed and reopened the
+recent theme will be loaded.
 ![Header](.png)
 
 
