@@ -31,7 +31,10 @@ This is a school project with the main focus to display my skills in HTML, css a
 
 Wireframes for this project was made with [Balsamiq](https://balsamiq.com/).
 Before I started programming the webpage the version 1 wireframe was the general interface design aim.
-But a few hours into the development process I decided to make minor changes in the interface design to make the webpage more responsive and user friendly and thus created the version 2 wireframe.
+But a few hours into the development process I decided to make minor changes in the interface design
+to make the webpage more responsive and user friendly and thus created the version 2 wireframe.
+The buttons for lowering and raising the volume was switched to just a mute audio and enable audio button
+for the 2 wireframe version.
 
 Wireframe version 1
 ![Header](assets/wireframes/balsamiq-wireframe-v.1.png)
