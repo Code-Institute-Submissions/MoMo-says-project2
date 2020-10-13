@@ -206,12 +206,27 @@ Page > action taken > expected result > pass/fail
 
 Webpage when initially loaded
 ![Header](/assets/readme-images/index-image.png)
+
 Webpage with mouse over start button (with hover effect)
-![Header](/assets/readme-images/index-image-hover.png)
+![Header](/assets/readme-images/hover-button.png)
+
 Webpage with start button pressed
-![Header](/assets/readme-images/index-image-animal.png)
+![Header](/assets/readme-images/animal.png)
+
 Webpage with animal panel pressed
-![Header](/assets/readme-images/index-image-animal-pressed.png)
+![Header](/assets/readme-images/animal-pressed.png)
+
+Webpage with wrong animal panel pressed showing the wrong button
+![Header](/assets/readme-images/wrong.png)
+
+Webpage with a refreshed webpage and stored highest score
+![Header](/assets/readme-images/stored-highest-score.png)
+
+Webpage with winter theme
+![Header](/assets/readme-images/winter.png)
+
+Webpage with galaxy theme
+![Header](/assets/readme-images/galaxy.png)
 
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
