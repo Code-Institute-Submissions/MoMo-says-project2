@@ -3,7 +3,7 @@
 /* variables */
 userSeq = [];
 momoSeq = [];
-const NUM_OF_SCORE = 10;
+const NUM_OF_SCORE = 3;
 var score = 0;
 var localStorageHighScore = "MoMoHighScore";
 var localStorageTheme = "MoMoTheme";
@@ -191,6 +191,11 @@ function resetGamePanel() {
 /* winner function */
 function gameWinner() {
     document.querySelector('.winner-restart-button').style.display = "block";
+    var score = "10"
+    document.getElementById('current-highscore').textContent = score;
+    document.getElementById('highest-highscore').textContent = score;
+        localHighScore = Math.max(score, localHighScore);
+        localStorage.setItem(localStorageHighScore, localHighScore);
     var winAudio = document.getElementById("applause");
         if (!mute) {
         winAudio.play();
