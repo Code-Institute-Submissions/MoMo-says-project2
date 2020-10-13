@@ -189,7 +189,7 @@ Page > action taken > expected result > pass/fail
 8. index.html > clicked on the right animal panels and recived 10 points > winner button appears > pass
 9. index.html > clicked on the winner button > winner button appears and restarts the game > pass
 10. index.html > hover over mute audio button > opacity of button reduces by 0.3 > pass
-11. index.html > clicked on the mute audio button > fontawesome icon changes to crossed over megaphone and audio is disabled > pass
+11. index.html > clicked on the mute audio button > fontawesome icon changes to a megaphone with a cross and audio is disabled > pass
 12. index.html > clicked on the enable audio button > fontawesome icon changes to megaphone with sound waves and audio is enabled > pass
 13. index.html > hover over restart button > opacity of button reduces by 0.3 > pass
 14. index.html > clicked on the restart button > if start, wrong or winner button is visible it disappears and restarts the game > pass
