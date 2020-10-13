@@ -174,7 +174,33 @@ choosen theme.
 ## Testing
 
 ### Manual Testing
+Manual testing:
 
+ page > action taken > expected result > pass/fail
+
+
+
+1. index.html > clicked on start button > start button disappear and game starts > pass
+2. index.html > hover over start button > opacity reduces with 0.3 > pass
+3. index.html > clicked on start button > start button disappear and game starts > pass
+4. index.html > clicked on animal panel > animal panel audio plays with matching audio > pass
+5. index.html > clicked on correct animal panel > animal panel audio plays with matching audio and current score increments > pass
+6. index.html > clicked on wrong animal panel > Tarzan audio plays and "wrong" panel displays > pass
+7. 
+
+index.html", "Clicked on Portfolio", "Page scrolls to Portfolio section", "Passed".
+
+
+    Repeat all testing on other web browsers to make sure they are compatible with the code.
+    Tests have been made on: Mozilla Firefox, Google Chrome and Microsoft Edge.
+
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
 
 ### Code Testing
 - Jasmine testing
