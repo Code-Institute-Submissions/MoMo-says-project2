@@ -54,23 +54,50 @@ throughout the webpage, despite viewport width and theme changes.
 ![Header](.png)
 
 Feature 3 - index.html > "How to play": allows users to read clear instructions for
-how to play the game.
+how to play the game and how to win it.
 ![Header](.png)
 
-Feature 4 - index.html > MoMo game: allows the user to play a interactive memory
-game. 
+Feature 4 - index.html > MoMo game > start game button: panel with the text "START"
+and a font awesome icon of a play button. Allows the user to start the game by pressing
+the play button. After pressing the button it disappears and reveals the animal panels.
 ![Header](.png)
 
-Feature 5 - index.html > Mute and restart buttons: allows users to turn off and on the
-audio and restart the game at any time.
+Feature 5 - index.html > MoMo game: allows the user to play a interactive memory
+game with animsl images and animal audio when clicked. 
 ![Header](.png)
 
-Feature 6 - index.html > Highscore: allows users to see their own score, both
+Feature 6 - index.html > MoMo game > wrong game button: displays a panel with the text
+"WRONG", a restart button underneath and plays a Tarzan sound when wrong animal panel is clicked.
+When the panel is clicked it restarts the game and current score count. 
+![Header](.png)
+
+Feature 7 - index.html > MoMo game > winner game button: displays a panel with a fontawesome
+icon nof a trophy, the text "WINNER", a restart button and plays a Tarzan sound
+when wrong animal panel is clicked. When the panel is clicked it restarts the game and
+current score count. 
+![Header](.png)
+
+Feature 8 - index.html > Audio button: allows users to turn off and on the
+audio. First when the webpage is loaded the button shows that sound is enabled with a fontawesome
+icon picturing a megaphone with soundwaves on the right side, it also has a decreased opacity
+effect when hovered. When clicked the audio is disabled throughout the webpage and the fontawesome icon
+changes to a megaphone with a cross over it. When clicked again the fontawesome icon changes
+back to the original and enables audio again.
+![Header](.png)
+
+Feature 9 - index.html > Restart buttons: allows users to restart the game at any time. It also
+has a decreased opacity effect when hovered. When pressed it restarts the game and resets the current
+score to 0. If the start, wrong or winner panels are covering the animal panels they will disappear
+when the restart button is clicked.
+hovered
+![Header](.png)
+
+Feature 10 - index.html > Highscore: allows users to see their own score, both
 current and highest. The highest score is locally stored so when the webpage is closed
 and reopened the highest score is still visible.
 ![Header](.png)
 
-Feature 7 - index.html > Theme buttons: three separate buttons allows users to interact with the
+Feature 11 - index.html > Theme buttons: three separate buttons allows users to interact with the
 interface design of the webpage by switching between three diffrent colored themes.
 ![Header](.png)
 
