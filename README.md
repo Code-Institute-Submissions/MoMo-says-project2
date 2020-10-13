@@ -176,20 +176,30 @@ choosen theme.
 ### Manual Testing
 Manual testing:
 
- page > action taken > expected result > pass/fail
-
-
+The manual testing will be executed with the following method: 
+Page > action taken > expected result > pass/fail
 
 1. index.html > clicked on start button > start button disappear and game starts > pass
 2. index.html > hover over start button > opacity reduces with 0.3 > pass
 3. index.html > clicked on start button > start button disappear and game starts > pass
 4. index.html > clicked on animal panel > animal panel audio plays with matching audio > pass
 5. index.html > clicked on correct animal panel > animal panel audio plays with matching audio and current score increments > pass
-6. index.html > clicked on wrong animal panel > Tarzan audio plays and "wrong" panel displays > pass
-7. 
-
-index.html", "Clicked on Portfolio", "Page scrolls to Portfolio section", "Passed".
-
+6. index.html > clicked on wrong animal panel > Tarzan audio plays and "wrong" button displays > pass
+7. index.html > clicked on wrong button > wrong button disappears and game starts > pass
+8. index.html > clicked on the right animal panels and recived 10 points > winner button appears > pass
+9. index.html > clicked on the winner button > winner button appears and restarts the game > pass
+10. index.html > hover over mute audio button > opacity of button reduces by 0.3 > pass
+11. index.html > clicked on the mute audio button > fontawesome icon changes to crossed over megaphone and audio is disabled > pass
+12. index.html > clicked on the enable audio button > fontawesome icon changes to megaphone with sound waves and audio is enabled > pass
+13. index.html > hover over restart button > opacity of button reduces by 0.3 > pass
+14. index.html > clicked on the restart button > if start, wrong or winner button is visible it disappears and restarts the game > pass
+15. index.html > clicked winter theme button > change color of header, game-section-text and footer. Also change background image to a winter image > pass
+16. index.html > clicked galaxy theme button > change color of header, game-section-text and footer. Also change background image to a galaxy image > pass
+17. index.html > clicked summer theme button > change color of header, game-section-text and footer. Also change background image to a summer image > pass
+18. index.html > clicked winter theme button and refresh webpage > page loads with winter theme > pass 
+19. index.html > clicked galaxy theme button and refresh webpage > page loads with galaxy theme > pass 
+20. index.html > clicked summer theme button and refresh webpage > page loads with summer theme > pass 
+21. index.html > clicked correct animal panel 5 times in a row and refresh page > previous highest score is loaded in highest score > pass
 
     Repeat all testing on other web browsers to make sure they are compatible with the code.
     Tests have been made on: Mozilla Firefox, Google Chrome and Microsoft Edge.
