@@ -3,7 +3,7 @@
 /* variables */
 userSeq = [];
 momoSeq = [];
-const NUM_OF_SCORE = 2;
+const NUM_OF_SCORE = 10;
 var score = 0;
 var localStorageHighScore = "MoMoHighScore";
 var localStorageTheme = "MoMoTheme";
