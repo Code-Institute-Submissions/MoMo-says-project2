@@ -204,7 +204,9 @@ Page > action taken > expected result > pass/fail
     Repeat all testing on other web browsers to make sure they are compatible with the code.
     Tests have been made on: Mozilla Firefox, Google Chrome and Microsoft Edge.
 
-![Header](index-image.png)
+![Header](/assets/readme-images/index-image.png)
+![Header](/assets/readme-images/index-image-animal.png)
+![Header](/assets/readme-images/index-image-hover.png)
 
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
