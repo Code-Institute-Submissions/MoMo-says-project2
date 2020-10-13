@@ -1,6 +1,5 @@
 References:
 
-
 index0.html and index.html:
 - The container-fluid class was adapted from bootstrap to achive a responsive div:
 [getbootstrap.com](https://getbootstrap.com/docs/4.0/layout/overview/)
