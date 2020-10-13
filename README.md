@@ -105,6 +105,10 @@ recent theme will be loaded.
 
 
 ### Features Left to Implement
+An idea of more features to implement would be to make themes for the animal panels and there for switch
+the images of animals and change them to something else. Either cars, plants, other animals or popular 
+characters like pokémons, marvel characters or the powerpuff girls. Also change the audio to match the
+choosen theme. 
 
 ## Technologies Used
 
