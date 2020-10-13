@@ -144,6 +144,11 @@ choosen theme.
 
 #### Other Technologies
 
+
+- Hatchful
+    The project uses a logo made with the online tool hatchful. 
+    [hatchful](hatchful.shopify.com)
+
 - Favicon
     The project uses a favicon made with the favicon.ico generator tool to make the page more visually appealing.
     The image is a cropped version of the company logo.
@@ -155,18 +160,24 @@ choosen theme.
 
 - Balsamiq
     The project used the wireframe Balsamiq to create simple visual wireframes.
-    [Balsamiq](https://balsamiq.com/).
+    [Balsamiq](https://balsamiq.com/)
 
 - Lunapic
     The project used the online tool to lower opacity of the summer background image.
-    [lunapic.com]https://www11.lunapic.com/editor/
+    [lunapic.com](https://www11.lunapic.com/editor/)
+
+- Tinypng
+    The project used the online tool to decrese the size of the background images.
+    [tinypng.com](https://tinypng.com/)
 
 
 ## Testing
 
 ### Manual Testing
 
+
 ### Code Testing
+- Jasmine testing
 
 ### Bugs:
 Recived:
@@ -191,7 +202,6 @@ to recive #2a1c21 and then use that color as my default dark themed hex color.
 ## Credits
 
 ### Content
-Company Logo made with the online tool [hatchful](hatchful.shopify.com)
 
 Grid responsiveness from [Bootstrap](https://getbootstrap.com/docs/4.5/layout/grid/)
 
@@ -199,42 +209,41 @@ Markdown styling from Github guides for [headings](https://guides.github.com/fea
 
 Code about playing audio onclick was adapted from [Arunkumar via stackoverflow](https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click)
 
-Code about cloning in javascript was adapted from [Luka Kvavilashvili via stackoverflow](https://stackoverflow.com/questions/40822531/jquery-audio-how-to-allow-overlapping-sounds)
+<!-- Code about cloning in javascript was adapted from [Luka Kvavilashvili via stackoverflow](https://stackoverflow.com/questions/40822531/jquery-audio-how-to-allow-overlapping-sounds) -->
 
 
 ### Media
 
 #### Images: 
 
-MoMo logo image and MoMo favicon made with [hatchful](https://hatchful.shopify.com)
+- Image of pig is created by Kimberly Lake and retrived via [unsplashed](https://unsplash.com/photos/VBmRbvMrb7A), thank you Kimberly!
 
-Image of pig is created by Kimberly Lake and retrived via [unsplashed](https://unsplash.com/photos/VBmRbvMrb7A), thank you Kimberly!
+- Image of sealion is created by Duncan Sanchez and retrived via [unsplashed](https://unsplash.com/photos/l6aAMUH_oW8), thank you Duncan!
 
-Image of sealion is created by Duncan Sanchez and retrived via [unsplashed](https://unsplash.com/photos/l6aAMUH_oW8), thank you Duncan!
+- Image of rattlesnake is created by NOAA and retrived via [unsplashed](https://unsplash.com/photos/VrQRpV4c9jY), thank you NOAA!
 
-Image of rattlesnake is created by NOAA and retrived via [unsplashed](https://unsplash.com/photos/VrQRpV4c9jY), thank you NOAA!
+- Image of elephant is created by Maurits Bausenhart and retrived via [unsplashed](https://unsplash.com/photos/Ay67yB6vmF8), thank you Maurits!
 
-Image of elephant is created by Maurits Bausenhart and retrived via [unsplashed](https://unsplash.com/photos/Ay67yB6vmF8), thank you Maurits!
+- Summer background image is created by Claudel Rheaultis and retrived via [unsplashed](https://unsplash.com/photos/ZVbv1akA-l4), thank you Claudel!
 
-Summer background image is created by Claudel Rheaultis and retrived via [unsplashed](https://unsplash.com/photos/ZVbv1akA-l4), thank you Claudel!
+- Winter background image is created by Dominik Dombrowski and retrived via [unsplashed](https://unsplash.com/photos/KNUp-YBwBSE), thank you Dominik!
 
-Winter background image is created by Dominik Dombrowski and retrived via [unsplashed](https://unsplash.com/photos/KNUp-YBwBSE), thank you Dominik!
-
-Galaxy background image is created by Jeremy Thomas and retrived via [unsplashed](https://unsplash.com/photos/4dpAqfTbvKA), thank you Jeremy!
+- Galaxy background image is created by Jeremy Thomas and retrived via [unsplashed](https://unsplash.com/photos/4dpAqfTbvKA), thank you Jeremy!
 
 
 #### Audio
 
-Audio of pig is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/snort-466308/)
+- Audio of pig is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/snort-466308/)
 
-Audio of sealion is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/sealion-466230/)
+- Audio of sealion is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/sealion-466230/)
 
-Audio of rattlesnake is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/rattlesnake4-466284/snake/)
+- Audio of rattlesnake is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/rattlesnake4-466284/snake/)
 
-Audio of elephant is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/elephantcub-466266/)
+- Audio of elephant is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/elephantcub-466266/)
 
-Audio of Tarzan is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/tarzan-428614/)
+- Audio of Tarzan is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/tarzan-428614/)
 
+- Audio of applause is created by Partners In Rhyme and retrived via [freesoundeffects.com](https://www.freesoundeffects.com/free-track/applause4-426809/)
 
 
 ### Acknowledgements
