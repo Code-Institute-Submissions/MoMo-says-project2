@@ -51,3 +51,15 @@ describe("Game", function() {
         });
     });
 });
+
+
+/* userSeq test */
+describe("Game", function() {
+    describe("increment MomoSeq test", function() {
+        it("should incement by 1 when played", function() {
+            momoSequence();
+            expect(momoSeq).not.toBe([ ]);
+        });
+    });
+});
+
