@@ -206,67 +206,79 @@ function gameWinner() {
 
 /* theme butttons */
 function switchSummer () {
-    document.getElementById('logo').src = '/assets/icons/green-logo.png';
-    document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/summer.png)";
-    document.querySelector('body').style.backgroundColor = "#ddfee4";
-    document.querySelector('.game-section-text').style.backgroundColor = "#b6fcc5";
-    document.querySelector('.game-section-text').style.color = "#188163";
-    localStorage.setItem(localStorageTheme, "summer");
-    var gameSectionText = document.querySelectorAll(".game-section-text");
-    for (var i = 0; i < gameSectionText.length; i++) {
-        gameSectionText[i].style.backgroundColor = "#b6fcc5";
-        gameSectionText[i].style.color = "#188163";
-    };
-    var buttonList = document.querySelectorAll(".theme-button");
-    for (var i = 0; i < buttonList.length; i++) {
-        buttonList[i].className = "theme-button theme-button-green";
-    };
-    var gamePanel = document.querySelectorAll(".center-button");
-    for (var i = 0; i < gamePanel.length; i++) {
-        gamePanel[i].style.backgroundColor = "#b6fcc5";
-        gamePanel[i].style.color = "#188163";
+    localTheme = "summer"
+    var logoElement = document.getElementById("logo")
+    if(logoElement) {
+        logoElement.src = "/assets/icons/green-logo.png";
+        document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/summer.png)";
+        document.querySelector('body').style.backgroundColor = "#ddfee4";
+        document.querySelector('.game-section-text').style.backgroundColor = "#b6fcc5";
+        document.querySelector('.game-section-text').style.color = "#188163";
+        localStorage.setItem(localStorageTheme, "summer");
+        var gameSectionText = document.querySelectorAll(".game-section-text");
+        for (var i = 0; i < gameSectionText.length; i++) {
+            gameSectionText[i].style.backgroundColor = "#b6fcc5";
+            gameSectionText[i].style.color = "#188163";
+        };
+        var buttonList = document.querySelectorAll(".theme-button");
+        for (var i = 0; i < buttonList.length; i++) {
+            buttonList[i].className = "theme-button theme-button-green";
+        };
+        var gamePanel = document.querySelectorAll(".center-button");
+        for (var i = 0; i < gamePanel.length; i++) {
+            gamePanel[i].style.backgroundColor = "#b6fcc5";
+            gamePanel[i].style.color = "#188163";
+        };
     };
 };
 
 function switchWinter () {
-    
-    document.getElementById("logo").src = "/assets/icons/white-logo.png";
-    document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/winter.jpg)";
-    document.querySelector('body').style.backgroundColor = "#eeeeee";
-    localStorage.setItem(localStorageTheme, "winter");
+    localTheme = "winter"
+    var logoElement = document.getElementById("logo")
+    if(logoElement) {
+        logoElement.src = "/assets/icons/white-logo.png";
+        document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/winter.jpg)";
+        document.querySelector('body').style.backgroundColor = "#eeeeee";
+        localStorage.setItem(localStorageTheme, localTheme);
         var gameSectionText = document.querySelectorAll(".game-section-text");
-    for (var i = 0; i < gameSectionText.length; i++) {
-        gameSectionText[i].style.backgroundColor = "#eeeeee";
-        gameSectionText[i].style.color = "#098b90";
-    }; 
-    var buttonList = document.querySelectorAll(".theme-button");
-    for (var i = 0; i < buttonList.length; i++) {
-        buttonList[i].className = "theme-button theme-button-white";
-    }; 
-    var gamePanel = document.querySelectorAll(".center-button");
-    for (var i = 0; i < gamePanel.length; i++) {
-        gamePanel[i].style.backgroundColor = "#eeeeee";
-        gamePanel[i].style.color = "#098b90";
+        for (var i = 0; i < gameSectionText.length; i++) {
+            gameSectionText[i].style.backgroundColor = "#eeeeee";
+            gameSectionText[i].style.color = "#098b90";
+        }; 
+        var buttonList = document.querySelectorAll(".theme-button");
+        for (var i = 0; i < buttonList.length; i++) {
+            buttonList[i].className = "theme-button theme-button-white";
+        }; 
+        var gamePanel = document.querySelectorAll(".center-button");
+        for (var i = 0; i < gamePanel.length; i++) {
+            gamePanel[i].style.backgroundColor = "#eeeeee";
+            gamePanel[i].style.color = "#098b90";
+        };
     };
 };
 
+
 function switchGalaxy () {
-    document.getElementById("logo").src = "/assets/icons/dark-logo.png";
-    document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/galaxy.jpg)";
-    document.querySelector('body').style.backgroundColor = "#2a1c21";
-    localStorage.setItem(localStorageTheme, "galaxy");
-    var gameSectionText = document.querySelectorAll(".game-section-text");
-    for (var i = 0; i < gameSectionText.length; i++) {
-        gameSectionText[i].style.backgroundColor = "#201317";
-        gameSectionText[i].style.color = "#655379";
-    }; 
-    var buttonList = document.querySelectorAll(".theme-button");
-    for (var i = 0; i < buttonList.length; i++) {
-        buttonList[i].className = "theme-button theme-button-dark";
-    }; 
-    var gamePanel = document.querySelectorAll(".center-button");
-    for (var i = 0; i < gamePanel.length; i++) {
-        gamePanel[i].style.backgroundColor = "#201317";
-        gamePanel[i].style.color = "#655379";
+    localTheme = "galaxy"
+    var logoElement = document.getElementById("logo")
+    if(logoElement) {
+        logoElement.src = "/assets/icons/dark-logo.png";
+        document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/galaxy.jpg)";
+        document.querySelector('body').style.backgroundColor = "#2a1c21";
+        localStorage.setItem(localStorageTheme, "galaxy");
+        var gameSectionText = document.querySelectorAll(".game-section-text");
+        for (var i = 0; i < gameSectionText.length; i++) {
+            gameSectionText[i].style.backgroundColor = "#201317";
+            gameSectionText[i].style.color = "#655379";
+        }; 
+        var buttonList = document.querySelectorAll(".theme-button");
+        for (var i = 0; i < buttonList.length; i++) {
+            buttonList[i].className = "theme-button theme-button-dark";
+        }; 
+        var gamePanel = document.querySelectorAll(".center-button");
+        for (var i = 0; i < gamePanel.length; i++) {
+            gamePanel[i].style.backgroundColor = "#201317";
+            gamePanel[i].style.color = "#655379";
+        };
     };
 };
