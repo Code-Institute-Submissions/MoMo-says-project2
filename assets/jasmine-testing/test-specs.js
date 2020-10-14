@@ -31,3 +31,14 @@ describe("Game", function() {
 });
 
 
+/* score test */
+describe("Game", function() {
+    describe("score test", function() {
+        it("should show 0", function() {
+            resetGame();
+            expect(score).toBe(0);
+        });
+    });
+});
+
+

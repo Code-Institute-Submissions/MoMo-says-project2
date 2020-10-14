@@ -163,16 +163,32 @@ function playSound(id) {
 };
 
 
+    // localTheme = "galaxy"
+    // var logoElement = document.getElementById("logo")
+    // if(logoElement) {
+    //     logoElement.src = "/assets/icons/dark-logo.png";
+
+    // localStyle = "galaxy"
+    // var logoStyle = document.getElementById('current-highscore')
+    // if(logoStyle) {
+    //     logoStyle.innerText = "0";
+
+
 /* reset game */
 function resetGame() {
     userSeq = [];
     momoSeq = [];
     score = 0;
-    document.getElementById('current-highscore').innerText = "0";
-    document.querySelector('.start-button').style.display = "none";
-    document.querySelector('.wrong-restart-button').style.display = "none";
-    document.querySelector('.winner-restart-button').style.display = "none";
-    momoSequence();  
+    localStyle = "0"
+    var logoStyle = document.getElementById('current-highscore')
+    if(logoStyle) {
+        logoStyle.innerText = "0";
+        document.getElementById('current-highscore').innerText = "0";
+        document.querySelector('.start-button').style.display = "none";
+        document.querySelector('.wrong-restart-button').style.display = "none";
+        document.querySelector('.winner-restart-button').style.display = "none";
+        momoSequence();  
+    };
 };
 
 
