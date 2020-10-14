@@ -24,24 +24,25 @@ localHighScore = localStorage.getItem(localStorageHighScore) == null ? 0 :
 
 localTheme = localStorage.getItem(localStorageTheme) == null ? 0 :
              localStorage.getItem(localStorageTheme);
-             console.log(localTheme);
-                    if(localTheme === "summer") {
-                        switchSummer();
-                    };
-                    if(localTheme === "winter") {
-                        switchWinter();
-                    };
-                    if(localTheme === "galaxy") {
-                        switchGalaxy();
-                    };
-
-
-$(document).ready(function () {
+console.log(localTheme);
+function ready() {
+    if(localTheme === "summer") {
+        switchSummer();
+    };
+    if(localTheme === "winter") {
+    switchWinter();
+    };
+    if(localTheme === "galaxy") {
+        switchGalaxy();
+    };
     $(".animal-panel").click(function() {
         id = $(this).attr("id");
         activePanel(id);
     });
-});
+};
+
+
+
 
 
 /* user pad listener */
@@ -228,6 +229,7 @@ function switchSummer () {
 };
 
 function switchWinter () {
+    
     document.getElementById("logo").src = "/assets/icons/white-logo.png";
     document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/winter.jpg)";
     document.querySelector('body').style.backgroundColor = "#eeeeee";
