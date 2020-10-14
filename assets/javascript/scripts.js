@@ -195,8 +195,8 @@ function gameWinner() {
     var score = "10"
     document.getElementById('current-highscore').textContent = score;
     document.getElementById('highest-highscore').textContent = score;
-        localHighScore = Math.max(score, localHighScore);
-        localStorage.setItem(localStorageHighScore, localHighScore);
+    localHighScore = Math.max(score, localHighScore);
+    localStorage.setItem(localStorageHighScore, localHighScore);
     var winAudio = document.getElementById("applause");
         if (!mute) {
         winAudio.play();
