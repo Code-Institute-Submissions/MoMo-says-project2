@@ -82,6 +82,7 @@ function checkUserSeq(i) {
     return true
 };
 
+
 /* wrong function */
 function displayWrong() {
     document.querySelector('.wrong-restart-button').style.display = "block";

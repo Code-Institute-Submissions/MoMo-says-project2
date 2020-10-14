@@ -41,4 +41,13 @@ describe("Game", function() {
     });
 });
 
-
+userSeq
+/* userSeq test */
+describe("Game", function() {
+    describe("reset userSeq test", function() {
+        it("should show 0 when pushed reset", function() {
+            resetGame();
+            expect(userSeq).toEqual([ ]);
+        });
+    });
+});
