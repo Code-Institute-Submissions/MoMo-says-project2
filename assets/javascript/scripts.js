@@ -163,17 +163,6 @@ function playSound(id) {
 };
 
 
-    // localTheme = "galaxy"
-    // var logoElement = document.getElementById("logo")
-    // if(logoElement) {
-    //     logoElement.src = "/assets/icons/dark-logo.png";
-
-    // localStyle = "galaxy"
-    // var logoStyle = document.getElementById('current-highscore')
-    // if(logoStyle) {
-    //     logoStyle.innerText = "0";
-
-
 /* reset game */
 function resetGame() {
     userSeq = [];
