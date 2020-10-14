@@ -15,5 +15,3 @@ scripts.js:
 
 - On line 8-11, 20-25, 91-92 and 198-99  the code for local storage was adapted from:
  [phaserjs.com](https://phaserjs.com/saving-high-score)
-
-test test
