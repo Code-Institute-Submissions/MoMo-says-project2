@@ -180,9 +180,9 @@ function resetGame() {
     momoSeq = [];
     score = 0;
     localStyle = "0"
-    var logoStyle = document.getElementById('current-highscore')
-    if(logoStyle) {
-        logoStyle.innerText = "0";
+    var localStyle = document.getElementById('current-highscore')
+    if(localStyle) {
+        localStyle.innerText = "0";
         document.getElementById('current-highscore').innerText = "0";
         document.querySelector('.start-button').style.display = "none";
         document.querySelector('.wrong-restart-button').style.display = "none";
