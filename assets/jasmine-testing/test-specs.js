@@ -31,7 +31,7 @@ describe("Game", function() {
 });
 
 
-/* score test */
+/* reset score test */
 describe("Game", function() {
     describe("reset score test", function() {
         it("should show 0 when pushed reset", function() {
