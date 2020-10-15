@@ -30,7 +30,7 @@ function ready() {
         switchSummer();
     };
     if(localTheme === "winter") {
-    switchWinter();
+        switchWinter();
     };
     if(localTheme === "galaxy") {
         switchGalaxy();
@@ -91,7 +91,7 @@ function displayWrong() {
     $("#current-highscore").text(score);
     localHighScore = Math.max(score, localHighScore);
     localStorage.setItem(localStorageHighScore, localHighScore);
-    console.log(localHighScore)
+    console.log(localHighScore);
     $("#highest-highscore").text(localHighScore);
     userSeq = [];
     momoSeq = [];
@@ -170,7 +170,7 @@ function resetGame() {
     momoSeq = [];
     score = 0;
     localStyle = "0"
-    var localStyle = document.getElementById('current-highscore')
+    var localStyle = document.getElementById('current-highscore');
     if(localStyle) {
         localStyle.innerText = "0";
         document.getElementById('current-highscore').innerText = "0";
@@ -198,13 +198,13 @@ function resetGamePanel() {
 /* winner function */
 function gameWinner() {
     document.querySelector('.winner-restart-button').style.display = "block";
-    var score = "10"
+    var score = "10";
     document.getElementById('current-highscore').textContent = score;
     document.getElementById('highest-highscore').textContent = score;
     localHighScore = Math.max(score, localHighScore);
     localStorage.setItem(localStorageHighScore, localHighScore);
     var winAudio = document.getElementById("applause");
-        if (!mute) {
+    if (!mute) {
         winAudio.play();
     };
 };
@@ -212,9 +212,9 @@ function gameWinner() {
 
 /* theme butttons */
 function switchSummer () {
-    localTheme = "summer"
-    var logoElement = document.getElementById("logo")
-    if(logoElement) {
+    localTheme = "summer";
+    var logoElement = document.getElementById("logo");
+    if (logoElement) {
         logoElement.src = "/assets/icons/green-logo.png";
         document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/summer.png)";
         document.querySelector('body').style.backgroundColor = "#ddfee4";
@@ -265,9 +265,9 @@ function switchWinter () {
 
 
 function switchGalaxy () {
-    localTheme = "galaxy"
-    var logoElement = document.getElementById("logo")
-    if(logoElement) {
+    localTheme = "galaxy";
+    var logoElement = document.getElementById("logo");
+    if (logoElement) {
         logoElement.src = "/assets/icons/dark-logo.png";
         document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/galaxy.jpg)";
         document.querySelector('body').style.backgroundColor = "#2a1c21";
