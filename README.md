@@ -266,13 +266,34 @@ to recive #2a1c21 and then use that color as my default dark themed hex color.
 
 ### Content
 
-Grid responsiveness from [Bootstrap](https://getbootstrap.com/docs/4.5/layout/grid/)
+index.html:
+- Grid responsiveness from bootstrap
+    [Bootstrap](https://getbootstrap.com/docs/4.5/layout/grid/)
 
-Markdown styling from Github guides for [headings](https://guides.github.com/features/mastering-markdown/)
+- The container-fluid class was adapted from bootstrap to achive a responsive div:
+    [getbootstrap.com](https://getbootstrap.com/docs/4.0/layout/overview/)
 
-Code about playing audio onclick was adapted from [Arunkumar via stackoverflow](https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click)
 
-<!-- Code about cloning in javascript was adapted from [Luka Kvavilashvili via stackoverflow](https://stackoverflow.com/questions/40822531/jquery-audio-how-to-allow-overlapping-sounds) -->
+style.css:
+- Media queries, flex order. The code for the wrapper and flex-order was adapted from:
+    [css-tricks.com](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)
+
+
+scripts.js:
+- The Simon says code for the javascript file was adapted from Root Tech via youtube:
+    [Video #1](https://www.youtube.com/watch?v=9MTR3V2XpRI)
+    [Video #2](https://www.youtube.com/watch?v=iXscqYgZ7HQ&t=9s)
+
+- On line 8-11, 20-26, 92-93, 205, 223, 248 and 274 the code for local storage was adapted from:
+    [phaserjs.com](https://phaserjs.com/saving-high-score)
+
+- Code about playing audio onclick was adapted from
+    [Arunkumar via stackoverflow](https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click)
+
+
+readme.md:
+- Markdown styling from Github guides
+    [github.com](https://guides.github.com/features/mastering-markdown/)
 
 
 ### Media
