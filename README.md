@@ -166,7 +166,7 @@ choosen theme.
 
 - Favicon   
     The project uses a favicon made with the favicon.ico generator tool to make the page more visually appealing.
-    The image is a cropped version of the company logo.
+    The image is a cropped version of the webpage logo.
     [favicon-generator.org](https://www.favicon-generator.org/)
 
 - Audiotrimmer  
