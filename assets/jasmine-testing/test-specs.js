@@ -41,8 +41,8 @@ describe("Game", function() {
     });
 });
 
-userSeq
-/* userSeq test */
+
+/* userSeq reset test */
 describe("Game", function() {
     describe("reset userSeq test", function() {
         it("should show 0 when pushed reset", function() {
@@ -53,7 +53,7 @@ describe("Game", function() {
 });
 
 
-/* userSeq test */
+/* userSeq increment test */
 describe("Game", function() {
     describe("increment MomoSeq test", function() {
         it("should incement by 1 when played", function() {
