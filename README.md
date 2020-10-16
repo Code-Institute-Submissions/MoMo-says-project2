@@ -158,11 +158,11 @@ choosen theme.
     [w3schools.com](https://www.w3schools.com/colors/colors_picker.asp)
 
 
-#### Other Technologies
+### Other Technologies
 
 - Hatchful  
     The project uses a logo made with the online tool hatchful. 
-    [hatchful](hatchful.shopify.com)
+    [hatchful](https://www.hatchful.shopify.com)
 
 - Favicon   
     The project uses a favicon made with the favicon.ico generator tool to make the page more visually appealing.
@@ -303,7 +303,7 @@ scripts.js:
     [Video #1](https://www.youtube.com/watch?v=9MTR3V2XpRI)
     [Video #2](https://www.youtube.com/watch?v=iXscqYgZ7HQ&t=9s)
 
-- On line 8-11, 20-26, 92-93, 205, 223, 248 and 274 the code for local storage was adapted from:
+- On line 8-11, 20-26 and 92-93 the code for local storage was adapted from:
     [phaserjs.com](https://phaserjs.com/saving-high-score)
 
 - Code about playing audio onclick was adapted from

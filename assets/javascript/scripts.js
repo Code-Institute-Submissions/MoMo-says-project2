@@ -16,7 +16,7 @@ var boardSound = [
     "/assets/audio/sealion.mp3",
 ];
 
-
+// the code for local storage was adapted from: [phaserjs.com](https://phaserjs.com/saving-high-score)
 localHighScore = localStorage.getItem(localStorageHighScore) == null ? 0 :
                  localStorage.getItem(localStorageHighScore);
                  $("#highest-highscore").text(localHighScore);
@@ -24,6 +24,7 @@ localHighScore = localStorage.getItem(localStorageHighScore) == null ? 0 :
 
 localTheme = localStorage.getItem(localStorageTheme) == null ? 0 :
              localStorage.getItem(localStorageTheme);
+
 console.log(localTheme);
 function ready() {
     if(localTheme === "summer") {
@@ -83,6 +84,7 @@ function checkUserSeq(i) {
 /* wrong function */
 function displayWrong() {
     document.querySelector('.wrong-restart-button').style.display = "block";
+    // code about playing audio onclick was adapted from Arunkumar via stackoverflow https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
     var wrongAudio = document.getElementById("tarzan");
     console.log("Wrong");
     $("#current-highscore").text(score);
@@ -152,9 +154,10 @@ function enableAudio() {
 }
 
 
-/* play board sound */ 
+/* play board sound */
 function playSound(id) {
     if (!mute) {
+        // code about playing audio onclick was adapted from Arunkumar via stackoverflow https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
         var sound = new Audio(boardSound[id]);
         sound.play();
     }
