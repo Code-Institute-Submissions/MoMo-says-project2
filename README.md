@@ -309,7 +309,18 @@ Screenshot of jasmine test
 
 
 ## Deployment
--
+The project was deployed to gitpages on the 15/10-2020.
+
+How it was deployed:   
+
+Accessed setting from github account, clicked the MoMo-says-project2 repository and then clicked 'settings'.
+Scrolled down to GitHub Pages and in 'Source' clicked to option 'master' and then pressed the 'Save' button.
+After a couple of minutes the project was uploaded to gitpages and responsive.
+        
+Since the gitpage is rooted from the repositorys master branch there is no difference between the gitpage and github
+repository, exept for a minor delay of a few minutes. To run the project locally one needs to clone the repository
+and open it in a web browser. Unfortunatly, the google maps in find-us.html might not work due to the API key that
+needs to be correlated with the web address.
 
 ## Credits
 
