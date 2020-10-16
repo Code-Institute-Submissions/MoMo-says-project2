@@ -333,12 +333,11 @@ scripts.js:
     [Video #1](https://www.youtube.com/watch?v=9MTR3V2XpRI)
     [Video #2](https://www.youtube.com/watch?v=iXscqYgZ7HQ&t=9s)
 
-- On line 8-11, 20-26 and 92-93 the code for local storage was adapted from:
+- On line 10-13, 22-28 and 92-93 the code for local storage was adapted from:
     [phaserjs.com](https://phaserjs.com/saving-high-score)
 
 - Code about playing audio onclick was adapted from
     [Arunkumar via stackoverflow](https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click)
-
 
 readme.md:
 - Markdown styling from Github guides

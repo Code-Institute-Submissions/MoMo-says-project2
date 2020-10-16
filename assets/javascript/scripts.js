@@ -1,5 +1,7 @@
 /* Momo says code */ 
 
+// The Simon says code for the javascript file was adapted from Root Tech via youtube, links in README.md
+
 /* variables */
 userSeq = [];
 momoSeq = [];
