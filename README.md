@@ -247,6 +247,7 @@ Webpage with winter theme
 Webpage with galaxy theme   
 ![Header](/assets/readme-images/galaxy.png)
 
+
 ### W3C vaildator
 
 The project has passed the W3C validator test on the 16/10-2020, 16:32.
@@ -275,8 +276,23 @@ test on the 16/10-2020, 16:32.
 
 
 ### Automated Testing
-- Jasmine   
+Jasmine   
     Six automated tests done with jasmine in the jasmine-test.html file.
+- Test 1: Test switchWinter function by checking if the local theme is set to "winter".
+
+- Test 2: Test switchGalaxy function by checking if the local theme is set to "galaxy".
+
+- Test 3: Test switchSummer function by checking if the local theme is set to "summer".
+
+- Test 4: Test resetGame function by checking if the score is set to 0.
+
+- Test 5: Test resetGame function by checking if the user sequence is set to 0.
+
+- Test 6: Test momoSequence function by checking if the momoSeq is empty.
+
+
+Screenshot of jasmine test  
+![Header](/assets/readme-images/jasmine-test.png)
 
 ### Bugs:
 
