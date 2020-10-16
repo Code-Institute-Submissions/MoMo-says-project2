@@ -25,7 +25,6 @@ localHighScore = localStorage.getItem(localStorageHighScore) == null ? 0 :
 localTheme = localStorage.getItem(localStorageTheme) == null ? 0 :
              localStorage.getItem(localStorageTheme);
 
-console.log(localTheme);
 function ready() {
     if(localTheme === "summer") {
         switchSummer();
