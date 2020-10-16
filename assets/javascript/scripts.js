@@ -168,6 +168,7 @@ function resetGame() {
     userSeq = [];
     momoSeq = [];
     score = 0;
+    id;
     localStyle = "0";
     var localStyle = document.getElementById('current-highscore');
     if(localStyle) {
@@ -198,6 +199,7 @@ function resetGamePanel() {
 function gameWinner() {
     document.querySelector('.winner-restart-button').style.display = "block";
     var score = "10";
+    console.log("Winner!")
     document.getElementById('current-highscore').textContent = score;
     document.getElementById('highest-highscore').textContent = score;
     localHighScore = Math.max(score, localHighScore);
