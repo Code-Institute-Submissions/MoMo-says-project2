@@ -10,10 +10,10 @@ var localStorageTheme = "MoMoTheme";
 var localHighScore;
 var localTheme;
 var boardSound = [
-    "/assets/audio/elephantcub.mp3",
-    "/assets/audio/pig.mp3",
-    "/assets/audio/rattlesnake.mp3",
-    "/assets/audio/sealion.mp3",
+    "assets/audio/elephantcub.mp3",
+    "assets/audio/pig.mp3",
+    "assets/audio/rattlesnake.mp3",
+    "assets/audio/sealion.mp3",
 ];
 
 // the code for local storage was adapted from: [phaserjs.com](https://phaserjs.com/saving-high-score)
@@ -215,8 +215,8 @@ function switchSummer () {
     localTheme = "summer";
     var logoElement = document.getElementById("logo");
     if (logoElement) {
-        logoElement.src = "/assets/icons/green-logo.png";
-        document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/summer.png)";
+        logoElement.src = "assets/icons/green-logo.png";
+        document.querySelector('.game-section').style.backgroundImage ="url(assets/background-images/summer.png)";
         document.querySelector('body').style.backgroundColor = "#ddfee4";
         document.querySelector('.game-section-text').style.backgroundColor = "#b6fcc5";
         document.querySelector('.game-section-text').style.color = "#188163";
@@ -242,8 +242,8 @@ function switchWinter () {
     localTheme = "winter";
     var logoElement = document.getElementById("logo");
     if(logoElement) {
-        logoElement.src = "/assets/icons/white-logo.png";
-        document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/winter.jpg)";
+        logoElement.src = "assets/icons/white-logo.png";
+        document.querySelector('.game-section').style.backgroundImage ="url(assets/background-images/winter.jpg)";
         document.querySelector('body').style.backgroundColor = "#eeeeee";
         localStorage.setItem(localStorageTheme, localTheme);
         var gameSectionText = document.querySelectorAll(".game-section-text");
@@ -268,8 +268,8 @@ function switchGalaxy () {
     localTheme = "galaxy";
     var logoElement = document.getElementById("logo");
     if (logoElement) {
-        logoElement.src = "/assets/icons/dark-logo.png";
-        document.querySelector('.game-section').style.backgroundImage ="url(/assets/background-images/galaxy.jpg)";
+        logoElement.src = "assets/icons/dark-logo.png";
+        document.querySelector('.game-section').style.backgroundImage ="url(assets/background-images/galaxy.jpg)";
         document.querySelector('body').style.backgroundColor = "#2a1c21";
         localStorage.setItem(localStorageTheme, "galaxy");
         var gameSectionText = document.querySelectorAll(".game-section-text");
