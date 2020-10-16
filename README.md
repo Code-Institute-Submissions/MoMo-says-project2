@@ -249,7 +249,7 @@ Webpage with galaxy theme
 
 ### W3C vaildator
 
-The project has passed the W3C validator test.
+The project has passed the W3C validator test on the 16/10-2020, 16:32.
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -259,7 +259,20 @@ The project has passed the W3C validator test.
 </p>
 
 ### w3 validator
--
+
+The project recived two warning with the W3 validator test on the 16/10-2020, 16:36.
+The warnings stated that the header and footer scetion lacked headings. 
+Since the header only contains a static image and the footer contains three clickable
+buttons there is no need for headings explaining these elements due to them being intuitive
+enough for use.
+
+[validator.w3.org](https://validator.w3.org/nu/?doc=https%3A%2F%2Fquelleqim.github.io%2FMoMo-says-project2%2F)
+
+### jshint
+test on the 16/10-2020, 16:32.
+
+[jshint.com](https://jshint.com/)
+
 
 ### Automated Testing
 - Jasmine   
