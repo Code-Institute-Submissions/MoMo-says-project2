@@ -249,6 +249,7 @@ Webpage with galaxy theme
 
 ### W3C vaildator
 
+The project has passed the W3C validator test.
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"

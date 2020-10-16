@@ -168,7 +168,7 @@ function resetGame() {
     userSeq = [];
     momoSeq = [];
     score = 0;
-    id;
+    // id;
     localStyle = "0";
     var localStyle = document.getElementById('current-highscore');
     if(localStyle) {
