@@ -162,7 +162,7 @@ choosen theme.
 
 - Hatchful  
     The project uses a logo made with the online tool hatchful. 
-    [hatchful](https://www.hatchful.shopify.com)
+    [hatchful](https://hatchful.shopify.com/)
 
 - Favicon   
     The project uses a favicon made with the favicon.ico generator tool to make the page more visually appealing.
@@ -294,7 +294,7 @@ Jasmine
 Screenshot of jasmine test  
 ![Header](/assets/readme-images/jasmine-test.png)
 
-### Bugs:
+### Bugs fixed:
 
 - Wrong color of logo
     The initial background color of the dark MoMo logo was #25161b. Once it was uploaded it was it became slightly lighter,
@@ -306,6 +306,10 @@ Screenshot of jasmine test
 - NaN in Highest highscore (Had to clear cache)
     When coding localStorage for the highest high score in the return was always NaN. To remove the NaN value the local
     storage cache had to be cleared manually for the actual local set high score to be shown in the webpage.
+
+### Known issues
+- Contious counting in the console log of "Momo: undefined" on javascript line 111. The game is still playable despite
+this know issue, therefor the issue will not be fixed before the project will be submitted for assessment. 
 
 
 ## Deployment
