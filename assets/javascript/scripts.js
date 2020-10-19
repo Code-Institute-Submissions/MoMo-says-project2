@@ -18,7 +18,7 @@ var boardSound = [
     "assets/audio/sealion.mp3",
 ];
 
-// the code for local storage was adapted from: [phaserjs.com](https://phaserjs.com/saving-high-score)
+// the code for local storage was adapted from: https://phaserjs.com/saving-high-score
 localHighScore = localStorage.getItem(localStorageHighScore) == null ? 0 :
                  localStorage.getItem(localStorageHighScore);
                  $("#highest-highscore").text(localHighScore);
