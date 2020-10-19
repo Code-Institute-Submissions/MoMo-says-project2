@@ -23,7 +23,7 @@ body {
 /*---------- Game section ----------*/
 
 .game-section {
-    background-image: url("assets/background-images/summer.png");
+    background-image: url("assets/background-images/summer.jpg");
     background-size: cover;
     min-width: 360px;
     text-align: center;

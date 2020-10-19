@@ -219,7 +219,7 @@ function switchSummer () {
     var logoElement = document.getElementById("logo");
     if (logoElement) {
         logoElement.src = "assets/icons/green-logo.png";
-        document.querySelector('.game-section').style.backgroundImage ="url(assets/background-images/summer.png)";
+        document.querySelector('.game-section').style.backgroundImage ="url(assets/background-images/summer.jpg)";
         document.querySelector('body').style.backgroundColor = "#ddfee4";
         document.querySelector('.game-section-text').style.backgroundColor = "#b6fcc5";
         document.querySelector('.game-section-text').style.color = "#188163";
