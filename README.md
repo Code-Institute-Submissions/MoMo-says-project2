@@ -336,6 +336,12 @@ this know issue, therefore the issue will not be fixed before the project will b
 - There is a color difference between the MoMo icon and the background color when displayed with the galaxy theme. 
 This is a minor issue and does not affect the game. Therefore it is left in it's current state.
 
+- When tested in chrome there was a message in the console that stated: 
+"style.css:1 GET https://quelleqim.github.io/MoMo-says-project2/assets/css/assets/background-images/summer.jpg 404"
+and a red cross. 
+The message states that the image summer.jpg cannot be found, but when looking on the viewport it showes the summer image
+without fault. Since this does not affect the function of the webpage there will be no action made for fixing the fault.
+
 ## Deployment
 
 The project was deployed to gitpages on the 15/10-2020.
