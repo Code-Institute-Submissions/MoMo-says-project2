@@ -7,6 +7,7 @@ This is a school project with the main focus to display my skills in HTML, css a
 ## UX/UI
 
 ### User Stories (UX)
+
 -   As a usertype, I want to play a fun game, to pass my time.
 
 -	As a usertype, the instructions to be simple and easy to understand, so I can play the game easily.
@@ -48,6 +49,7 @@ Wireframe version 2
 
 
 ## Features
+
 
 ### Existing Features
 
@@ -121,6 +123,7 @@ recent theme will be loaded.
 
 
 ### Features Left to Implement
+
 An idea of more features to implement would be to make themes for the animal panels and there for switch
 the images of animals and change them to something else. Either cars, plants, other animals or popular 
 characters like pokémons, marvel characters or the powerpuff girls. Also change the audio to match the
@@ -129,6 +132,7 @@ choosen theme.
 ## Technologies Used
 
 ### Languages
+
 - HTML
 - CSS
 - Javascript    
@@ -188,6 +192,7 @@ choosen theme.
 
 ## Testing
 
+
 ### Manual Testing
 
 The manual testing is executed with the following method: 
@@ -217,6 +222,7 @@ Page > action taken > expected result > pass/fail
 
     Repeat all testing on other web browsers to make sure they are compatible with the code.
     Tests have been made on: Mozilla Firefox, Google Chrome and Microsoft Edge.
+
 
 ### Webpage images
 
@@ -259,6 +265,7 @@ The project has passed the W3C validator test on the 16/10-2020, 16:32.
     </a>
 </p>
 
+
 ### w3 validator
 
 The project recived two warning with the W3 validator test on the 16/10-2020, 16:36.
@@ -269,13 +276,16 @@ enough for use.
 
 [validator.w3.org](https://validator.w3.org/nu/?doc=https%3A%2F%2Fquelleqim.github.io%2FMoMo-says-project2%2F)
 
+
 ### jshint
+
 test on the 16/10-2020, 16:32.
 
 [jshint.com](https://jshint.com/)
 
 
 ### Automated Testing
+
 Jasmine   
     Six automated tests done with jasmine in the jasmine-test.html file.
 - Test 1: Test switchWinter function by checking if the local theme is set to "winter".
@@ -294,6 +304,7 @@ Jasmine
 Screenshot of jasmine test  
 ![Header](/assets/readme-images/jasmine-test.png)
 
+
 ### Bugs fixed:
 
 - Wrong color of logo
@@ -307,12 +318,17 @@ Screenshot of jasmine test
     When coding localStorage for the highest high score in the return was always NaN. To remove the NaN value the local
     storage cache had to be cleared manually for the actual local set high score to be shown in the webpage.
 
-### Known issues
-- Contious counting in the console log of "Momo: undefined" on javascript line 111. The game is still playable despite
-this know issue, therefor the issue will not be fixed before the project will be submitted for assessment. 
 
+### Known issues
+
+- Contious counting in the console log of "Momo: undefined" on javascript line 111. The game is still playable despite
+this know issue, therefore the issue will not be fixed before the project will be submitted for assessment. 
+
+- There is a color difference between the MoMo icon and the background color when displayed with the galaxy theme. 
+This is a minor issue and does not affect the game. Therefore it is left in it's current state.
 
 ## Deployment
+
 The project was deployed to gitpages on the 15/10-2020.
 
 How it was deployed:   
@@ -323,10 +339,15 @@ After a couple of minutes the project was uploaded to gitpages and responsive.
         
 Since the gitpage is rooted from the repositorys master branch there is no difference between the gitpage and github
 repository, exept for a minor delay of a few minutes. To run the project locally one needs to clone the repository
-and open it in a web browser. Unfortunatly, the google maps in find-us.html might not work due to the API key that
-needs to be correlated with the web address.
+and open it in a web browser.
+
+The direct link to the project on gitpages is:
+
+https://quelleqim.github.io/MoMo-says-project2/
+
 
 ## Credits
+
 
 ### Content
 
@@ -360,6 +381,7 @@ readme.md:
 
 
 ### Media
+
 
 #### Images: 
 
