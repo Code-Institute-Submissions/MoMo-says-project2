@@ -137,7 +137,7 @@ function addClassSound(id) {
 }
 
 
-let mute = false;
+var mute = false;
 
 /* mute audio button */
 function muteAudio() {
