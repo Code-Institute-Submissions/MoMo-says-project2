@@ -223,6 +223,8 @@ Page > action taken > expected result > pass/fail
     Repeat all testing on other web browsers to make sure they are compatible with the code.
     Tests have been made on: Mozilla Firefox, Google Chrome and Microsoft Edge.
 
+    All tests passed on the 19/10-2020, 13:05.
+
 
 ### Webpage images
 
