@@ -279,7 +279,16 @@ enough for use.
 
 ### jshint
 
-test on the 16/10-2020, 16:32.
+The project was tested with jshint on the 16/10-2020, 16:32.
+The test showed 8 warnings, 41 undefined variables and 5 unused variables.
+- 7 out of 8 warnings stated "'i' is already defined". All of these were inside loops and necessary for the code, so the
+code will not be altered.
+- The undefined variable were userSeq, momoSeq, $ and id. All these variables need to bee empty othervise the code will not work
+when the game is started or restarted. Therefore the code will be left in it's original state. Also the $ sign is a jQuery 
+selector and if remove the code will not work as intended.
+- The 5 unused variables are only called via the index.html with onclick functions. Presumably the jshint.com website
+is not aware of the HTML file connected to the javaScript code and therefore it assumes these variable unused. But once 
+the webpage is loaded the variables are fully functional throughout the page as intended.
 
 [jshint.com](https://jshint.com/)
 
