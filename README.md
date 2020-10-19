@@ -258,7 +258,7 @@ Webpage with galaxy theme
 
 ### W3C vaildator
 
-The project has passed the W3C validator test on the 16/10-2020, 16:32.
+The project has passed the W3C validator test with no remarks on the 16/10-2020, 16:32.
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -338,7 +338,7 @@ this know issue, therefore the issue will not be fixed before the project will b
 - There is a color difference between the MoMo icon and the background color when displayed with the galaxy theme. 
 This is a minor issue and does not affect the game. Therefore it is left in it's current state.
 
-- When tested in chrome there was a message in the console that stated: 
+- When the webpage was tested with chrome and microsoft edge there was a message in the console that stated: 
 "style.css:1 GET https://quelleqim.github.io/MoMo-says-project2/assets/css/assets/background-images/summer.jpg 404"
 and a red cross. 
 The message states that the image summer.jpg cannot be found, but when looking on the viewport it showes the summer image
